@@ -42,6 +42,16 @@ class App extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/bartonization" >
+                    Bart
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/story" >
+                    Story
+                  </NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink onClick={this.closeCollapse('mainNavbarCollapse')} to="/test">
                     Test
                   </NavLink>

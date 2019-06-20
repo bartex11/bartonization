@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import NavigationNavPage from './pages/NavigationNavPage';
 import FormsNavPage from './pages/FormsNavPage';
@@ -13,6 +13,8 @@ import ComponentsNavPage from './pages/ComponentsNavPage';
 import AnimationPage from './pages/AnimationPage';
 import AlertPage from './pages/AlertPage';
 import HomePage from './pages/HomePage';
+import HomePageBart from './pages/HomePageBart';
+import Story from './pages/MyStory';
 import ButtonPage from './pages/ButtonPage';
 import CSSPage from './pages/CSSPage';
 import TablePage from './pages/TablePage';
@@ -54,10 +56,12 @@ import Background from './pages_new/Background';
 import Tabs from './pages_new/Tabs';
 
 class Routes extends React.Component {
-  render () {
+  render() {
     return (
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/bartonization" component={HomePageBart} />
+        <Route exact path="/story" component={Story} />
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />
         <Route exact path="/advanced" component={AdvancedNavPage} />

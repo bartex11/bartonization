@@ -6,194 +6,186 @@ VARIABLES
 /*********************
 BREAKPOINTS
 *********************/
+
 @mixin for-phone-only {
-  @media (max-width: 599px) {
-    @content;
-  }
+    @media (max-width: 599px) {
+        @content;
+    }
 }
 
 @mixin for-tablet-portrait-up {
-  @media (min-width: 600px) {
-    @content;
-  }
+    @media (min-width: 600px) {
+        @content;
+    }
 }
 
 @mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
-    @content;
-  }
+    @media (min-width: 900px) {
+        @content;
+    }
 }
 
 @mixin for-desktop-up {
-  @media (min-width: 1200px) {
-    @content;
-  }
+    @media (min-width: 1200px) {
+        @content;
+    }
 }
 
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
-    @content;
-  }
+    @media (min-width: 1800px) {
+        @content;
+    }
 }
+
 
 /*********************
 STYLES
 *********************/
 
 .App {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .App-logo {
-  width: 10rem;
+    width: 10rem;
 }
 
 .flyout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 .home-feature-box .fa {
-  font-size: 6rem;
+    font-size: 6rem;
 }
 
 .home-feature-box span {
-  display: block;
-  color: #111;
-  font-weight: bold;
-  margin-top: 1.5rem;
+    display: block;
+    color: #111;
+    font-weight: bold;
+    margin-top: 1.5rem;
 }
 
 .example-components-list li>a {
-  color: #495057;
+    color: #495057;
 }
 
 .example-components-list li:last-child>a {
-  border-bottom: 0;
+    border-bottom: 0;
 }
 
 .example-components-list li>a .fa {
-  color: rgba(0, 0, 0, .35);
-  float: right;
+    color: rgba(0, 0, 0, .35);
+    float: right;
 }
 
 .justify-content-around {
-  justify-content: center !important
+    justify-content: center !important
 }
 
 .page-footer {
-  margin-top: 0 !important;
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
-  background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    margin-top: 0 !important;
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+    background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
 }
 
 #background-image .gradient {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
 }
 
-#background-image .view {
-  background-image: url(http://bartonization.com/wp-content/uploads/2016/08/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
+#background-image .index-image {
+    background-image: url(http://bartonization.com/wp-content/uploads/2016/08/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
 }
 
 #background-image h6 {
-  line-height: 1.7;
+    line-height: 1.7;
 }
 
 .content {
-  margin-top: 4rem
+    margin-top: 4rem
 }
 
 .free-bird {
-  margin-top: -150px;
-
-  @include for-phone-only {
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-top: -220px;
-  }
+    margin-top: -150px;
+    @include for-phone-only {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-top: -220px;
+    }
 }
+
 
 /*********************
 REACT TABS
 *********************/
 
 .react-tabs {
-  -webkit-tap-highlight-color: transparent;
-
-
-  &__tab-list {
-    margin: 0 0 2rem 0;
-    padding: 0;
-    text-align: left;
-
-    @media (max-width: 1200px) {
-      text-align: center;
-      margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    &__tab-list {
+        margin: 0 0 2rem 0;
+        padding: 0;
+        text-align: left;
+        @media (max-width: 1200px) {
+            text-align: center;
+            margin: 0;
+        }
     }
-
-  }
-
-  &__tab {
-    display: inline-block;
-    border-bottom: none;
-    bottom: -1px;
-    position: relative;
-    list-style: none;
-    padding: 6px 12px;
-    cursor: pointer;
-
-    &--selected {
-      background: #fff;
-      border-bottom: 1px solid #3DAC71;
-      color: #3DAC71;
-      font-weight: bold
+    &__tab {
+        display: inline-block;
+        border-bottom: none;
+        bottom: -1px;
+        position: relative;
+        list-style: none;
+        padding: 6px 12px;
+        cursor: pointer;
+        &--selected {
+            background: #fff;
+            border-bottom: 1px solid #3DAC71;
+            color: #3DAC71;
+            font-weight: bold
+        }
+        &--disabled {
+            color: GrayText;
+            cursor: default;
+        }
+        &:focus {
+            outline: none;
+            &:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                left: -4px;
+                right: -4px;
+                bottom: -5px;
+                background: #fff;
+            }
+        }
     }
-
-    &--disabled {
-      color: GrayText;
-      cursor: default;
+    &__tab-panel {
+        display: none;
+        text-align: left;
+        &--selected {
+            display: block;
+        }
     }
-
-    &:focus {
-      outline: none;
-
-      &:after {
-        content: "";
-        position: absolute;
-        height: 5px;
-        left: -4px;
-        right: -4px;
-        bottom: -5px;
-        background: #fff;
-      }
-    }
-  }
-
-  &__tab-panel {
-    display: none;
-    text-align: left;
-
-    &--selected {
-      display: block;
-    }
-  }
 }
+
 
 /*********************
 END REACT TABS

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import {
   EdgeHeader,
@@ -56,10 +56,10 @@ class TestPage extends React.Component {
   };
   renderImages = () => {
     let photoIndex = -1;
-    const {images} = this.state;
-    const {name} = this.state;
+    const { images } = this.state;
+    const { name } = this.state;
 
-    return images.map (imageSrc => {
+    return images.map(imageSrc => {
       photoIndex++;
       const privateKey = photoIndex;
       return (
@@ -70,7 +70,7 @@ class TestPage extends React.Component {
               alt="Gallery"
               className="img-fluid z-depth-1"
               onClick={() =>
-                this.setState ({photoIndex: privateKey, isOpen: true})}
+                this.setState({ photoIndex: privateKey, isOpen: true })}
             />
             <p class="text-uppercase font-weight-bold blue-grey-text mt-4">
               {name[photoIndex]}
@@ -80,8 +80,8 @@ class TestPage extends React.Component {
       );
     });
   };
-  render () {
-    const {photoIndex, isOpen, images} = this.state;
+  render() {
+    const { photoIndex, isOpen, images } = this.state;
     return (
       <div>
         <EdgeHeader color="indigo darken-3" />
@@ -115,7 +115,7 @@ class TestPage extends React.Component {
             </Col>
           </Row>
         </FreeBird>
-        <MDBContainer style={{marginTop: '3rem'}}>
+        <MDBContainer style={{ marginTop: '3rem' }}>
           <MDBCarousel
             activeItem={1}
             length={2}
@@ -147,11 +147,11 @@ class TestPage extends React.Component {
             </MDBCarouselInner>
           </MDBCarousel>
         </MDBContainer>
-        <Container style={{marginTop: '3rem'}}>
+        <Container style={{ marginTop: '3rem' }}>
           <Row>
             <Col>
               <Animation type="bounce">
-                <Card reverse style={{width: '22rem'}}>
+                <Card reverse style={{ width: '22rem' }}>
                   <CardImage
                     cascade
                     className="img-fluid"
@@ -170,7 +170,7 @@ class TestPage extends React.Component {
               </Animation>
             </Col>
           </Row>
-          <Col style={{margin: '3rem auto'}}>
+          <Col style={{ margin: '3rem auto' }}>
             <Row>
               <Iframe
                 title="This is a Bartonization site"
@@ -183,7 +183,7 @@ class TestPage extends React.Component {
 
         <Container
           className="mt-5 p-3"
-          style={{backgroundColor: '#fff', marginBottom: '50px'}}
+          style={{ backgroundColor: '#fff', marginBottom: '50px' }}
         >
           <h2 class="h1 text-center text-uppercase font-weight-bold pt-5 mb-3 mt-5">
             My projects
@@ -199,7 +199,7 @@ class TestPage extends React.Component {
           </p>
           <div className="mdb-lightbox p-3">
             <MDBRow>
-              {this.renderImages ()}
+              {this.renderImages()}
             </MDBRow>
           </div>
           {isOpen &&
@@ -208,13 +208,13 @@ class TestPage extends React.Component {
               nextSrc={images[(photoIndex + 1) % images.length]}
               prevSrc={images[(photoIndex + images.length - 1) % images.length]}
               imageTitle={photoIndex + 1 + '/' + images.length}
-              onCloseRequest={() => this.setState ({isOpen: false})}
+              onCloseRequest={() => this.setState({ isOpen: false })}
               onMovePrevRequest={() =>
-                this.setState ({
+                this.setState({
                   photoIndex: (photoIndex + images.length - 1) % images.length,
                 })}
               onMoveNextRequest={() =>
-                this.setState ({
+                this.setState({
                   photoIndex: (photoIndex + 1) % images.length,
                 })}
             />}
@@ -222,6 +222,10 @@ class TestPage extends React.Component {
             <MDBBtn outline color="black"><strong>more</strong></MDBBtn>
           </MDBCol>
         </Container>
+        <div style={{ margin: '50px auto', textAlign: 'center' }}  >
+
+          <img src="/images/askora/1.jpg" alt="" height="700" style={{ margin: '0 auto' }} />
+        </div>
       </div>
     );
   }

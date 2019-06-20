@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+.paper-background {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+
+.paper-background:before,
+.paper-content:before {
+    -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+
+.paper-background,
+.content,
+.paper-date,
+.paper-name {
+    font-family: "Architects Daughter", cursive;
+    font-size: 18px;
+}
+
+.paper-background {
+    margin: 0 auto;
+    padding: 30px;
+    width: 960px;
+    color: #333;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 100px
+}
+
+.paper-background p {
+    line-height: 24px;
+    text-indent: 1.6666666667em;
+}
+
+.coffee-stain {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    bottom: -24px;
+    right: -24px;
+    z-index: 6;
+    opacity: 0.35;
+    width: 200px;
+    height: 200px;
+    background-image: url(https://openclipart.org/image/800px/svg_to_png/185884/coffeering.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 200px 200px;
+}
+
+.paper-background {
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin: 100px;
+    padding-top: 75px;
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.paper-background:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 96px;
+    left: 24px;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.paper-background:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 96px;
+    z-index: 3;
+    width: 4px;
+    height: 100%;
+    border-left: 4px double #fca1a1;
+}
+
+.paper-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 48px 120px 24px;
+    height: auto;
+    background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 23px, #6ba2d8 1px, #f9f9f9);
+    background-size: 100% 24px;
+    line-height: 24px;
+}
+
+.paper-content:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 384px;
+    left: 24px;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.paper-content:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: -75px;
+    bottom: 0;
+    right: 96px;
+    z-index: 4;
+    width: 4px;
+    height: 1000%;
+    border-left: 1px solid #fca1a1;
+}
+
+.paper-name,
+.paper-date {
+    position: absolute;
+    z-index: 5;
+    width: 300px;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    vertical-align: baseline;
+}
+
+.paper-name:focus,
+.paper-date:focus {
+    outline: none;
+}
+
+.paper-name {
+    left: 120px;
+}
+
+.paper-date {
+    right: 120px;
+    z-index: 5;
+    text-align: right;
+}
