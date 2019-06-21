@@ -2,7 +2,7 @@
   "name": "bartex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bartex11.github.io/MDB-React",
+  "homepage": "https://bartex11.github.io/bartonization",
   "dependencies": {
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.12",

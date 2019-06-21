@@ -1,146 +1,155 @@
-@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rock+Salt&display=swap');
+
 
 .paper-background {
-    display: block;
-    position: relative;
-    width: 50%;
-    height: auto;
-    padding: 70px 30px;
-    margin: 100px auto;
-    color: #333;
-    background-color: #f9f9f9;
-    font-family: "Architects Daughter", cursive;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  display: block;
+  position: relative;
+  width: 860px;
+  height: auto;
+  padding: 70px 0;
+  margin: 100px auto;
+  color: #333;
+  background-color: #f9f9f9;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
 }
-
-.paper-background:before,
-.paper-content:before {
-    -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
-    -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
-    box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
-}
-
-
 
 .paper-background:before {
-    content: " ";
-    display: inline-block;
-    position: absolute;
-    top: 96px;
-    left: 24px;
-    z-index: 3;
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 96px;
+  z-index: 3;
+  width: 4px;
+  height: 100%;
+  border-left: 4px double #fca1a1;
 }
 
 .paper-background:after {
-    content: " ";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 96px;
-    z-index: 3;
-    width: 4px;
-    height: 100%;
-    border-left: 4px double #fca1a1;
-}
-
-.paper-background p {
-    line-height: 24px;
-    text-indent: 1.6666666667em;
-    margin-bottom: 0;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 96px;
+  z-index: 4;
+  width: 4px;
+  height: 100%;
+  border-left: 1px solid #fca1a1;
 }
 
 .paper-content {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    padding: 48px 120px 24px;
-    height: auto;
-    background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 23px, #6ba2d8 1px, #f9f9f9);
-    background-size: 100% 24px;
-    line-height: 24px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 76px 106px;
+  height: 100%;
+  background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 23px, #6ba2d8 1px, #f9f9f9);
+  background-size: 100% 24px;
+  line-height: 24px;
+}
+
+.paper-content:before,
+.paper-content:after {
+  -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
 }
 
 .paper-content:before {
-    content: " ";
-    display: inline-block;
-    position: absolute;
-    top: 384px;
-    left: 24px;
-    z-index: 3;
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 28%;
+  left: 34px;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .paper-content:after {
-    content: " ";
-    display: inline-block;
-    position: absolute;
-    top: -75px;
-    bottom: 0;
-    right: 96px;
-    z-index: 4;
-    width: 4px;
-    height: 1000%;
-    border-left: 1px solid #fca1a1;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 58%;
+  left: 34px;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.paper-background .paper-content p {
+  line-height: 24px;
+  text-indent: 1.5em;
+  margin-bottom: 0;
 }
 
 .paper-name,
 .paper-date {
-    position: absolute;
-    z-index: 5;
-    width: 300px;
-    background-color: transparent;
-    font-size: 20px;
-    border: none;
-    vertical-align: baseline;
+  position: absolute;
+  z-index: 5;
+  width: 300px;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  vertical-align: baseline;
 }
 
 .paper-name:focus,
 .paper-date:focus {
-    outline: none;
+  outline: none;
 }
 
 .paper-name {
-    left: 120px;
+  left: 120px;
 }
 
 .paper-date {
-    right: 120px;
-    z-index: 5;
-    text-align: right;
+  right: 120px;
+  z-index: 5;
+  text-align: right;
+}
+
+.paper-background .paper-content .paper-signature {
+  /* font-family: 'Rock Salt', cursive; */
+  /*   color: #4c4848; */
+  margin-top: -3px;
+  font-size: 30px;
+  letter-spacing: 0;
+  text-indent: .5em;
+
 }
 
 .coffee-stain {
-    content: " ";
-    display: inline-block;
-    position: absolute;
-    bottom: -24px;
-    right: -24px;
-    z-index: 6;
-    opacity: 0.35;
-    width: 200px;
-    height: 200px;
-    background-image: url(/images/coffeering.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 200px 200px;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  z-index: 6;
+  opacity: 0.35;
+  width: 200px;
+  height: 200px;
+  background-image: url(/images/coffeering.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px 200px;
 }
