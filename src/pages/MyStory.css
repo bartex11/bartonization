@@ -1,5 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+
 .paper-background {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 70px 30px;
+    margin: 100px auto;
+    color: #333;
+    background-color: #f9f9f9;
+    font-family: "Architects Daughter", cursive;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
@@ -12,56 +27,7 @@
     box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
 }
 
-.paper-background,
-.paper-date,
-.paper-name {
-    font-family: "Architects Daughter", cursive;
-    font-size: 18px;
-}
 
-.paper-background {
-    margin: 0 auto;
-    padding: 30px;
-    width: 960px;
-    color: #333;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin: 100px
-}
-
-.paper-background p {
-    line-height: 24px;
-    text-indent: 1.6666666667em;
-}
-
-.coffee-stain {
-    content: " ";
-    display: inline-block;
-    position: absolute;
-    bottom: -24px;
-    right: -24px;
-    z-index: 6;
-    opacity: 0.35;
-    width: 200px;
-    height: 200px;
-    background-image: url(https://openclipart.org/image/800px/svg_to_png/185884/coffeering.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 200px 200px;
-}
-
-.paper-background {
-    display: block;
-    float: left;
-    position: relative;
-    z-index: 1;
-    margin: 100px;
-    padding-top: 75px;
-    width: 100%;
-    height: auto;
-    background-color: #f9f9f9;
-    overflow: hidden;
-}
 
 .paper-background:before {
     content: " ";
@@ -89,6 +55,12 @@
     width: 4px;
     height: 100%;
     border-left: 4px double #fca1a1;
+}
+
+.paper-background p {
+    line-height: 24px;
+    text-indent: 1.6666666667em;
+    margin-bottom: 0;
 }
 
 .paper-content {
@@ -155,4 +127,20 @@
     right: 120px;
     z-index: 5;
     text-align: right;
+}
+
+.coffee-stain {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    bottom: -24px;
+    right: -24px;
+    z-index: 6;
+    opacity: 0.35;
+    width: 200px;
+    height: 200px;
+    background-image: url(/images/coffeering.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 200px 200px;
 }

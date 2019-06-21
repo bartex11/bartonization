@@ -1,24 +1,35 @@
-import React from "react";
+import React from 'react';
 
-import "./HomePage.css";
+import './HomePage.css';
 import View from '../components/View';
 import Mask from '../components/Mask';
 import Container from '../components/Container';
 import Row from '../components/Row';
 import Button from '../components/Button';
-import { MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn, MDBView, MDBMask } from "mdbreact";
+import {
+  MDBRow,
+  MDBCol,
+  MDBCardBody,
+  MDBIcon,
+  MDBBtn,
+  MDBView,
+  MDBMask,
+} from 'mdbreact';
 
-const NavLink = require("react-router-dom").NavLink;
+const NavLink = require ('react-router-dom').NavLink;
 
 class HomePage extends React.Component {
-  render() {
+  render () {
     return (
       <div id="background-image">
         <View className="index-image">
-          <Mask className="d-flex justify-content-center align-items-center" overlay="grey-light">
+          <Mask
+            className="d-flex justify-content-center align-items-center"
+            overlay="grey-light"
+          >
             <Container>
               <Row>
-                <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5" >
+                <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
                   <h1 className="h1-responsive font-weight-bold mt-sm-5">
                     Hi, my name is Ivan{' '}
                   </h1>
@@ -40,13 +51,13 @@ class HomePage extends React.Component {
         <section className="text-center my-5">
           <h2 className="h1-responsive font-weight-bold my-5">
             Our best projects
-        </h2>
+          </h2>
           <p className="grey-text w-responsive mx-auto mb-5">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             est laborum.
-        </p>
+          </p>
 
           <MDBRow className="d-flex justify-content-center">
             <MDBCol md="6" xl="5" className="mb-4">
@@ -65,17 +76,17 @@ class HomePage extends React.Component {
                   <h5 className="font-weight-bold mt-2 mb-3">
                     <MDBIcon fas icon="chart-line" className="pr-2" />
                     Marketing
-                </h5>
+                  </h5>
                 </a>
                 <h4 className="font-weight-bold mb-3">Title of the news</h4>
                 <p>
                   Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                   amet, consectetur, adipisci velit cupidatat proident
                   voluptatem quia numquam.
-              </p>
+                </p>
                 <MDBBtn color="success" rounded>
                   MDBView more
-              </MDBBtn>
+                </MDBBtn>
               </MDBCardBody>
             </MDBCol>
             <MDBCol md="6" xl="5" className="mb-4">
@@ -94,17 +105,17 @@ class HomePage extends React.Component {
                   <h5 className="font-weight-bold mt-2 mb-3">
                     <MDBIcon icon="eye" className="pr-2" />
                     Entertainment
-                </h5>
+                  </h5>
                 </a>
                 <h4 className="font-weight-bold mb-3">Title of the news</h4>
                 <p>
                   Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                   amet, consectetur, adipisci velit cupidatat proident
                   voluptatem quia numquam.
-              </p>
+                </p>
                 <MDBBtn color="success" rounded>
                   MDBView more
-              </MDBBtn>
+                </MDBBtn>
               </MDBCardBody>
             </MDBCol>
             <MDBCol md="6" xl="5" className="mb-4">
@@ -123,17 +134,17 @@ class HomePage extends React.Component {
                   <h5 className="font-weight-bold mt-2 mb-3">
                     <MDBIcon icon="camera" className="pr-2" />
                     Travel
-                </h5>
+                  </h5>
                 </a>
                 <h4 className="font-weight-bold mb-3">Title of the news</h4>
                 <p>
                   Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                   amet, consectetur, adipisci velit cupidatat proident
                   voluptatem quia numquam.
-              </p>
+                </p>
                 <MDBBtn color="success" rounded>
                   MDBView more
-              </MDBBtn>
+                </MDBBtn>
               </MDBCardBody>
             </MDBCol>
             <MDBCol md="6" xl="5" className="mb-4">
@@ -152,17 +163,17 @@ class HomePage extends React.Component {
                   <h5 className="font-weight-bold mt-2 mb-3">
                     <MDBIcon icon="phone" className="pr-2" />
                     Technology
-                </h5>
+                  </h5>
                 </a>
                 <h4 className="font-weight-bold mb-3">Title of the news</h4>
                 <p>
                   Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                   amet, consectetur, adipisci velit cupidatat proident
                   voluptatem quia numquam.
-              </p>
+                </p>
                 <MDBBtn color="success" rounded>
                   MDBView more
-              </MDBBtn>
+                </MDBBtn>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
