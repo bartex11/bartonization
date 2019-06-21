@@ -24,7 +24,7 @@ class HomePage extends React.Component {
       <div class="paper-background">
         <span class="coffee-stain" />
         <span class="paper-date">
-          Düsseldorf, 21.06.2019
+          Düsseldorfeeeee, 21.06.2019
         </span>
         <section class="paper-content">
           <p>
