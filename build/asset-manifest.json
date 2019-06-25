@@ -1,17 +1,17 @@
 {
   "main.css": "/bartonization/static/css/main.2f7c815f.chunk.css",
-  "main.js": "/bartonization/static/js/main.72c0f96d.chunk.js",
-  "main.js.map": "/bartonization/static/js/main.72c0f96d.chunk.js.map",
+  "main.js": "/bartonization/static/js/main.4bac96d1.chunk.js",
+  "main.js.map": "/bartonization/static/js/main.4bac96d1.chunk.js.map",
   "static/css/1.78204e91.chunk.css": "/bartonization/static/css/1.78204e91.chunk.css",
-  "static/js/1.e34a5a44.chunk.js": "/bartonization/static/js/1.e34a5a44.chunk.js",
-  "static/js/1.e34a5a44.chunk.js.map": "/bartonization/static/js/1.e34a5a44.chunk.js.map",
+  "static/js/1.6577a6e2.chunk.js": "/bartonization/static/js/1.6577a6e2.chunk.js",
+  "static/js/1.6577a6e2.chunk.js.map": "/bartonization/static/js/1.6577a6e2.chunk.js.map",
   "runtime~main.js": "/bartonization/static/js/runtime~main.3d03dd08.js",
   "runtime~main.js.map": "/bartonization/static/js/runtime~main.3d03dd08.js.map",
-  "static/media/mdb.css": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf",
+  "static/media/mdb.css": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf",
   "static/media/font-awesome.min.css": "/bartonization/static/media/fontawesome-webfont.fee66e71.woff",
   "static/css/main.2f7c815f.chunk.css.map": "/bartonization/static/css/main.2f7c815f.chunk.css.map",
   "static/css/1.78204e91.chunk.css.map": "/bartonization/static/css/1.78204e91.chunk.css.map",
   "index.html": "/bartonization/index.html",
-  "precache-manifest.f272ae43905474b52bbead4650672b15.js": "/bartonization/precache-manifest.f272ae43905474b52bbead4650672b15.js",
+  "precache-manifest.6b52a3a793b87645294d540c63c81675.js": "/bartonization/precache-manifest.6b52a3a793b87645294d540c63c81675.js",
   "service-worker.js": "/bartonization/service-worker.js"
 }
