@@ -8,20 +8,14 @@ import {
   Footer,
   NavLink,
 } from 'mdbreact';
-import {translate, Trans} from 'react-i18next';
+import {translate} from 'react-i18next';
 import {withStyles} from '@material-ui/core/styles';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 
 import Navbar from './components/Navbar';
 import {HashRouter as Router} from 'react-router-dom';
@@ -92,7 +86,6 @@ class App extends Component {
         onClick={this.toggleCollapse ('mainNavbarCollapse')}
       />
     );
-    const {t, i18n} = this.props;
     const {classes} = this.props;
     return (
       <Router>

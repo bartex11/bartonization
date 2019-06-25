@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {translate, Trans} from 'react-i18next';
 
 import {
@@ -86,7 +86,7 @@ class TestPage extends React.Component {
   };
   render () {
     const {photoIndex, isOpen, images} = this.state;
-    const {t, i18n} = this.props;
+    const {t} = this.props;
 
     return (
       <div>
