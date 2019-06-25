@@ -74,7 +74,7 @@ class HomePage extends React.Component {
               <MDBCardBody className="pb-0">
                 <a href="#!" className="green-text">
                   <h5 className="font-weight-bold mt-2 mb-3">
-                    <MDBIcon fas icon="chart-line" className="pr-2" />
+                    <MDBIcon icon="twitter" className="pr-2" />
                     Marketing
                   </h5>
                 </a>
@@ -103,7 +103,7 @@ class HomePage extends React.Component {
               <MDBCardBody className="pb-0">
                 <a href="#!" className="blue-text">
                   <h5 className="font-weight-bold mt-2 mb-3">
-                    <MDBIcon icon="eye" className="pr-2" />
+                    <MDBIcon far icon="eye" className="pr-2" />
                     Entertainment
                   </h5>
                 </a>
