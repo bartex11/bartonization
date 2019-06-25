@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {MDBMask, MDBRow, MDBCol, MDBBtn, MDBView, MDBContainer} from 'mdbreact';
+import {MDBMask, MDBRow, MDBBtn, MDBView, MDBContainer} from 'mdbreact';
 
 class BackgroundImage extends React.Component {
   render () {

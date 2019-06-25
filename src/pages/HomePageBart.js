@@ -16,8 +16,6 @@ import {
   MDBMask,
 } from 'mdbreact';
 
-const NavLink = require ('react-router-dom').NavLink;
-
 class HomePage extends React.Component {
   render () {
     return (
