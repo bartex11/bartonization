@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/bartonization/static/css/main.2f7c815f.chunk.css"
   },
   {
-    "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
-    "url": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf"
+    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
+    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
   },
   {
     "revision": "6577a6e2386c631484d3",
@@ -92,10 +92,6 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Thin.7500519d.woff"
   },
   {
-    "revision": "3b813c2ae0d04909a33a18d792912ee7",
-    "url": "/bartonization/static/media/Roboto-Light.3b813c2a.woff"
-  },
-  {
     "revision": "ba3dcd8903e3d0af5de7792777f8ae0d",
     "url": "/bartonization/static/media/Roboto-Regular.ba3dcd89.woff"
   },
@@ -104,24 +100,28 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Medium.fc78759e.woff"
   },
   {
-    "revision": "dc81817def276b4f21395f7ea5e88dcd",
-    "url": "/bartonization/static/media/Roboto-Bold.dc81817d.woff"
+    "revision": "3b813c2ae0d04909a33a18d792912ee7",
+    "url": "/bartonization/static/media/Roboto-Light.3b813c2a.woff"
   },
   {
-    "revision": "94998475f6aea65f558494802416c1cf",
-    "url": "/bartonization/static/media/Roboto-Thin.94998475.ttf"
+    "revision": "dc81817def276b4f21395f7ea5e88dcd",
+    "url": "/bartonization/static/media/Roboto-Bold.dc81817d.woff"
   },
   {
     "revision": "46e48ce0628835f68a7369d0254e4283",
     "url": "/bartonization/static/media/Roboto-Light.46e48ce0.ttf"
   },
   {
+    "revision": "94998475f6aea65f558494802416c1cf",
+    "url": "/bartonization/static/media/Roboto-Thin.94998475.ttf"
+  },
+  {
     "revision": "df7b648ce5356ea1ebce435b3459fd60",
     "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
-    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
-    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
+    "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
+    "url": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf"
   },
   {
     "revision": "6577a6e2386c631484d3",
