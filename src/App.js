@@ -138,7 +138,7 @@ class App extends Component {
             >
               <NavbarBrand href="/">
                 <img
-                  src="/images/bart-simpson-picture-png-image-723.png"
+                  src="./images/bart-simpson-picture-png-image-723.png"
                   alt=""
                   height="40"
                   style={{marginRight: '10px'}}
@@ -287,7 +287,7 @@ class App extends Component {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="/images/bart-simpson-picture-png-image-723.png"
+                    src="./images/bart-simpson-picture-png-image-723.png"
                     alt=""
                     height="50"
                     style={{marginRight: '10px'}}
