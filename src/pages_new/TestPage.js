@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {translate, Trans} from 'react-i18next';
 
 import {
   EdgeHeader,
@@ -85,6 +86,7 @@ class TestPage extends React.Component {
   };
   render () {
     const {photoIndex, isOpen, images} = this.state;
+    const {t, i18n} = this.props;
 
     return (
       <div>
@@ -101,6 +103,8 @@ class TestPage extends React.Component {
 
                 </h2>
                 <p>React Bootstrap with Material Design</p>
+                <h1><Trans> {t ('Introduction')} </Trans></h1>
+                <h3><Trans> BARTEX {t ('Description')} </Trans></h3>
                 <p className="pb-4">
                   This application shows the actual use of MDB React components
                   in the application.
@@ -243,4 +247,4 @@ class TestPage extends React.Component {
   }
 }
 
-export default TestPage;
+export default translate ('translations') (TestPage);
