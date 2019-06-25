@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Bold.ecdd509c.eot"
   },
   {
-    "revision": "01fe9a813ba1411ca3f1",
-    "url": "/bartonization/static/css/main.f1a10397.chunk.css"
+    "revision": "c923014485fdf193b3f0",
+    "url": "/bartonization/static/css/main.fe9362c2.chunk.css"
   },
   {
-    "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
-    "url": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf"
+    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
+    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
   },
   {
-    "revision": "247c4678970a44fb99e0",
-    "url": "/bartonization/static/js/1.247c4678.chunk.js"
+    "revision": "50668436d372d12e661e",
+    "url": "/bartonization/static/js/1.50668436.chunk.js"
   },
   {
     "revision": "3d03dd088975020b62fc",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "11911410dca2de148f30954eb2fd5eab",
-    "url": "/bartonization/static/media/arrow_left.11911410.svg"
-  },
-  {
     "revision": "8ef6a08cdc1154920165680a4edde771",
     "url": "/bartonization/static/media/arrow_right.8ef6a08c.svg"
+  },
+  {
+    "revision": "11911410dca2de148f30954eb2fd5eab",
+    "url": "/bartonization/static/media/arrow_left.11911410.svg"
   },
   {
     "revision": "dfe56a876d0282555d1e2458e278060f",
@@ -64,12 +64,16 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Medium.4d9f3f9e.eot"
   },
   {
-    "revision": "01fe9a813ba1411ca3f1",
-    "url": "/bartonization/static/js/main.01fe9a81.chunk.js"
+    "revision": "c923014485fdf193b3f0",
+    "url": "/bartonization/static/js/main.c9230144.chunk.js"
   },
   {
     "revision": "954bbdeb86483e4ffea00c4591530ece",
     "url": "/bartonization/static/media/Roboto-Thin.954bbdeb.woff2"
+  },
+  {
+    "revision": "2751ee43015f9884c3642f103b7f70c9",
+    "url": "/bartonization/static/media/Roboto-Regular.2751ee43.woff2"
   },
   {
     "revision": "69f8a0617ac472f78e45841323a3df9e",
@@ -80,10 +84,6 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Medium.574fd0b5.woff2"
   },
   {
-    "revision": "2751ee43015f9884c3642f103b7f70c9",
-    "url": "/bartonization/static/media/Roboto-Regular.2751ee43.woff2"
-  },
-  {
     "revision": "39b2c3031be6b4ea96e2e3e95d307814",
     "url": "/bartonization/static/media/Roboto-Bold.39b2c303.woff2"
   },
@@ -92,43 +92,43 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Thin.7500519d.woff"
   },
   {
-    "revision": "3b813c2ae0d04909a33a18d792912ee7",
-    "url": "/bartonization/static/media/Roboto-Light.3b813c2a.woff"
-  },
-  {
     "revision": "ba3dcd8903e3d0af5de7792777f8ae0d",
     "url": "/bartonization/static/media/Roboto-Regular.ba3dcd89.woff"
   },
   {
-    "revision": "dc81817def276b4f21395f7ea5e88dcd",
-    "url": "/bartonization/static/media/Roboto-Bold.dc81817d.woff"
+    "revision": "3b813c2ae0d04909a33a18d792912ee7",
+    "url": "/bartonization/static/media/Roboto-Light.3b813c2a.woff"
   },
   {
     "revision": "fc78759e93a6cac50458610e3d9d63a0",
     "url": "/bartonization/static/media/Roboto-Medium.fc78759e.woff"
   },
   {
-    "revision": "46e48ce0628835f68a7369d0254e4283",
-    "url": "/bartonization/static/media/Roboto-Light.46e48ce0.ttf"
-  },
-  {
-    "revision": "df7b648ce5356ea1ebce435b3459fd60",
-    "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
-  },
-  {
-    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
-    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
+    "revision": "dc81817def276b4f21395f7ea5e88dcd",
+    "url": "/bartonization/static/media/Roboto-Bold.dc81817d.woff"
   },
   {
     "revision": "94998475f6aea65f558494802416c1cf",
     "url": "/bartonization/static/media/Roboto-Thin.94998475.ttf"
   },
   {
-    "revision": "247c4678970a44fb99e0",
-    "url": "/bartonization/static/css/1.7c6e1a53.chunk.css"
+    "revision": "df7b648ce5356ea1ebce435b3459fd60",
+    "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
-    "revision": "f226fd411464ada77afdf72dcd79b5cb",
+    "revision": "46e48ce0628835f68a7369d0254e4283",
+    "url": "/bartonization/static/media/Roboto-Light.46e48ce0.ttf"
+  },
+  {
+    "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
+    "url": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf"
+  },
+  {
+    "revision": "50668436d372d12e661e",
+    "url": "/bartonization/static/css/1.a859b08b.chunk.css"
+  },
+  {
+    "revision": "1212ac45406a19bad7d92a5668346b1e",
     "url": "/bartonization/index.html"
   }
 ];
