@@ -104,7 +104,7 @@ class App extends Component {
                   component="fieldset"
                   className={classes.formControl}
                 >
-                  <FormLabel component="legend">Select Language</FormLabel>
+
                   <RadioGroup
                     aria-label="Gender"
                     name="gender1"
