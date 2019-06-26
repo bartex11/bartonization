@@ -22,29 +22,32 @@ class HomePage extends React.Component {
     const projects = [
       {
         id: 1,
-        imgSrc: 'https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg',
+        imgSrc: './images/askora/1.jpg',
         title: 'Marketing',
-        text: 'Welcome to learning React!',
-        button: 'Button 1',
+        name: 'Askora Translation',
+        text: 'The webpage was created for the needs of company Askora based in the town of Kardzhali, Bulgaria',
+        button: 'Learn more >>',
       },
       {
         id: 2,
-        imgSrc: 'https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg',
+        imgSrc: './images/KK/1-3.jpg',
         title: 'AAAAAAAAAAAAAAAAAAAA',
-        text: 'Welcome to learning sss!',
-        button: 'Button 2',
+        text: 'This page provides information about the services, products and prices of beauty salon Katerina located in Düsseldorf, Germany',
+        name: 'Kosmetikstudio Katerina',
+        button: 'Learn more >>',
       },
       {
         id: 1,
-        imgSrc: 'https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg',
+        imgSrc: './images/NN/1.png',
         title: 'BBBBBB',
-        text: 'Welcome to learning React!',
-        button: 'Button 3',
+        text: 'This page provides information about the services of dentist Chlosta located in Duisburg, Germany',
+        name: 'Dentist Chlosta',
+        button: 'Learn more >>',
       },
     ];
 
     const project = projects.map (project => (
-      <MDBCol md="6" xl="5" className="mb-4" key={projects.id}>
+      <MDBCol md="3" xl="3" className="mb-5" key={projects.id}>
         <MDBView className="overlay rounded z-depth-2" waves>
           <img src={project.imgSrc} alt="" className="img-fluid" />
           <a href="#!">
@@ -58,7 +61,7 @@ class HomePage extends React.Component {
               {project.title}
             </h5>
           </a>
-          <h4 className="font-weight-bold mb-3">Title of the news</h4>
+          <h4 className="font-weight-bold mb-3">{project.name}</h4>
           <p>
             {project.text}
           </p>
@@ -113,96 +116,7 @@ class HomePage extends React.Component {
           </p>
 
           <MDBRow className="d-flex justify-content-center">
-
             {project}
-
-            <MDBCol md="6" xl="5" className="mb-4">
-              <MDBView className="overlay rounded z-depth-2" waves>
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg"
-                  alt=""
-                  className="img-fluid"
-                />
-                <a href="#!">
-                  <MDBMask overlay="white-slight" />
-                </a>
-              </MDBView>
-              <MDBCardBody className="pb-0">
-                <a href="#!" className="blue-text">
-                  <h5 className="font-weight-bold mt-2 mb-3">
-                    <MDBIcon far icon="eye" className="pr-2" />
-                    Entertainment
-                  </h5>
-                </a>
-                <h4 className="font-weight-bold mb-3">Title of the news</h4>
-                <p>
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci velit cupidatat proident
-                  voluptatem quia numquam.
-                </p>
-                <MDBBtn color="success" rounded>
-                  MDBView more
-                </MDBBtn>
-              </MDBCardBody>
-            </MDBCol>
-            <MDBCol md="6" xl="5" className="mb-4">
-              <MDBView className="overlay rounded z-depth-2" waves>
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg"
-                  alt=""
-                  className="img-fluid"
-                />
-                <a href="#!">
-                  <MDBMask overlay="white-slight" />
-                </a>
-              </MDBView>
-              <MDBCardBody className="pb-0">
-                <a href="#!" className="brown-text">
-                  <h5 className="font-weight-bold mt-2 mb-3">
-                    <MDBIcon icon="camera" className="pr-2" />
-                    Travel
-                  </h5>
-                </a>
-                <h4 className="font-weight-bold mb-3">Title of the news</h4>
-                <p>
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci velit cupidatat proident
-                  voluptatem quia numquam.
-                </p>
-                <MDBBtn color="success" rounded>
-                  MDBView more
-                </MDBBtn>
-              </MDBCardBody>
-            </MDBCol>
-            <MDBCol md="6" xl="5" className="mb-4">
-              <MDBView className="overlay rounded z-depth-2" waves>
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (56).jpg"
-                  alt=""
-                  className="img-fluid"
-                />
-                <a href="#!">
-                  <MDBMask overlay="white-slight" />
-                </a>
-              </MDBView>
-              <MDBCardBody className="pb-0">
-                <a href="#!" className="cyan-text">
-                  <h5 className="font-weight-bold mt-2 mb-3">
-                    <MDBIcon icon="phone" className="pr-2" />
-                    Technology
-                  </h5>
-                </a>
-                <h4 className="font-weight-bold mb-3">Title of the news</h4>
-                <p>
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci velit cupidatat proident
-                  voluptatem quia numquam.
-                </p>
-                <MDBBtn color="success" rounded>
-                  MDBView more
-                </MDBBtn>
-              </MDBCardBody>
-            </MDBCol>
           </MDBRow>
         </section>
       </div>
