@@ -25,6 +25,9 @@ class App extends Component {
       value: 'en',
     };
   }
+  componentDidMount () {
+    document.title = 'Bartonization';
+  }
 
   toggleCollapse = collapseID => () =>
     this.setState (prevState => ({
@@ -79,21 +82,14 @@ class App extends Component {
                 navbar
               >
                 <NavbarNav>
+
                   <NavItem>
                     <NavLink
-                      exact
-                      to="/"
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
+                      to="/"
+                      exact
                     >
                       Home
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      onClick={this.closeCollapse ('mainNavbarCollapse')}
-                      to="/bartonization"
-                    >
-                      Bart
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -107,17 +103,17 @@ class App extends Component {
                   <NavItem>
                     <NavLink
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
-                      to="/test"
+                      to="/portfolio"
                     >
-                      Test
+                      Portfolio
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
-                      to="/tabs"
+                      to="/contact"
                     >
-                      Tabs
+                      Contact
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -182,6 +178,14 @@ class App extends Component {
                       to="/addons"
                     >
                       Addons
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      to="/homeOld"
+                      onClick={this.closeCollapse ('mainNavbarCollapse')}
+                    >
+                      HomeOld
                     </NavLink>
                   </NavItem>
 

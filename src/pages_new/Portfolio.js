@@ -32,7 +32,7 @@ import Lightbox from 'react-image-lightbox';
 
 class TestPage extends React.Component {
   componentDidMount () {
-    document.title = 'dfsdfsdfsd';
+    document.title = 'Portfolio';
   }
   state = {
     photoIndex: 0,

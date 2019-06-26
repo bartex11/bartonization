@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import NavigationNavPage from './pages/NavigationNavPage';
 import FormsNavPage from './pages/FormsNavPage';
@@ -51,16 +51,16 @@ import SearchPage from './pages/SearchPage';
 import ValidationPage from './pages/ValidationPage';
 import NavbarPage from './pages/NavbarPage';
 import IframePage from './pages/IframePage';
-import TestPage from './pages_new/TestPage';
+import Portfolio from './pages_new/Portfolio';
 import Background from './pages_new/Background';
-import Tabs from './pages_new/Tabs';
+import Contact from './pages_new/Contact';
 
 class Routes extends React.Component {
-  render() {
+  render () {
     return (
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/bartonization" component={HomePageBart} />
+
+        <Route exact path="/" component={HomePageBart} />
         <Route exact path="/story" component={Story} />
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />
@@ -70,9 +70,10 @@ class Routes extends React.Component {
         <Route exact path="/tables" component={TablesNavPage} />
         <Route exact path="/modals" component={ModalsNavPage} />
         <Route exact path="/addons" component={AddonsNavPage} />
-        <Route exact path="/test" component={TestPage} />
+        <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/background" component={Background} />
-        <Route exact path="/tabs" component={Tabs} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/homeOld" component={HomePage} />
 
         {/* FREE */}
         <Route path="/css/animations" component={AnimationPage} />

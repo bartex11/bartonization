@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './HomePage.css';
 import View from '../components/View';
@@ -18,6 +19,56 @@ import {
 
 class HomePage extends React.Component {
   render () {
+    const projects = [
+      {
+        id: 1,
+        imgSrc: 'https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg',
+        title: 'Marketing',
+        text: 'Welcome to learning React!',
+        button: 'Button 1',
+      },
+      {
+        id: 2,
+        imgSrc: 'https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg',
+        title: 'AAAAAAAAAAAAAAAAAAAA',
+        text: 'Welcome to learning sss!',
+        button: 'Button 2',
+      },
+      {
+        id: 1,
+        imgSrc: 'https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg',
+        title: 'BBBBBB',
+        text: 'Welcome to learning React!',
+        button: 'Button 3',
+      },
+    ];
+
+    const project = projects.map (project => (
+      <MDBCol md="6" xl="5" className="mb-4" key={projects.id}>
+        <MDBView className="overlay rounded z-depth-2" waves>
+          <img src={project.imgSrc} alt="" className="img-fluid" />
+          <a href="#!">
+            <MDBMask overlay="white-slight" />
+          </a>
+        </MDBView>
+        <MDBCardBody className="pb-0">
+          <a href="#!" className="green-text">
+            <h5 className="font-weight-bold mt-2 mb-3">
+              <MDBIcon icon="twitter" className="pr-2" />
+              {project.title}
+            </h5>
+          </a>
+          <h4 className="font-weight-bold mb-3">Title of the news</h4>
+          <p>
+            {project.text}
+          </p>
+          <MDBBtn color="success" rounded>
+            {project.button}
+          </MDBBtn>
+        </MDBCardBody>
+      </MDBCol>
+    ));
+
     return (
       <div id="background-image">
         <View className="index-image">
@@ -35,10 +86,14 @@ class HomePage extends React.Component {
                   <h6 className="mb-4">
                     I'm a Frontend Webdeveloper living in Düsseldorf.
                   </h6>
-                  <Button color="white">Portfolio</Button>
-                  <Button outline color="white">
-                    Contact me
-                  </Button>
+                  <Link to="/portfolio">
+                    <Button color="white">Portfolio</Button>
+                  </Link>
+                  <Link to="/contact">
+                    <Button outline color="white">
+                      Contact me
+                    </Button>
+                  </Link>
                 </div>
 
               </Row>
@@ -46,47 +101,21 @@ class HomePage extends React.Component {
           </Mask>
         </View>
 
-        <section className="text-center my-5">
+        <section className="text-center my-5 project-section">
           <h2 className="h1-responsive font-weight-bold my-5">
-            Our best projects
+            My projects
           </h2>
           <p className="grey-text w-responsive mx-auto mb-5">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            Duisyaute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             est laborum.
           </p>
 
           <MDBRow className="d-flex justify-content-center">
-            <MDBCol md="6" xl="5" className="mb-4">
-              <MDBView className="overlay rounded z-depth-2" waves>
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg"
-                  alt=""
-                  className="img-fluid"
-                />
-                <a href="#!">
-                  <MDBMask overlay="white-slight" />
-                </a>
-              </MDBView>
-              <MDBCardBody className="pb-0">
-                <a href="#!" className="green-text">
-                  <h5 className="font-weight-bold mt-2 mb-3">
-                    <MDBIcon icon="twitter" className="pr-2" />
-                    Marketing
-                  </h5>
-                </a>
-                <h4 className="font-weight-bold mb-3">Title of the news</h4>
-                <p>
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci velit cupidatat proident
-                  voluptatem quia numquam.
-                </p>
-                <MDBBtn color="success" rounded>
-                  MDBView more
-                </MDBBtn>
-              </MDBCardBody>
-            </MDBCol>
+
+            {project}
+
             <MDBCol md="6" xl="5" className="mb-4">
               <MDBView className="overlay rounded z-depth-2" waves>
                 <img
