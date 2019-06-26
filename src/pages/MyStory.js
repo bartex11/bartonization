@@ -11,12 +11,12 @@ class MyStory extends React.Component {
     const {t} = this.props;
     return (
       <div>
-        <div class="paper-background">
-          <span class="coffee-stain" />
-          <span class="paper-date">
+        <div className="paper-background">
+          <span className="coffee-stain" />
+          <span className="paper-date">
             Düsseldorf, 21.06.2019
           </span>
-          <section class="paper-content">
+          <section className="paper-content">
             <p>
               {t ('Story')}
             </p><br />
