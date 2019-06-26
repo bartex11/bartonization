@@ -101,7 +101,7 @@ class App extends Component {
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/story"
                     >
-                      Story
+                      {t ('NavStory')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
