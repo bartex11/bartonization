@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import {withNamespaces} from 'react-i18next';
+import {HashRouter as Router} from 'react-router-dom';
+import {ThemeProvider} from 'styled-components';
 import {
   NavbarBrand,
   NavbarNav,
@@ -8,50 +11,11 @@ import {
   Footer,
   NavLink,
 } from 'mdbreact';
-import {translate} from 'react-i18next';
-import {withStyles} from '@material-ui/core/styles';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 
 import Navbar from './components/Navbar';
-import {HashRouter as Router} from 'react-router-dom';
-import {ThemeProvider} from 'styled-components';
-
 import './index.scss';
 import theme from './theme';
 import Routes from './Routes';
-
-const styles = theme => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  formControl: {
-    margin: theme.spacing.unit * 3,
-  },
-  group: {
-    margin: `${theme.spacing.unit}px 0`,
-    flexDirection: 'row',
-  },
-  container: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-  topgrid: {
-    marginTop: '10px',
-    textAlign: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 class App extends Component {
   constructor (props) {
@@ -70,14 +34,6 @@ class App extends Component {
   closeCollapse = collapseID => () =>
     this.state.collapseID === collapseID && this.setState ({collapseID: ''});
 
-  handleChange = event => {
-    console.log ('selected val is ', event.target.value);
-    let newlang = event.target.value;
-    this.setState (prevState => ({value: newlang}));
-    console.log ('state value is', newlang);
-    this.props.i18n.changeLanguage (newlang);
-  };
-
   render () {
     const overlay = (
       <div
@@ -86,40 +42,15 @@ class App extends Component {
         onClick={this.toggleCollapse ('mainNavbarCollapse')}
       />
     );
-    const {classes} = this.props;
+    const {t, i18n} = this.props;
+    const changeLanguage = lng => {
+      i18n.changeLanguage (lng);
+    };
+
     return (
       <Router>
         <div>
-          <Grid item xs={12} className={classes.topgrid}>
-            <Paper className={classes.paper}>
-              <div className={classes.root}>
-                <FormControl
-                  component="fieldset"
-                  className={classes.formControl}
-                >
 
-                  <RadioGroup
-                    aria-label="Gender"
-                    name="gender1"
-                    className={classes.group}
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                  >
-                    <FormControlLabel
-                      value="en"
-                      control={<Radio />}
-                      label="English"
-                    />
-                    <FormControlLabel
-                      value="ger"
-                      control={<Radio />}
-                      label="German"
-                    />
-                  </RadioGroup>
-                </FormControl>
-              </div>
-            </Paper>
-          </Grid>
           <div className="flyout">
             <Navbar
               color="indigo"
@@ -287,7 +218,13 @@ class App extends Component {
                   />
                   Bartonization{' '}
                 </a>
+
               </p>
+              <div className="language-change">
+                <button onClick={() => changeLanguage ('de')}>de</button>
+                <button onClick={() => changeLanguage ('en')}>en</button>
+              </div>
+
             </Footer>
           </div>
 
@@ -298,4 +235,4 @@ class App extends Component {
   }
 }
 
-export default withStyles (styles) (translate ('translations') (App));
+export default withNamespaces () (App);

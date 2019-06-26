@@ -1,9 +1,9 @@
 import React from 'react';
-import {translate} from 'react-i18next';
+import {withNamespaces} from 'react-i18next';
 
 import './MyStory.css';
 
-class HomePage extends React.Component {
+class MyStory extends React.Component {
   componentDidMount () {
     document.title = 'My Story';
   }
@@ -54,4 +54,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default translate ('translations') (HomePage);
+export default withNamespaces () (MyStory);
