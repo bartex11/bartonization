@@ -21,11 +21,12 @@ import {
   MDBView,
   MDBMask,
   Animation,
-  Iframe,
   MDBRow,
   MDBCol,
   MDBBtn,
 } from 'mdbreact';
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import styled from 'styled-components';
 
 import './Lightbox.css';
 import Lightbox from 'react-image-lightbox';
@@ -38,7 +39,7 @@ class TestPage extends React.Component {
     photoIndex: 0,
     isOpen: false,
     images: [
-      'https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(135).jpg',
+      './images/askora/1.jpg',
       'https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(128).jpg',
       'https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(133).jpg',
       'https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(131).jpg',
@@ -58,12 +59,12 @@ class TestPage extends React.Component {
       'Projekt 8',
     ],
   };
-  renderImages = () => {
+  renderImages = test => {
     let photoIndex = -1;
-    const {images} = this.state;
+
     const {name} = this.state;
 
-    return images.map (imageSrc => {
+    return test.map (imageSrc => {
       photoIndex++;
       const privateKey = photoIndex;
       return (
@@ -181,14 +182,6 @@ class TestPage extends React.Component {
               </Animation>
             </Col>
           </Row>
-          <Col style={{margin: '3rem auto'}}>
-            <Row>
-              <Iframe
-                title="This is a Bartonization site"
-                src="http://www.bartonization.com/"
-              />
-            </Row>
-          </Col>
 
         </Container>
 
@@ -210,7 +203,7 @@ class TestPage extends React.Component {
           </p>
           <div className="mdb-lightbox p-3">
             <MDBRow>
-              {this.renderImages ()}
+              {this.renderImages (images)}
             </MDBRow>
           </div>
           {isOpen &&
@@ -233,15 +226,120 @@ class TestPage extends React.Component {
             <MDBBtn outline color="black"><strong>more</strong></MDBBtn>
           </MDBCol>
         </Container>
-        <div style={{margin: '50px auto', textAlign: 'center'}}>
 
-          <img
-            src="/images/askora/1.jpg"
-            alt=""
-            height="700"
-            style={{margin: '0 auto'}}
-          />
-        </div>
+        <Container style={{marginTop: '3rem'}}>
+          <Row>
+            <Col>
+              <Tabs style={{marginTop: '3rem'}}>
+                <TabList>
+                  <Tab>Freelancer</Tab>
+                  <Tab>SpycyMedia</Tab>
+                </TabList>
+                <TabPanel>
+                  <Container
+                    className="mt-5 p-3"
+                    style={{backgroundColor: '#fff', marginBottom: '50px'}}
+                  >
+                    <h2 class="h1 text-center text-uppercase font-weight-bold pt-5 mb-3 mt-5">
+                      My projects
+                    </h2>
+                    <p class="text-center text-uppercase font-weight-bold">
+                      Freelancer
+                    </p>
+                    <p class="section-description mt-5 pt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+                      amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
+                      pariatur accusamus veniam. At ab ea a molestiae corrupti numquam quo beatae minima ratione magni accusantium
+                      repellat eveniet quia vitae.
+                    </p>
+                    <div className="mdb-lightbox p-3">
+                      <MDBRow>
+                        {this.renderImages (images)}
+                      </MDBRow>
+                    </div>
+                    {isOpen &&
+                      <Lightbox
+                        mainSrc={images[photoIndex]}
+                        nextSrc={images[(photoIndex + 1) % images.length]}
+                        prevSrc={
+                          images[
+                            (photoIndex + images.length - 1) % images.length
+                          ]
+                        }
+                        imageTitle={photoIndex + 1 + '/' + images.length}
+                        onCloseRequest={() => this.setState ({isOpen: false})}
+                        onMovePrevRequest={() =>
+                          this.setState ({
+                            photoIndex: (photoIndex + images.length - 1) %
+                              images.length,
+                          })}
+                        onMoveNextRequest={() =>
+                          this.setState ({
+                            photoIndex: (photoIndex + 1) % images.length,
+                          })}
+                      />}
+                    <MDBCol md="12" className="text-center py-4">
+                      <MDBBtn outline color="black">
+                        <strong>more</strong>
+                      </MDBBtn>
+                    </MDBCol>
+                  </Container>
+                </TabPanel>
+                <TabPanel>
+                  <Container
+                    className="mt-5 p-3"
+                    style={{backgroundColor: '#fff', marginBottom: '50px'}}
+                  >
+                    <h2 class="h1 text-center text-uppercase font-weight-bold pt-5 mb-3 mt-5">
+                      My projects
+                    </h2>
+                    <p class="text-center text-uppercase font-weight-bold">
+                      SpycyMedia
+                    </p>
+                    <p class="section-description mt-5 pt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+                      amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
+                      pariatur accusamus veniam. At ab ea a molestiae corrupti numquam quo beatae minima ratione magni accusantium
+                      repellat eveniet quia vitae.
+                    </p>
+                    <div className="mdb-lightbox p-3">
+                      <MDBRow>
+                        {this.renderImages (images)}
+                      </MDBRow>
+                    </div>
+                    {isOpen &&
+                      <Lightbox
+                        mainSrc={images[photoIndex]}
+                        nextSrc={images[(photoIndex + 1) % images.length]}
+                        prevSrc={
+                          images[
+                            (photoIndex + images.length - 1) % images.length
+                          ]
+                        }
+                        imageTitle={photoIndex + 1 + '/' + images.length}
+                        onCloseRequest={() => this.setState ({isOpen: false})}
+                        onMovePrevRequest={() =>
+                          this.setState ({
+                            photoIndex: (photoIndex + images.length - 1) %
+                              images.length,
+                          })}
+                        onMoveNextRequest={() =>
+                          this.setState ({
+                            photoIndex: (photoIndex + 1) % images.length,
+                          })}
+                      />}
+                    <MDBCol md="12" className="text-center py-4">
+                      <MDBBtn outline color="black">
+                        <strong>more</strong>
+                      </MDBBtn>
+                    </MDBCol>
+                  </Container>
+                </TabPanel>
+              </Tabs>
+            </Col>
+          </Row>
+        </Container>
+
       </div>
     );
   }
