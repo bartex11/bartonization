@@ -148,6 +148,22 @@
   background-size: 200px 200px;
 }
 
+.duss {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  z-index: 6;
+  opacity: 0.35;
+  width: 200px;
+  height: 200px;
+  background-image: url(https://bartex11.github.io/bartonization/images/duss.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px 200px;
+}
+
 @media (min-width: 600px) and (max-width: 920px) {
   .paper-background {
     width: 100%;
