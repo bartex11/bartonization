@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import NavigationNavPage from './pages/NavigationNavPage';
 import FormsNavPage from './pages/FormsNavPage';
@@ -9,6 +9,10 @@ import ModalsNavPage from './pages/ModalsNavPage';
 import AdvancedNavPage from './pages/AdvancedNavPage';
 import ComponentsNavPage from './pages/ComponentsNavPage';
 
+// SITE
+import Portfolio from './site/Portfolio';
+import Background from './site/Background';
+import Contact from './site/Contact';
 // FREE
 import AnimationPage from './pages/AnimationPage';
 import AlertPage from './pages/AlertPage';
@@ -52,17 +56,17 @@ import SearchPage from './pages/SearchPage';
 import ValidationPage from './pages/ValidationPage';
 import NavbarPage from './pages/NavbarPage';
 import IframePage from './pages/IframePage';
-import Portfolio from './pages_new/Portfolio';
-import Background from './pages_new/Background';
-import Contact from './pages_new/Contact';
 
 class Routes extends React.Component {
-  render() {
+  render () {
     return (
       <Switch>
         <Route exact path="/" component={HomePageBart} />
         <Route exact path="/story" component={Story} />
+        <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/resume" component={Resume} />
+        <Route exact path="/contact" component={Contact} />
+
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />
         <Route exact path="/advanced" component={AdvancedNavPage} />
@@ -71,15 +75,16 @@ class Routes extends React.Component {
         <Route exact path="/tables" component={TablesNavPage} />
         <Route exact path="/modals" component={ModalsNavPage} />
         <Route exact path="/addons" component={AddonsNavPage} />
-        <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/background" component={Background} />
-        <Route exact path="/contact" component={Contact} />
         <Route exact path="/homeOld" component={HomePage} />
 
         {/* FREE */}
         <Route path="/css/animations" component={AnimationPage} />
         <Route exact path="/tables/table" component={TablePage} />
-        <Route path="/tables/table-responsive" component={TableResponsivePage} />
+        <Route
+          path="/tables/table-responsive"
+          component={TableResponsivePage}
+        />
         <Route path="/tables/table-scroll" component={TableScrollPage} />
         <Route path="/tables/table-styles" component={TableStylesPage} />
         <Route path="/components/badge" component={BadgePage} />
@@ -116,7 +121,7 @@ class Routes extends React.Component {
         <Route path="/addons/iframe" component={IframePage} />
         <Route path="/advanced/alerts" component={AlertPage} />
         <Route
-          render={function() {
+          render={function () {
             return <h1>Not Found</h1>;
           }}
         />
