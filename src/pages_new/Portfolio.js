@@ -39,7 +39,7 @@ class TestPage extends React.Component {
     photoIndex: 0,
     isOpen: false,
     images: [
-      './images/askora/1.jpg',
+      './images/Askora/1.jpg',
       'https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(128).jpg',
       'https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(133).jpg',
       'https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(131).jpg',

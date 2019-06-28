@@ -22,7 +22,7 @@ class HomePage extends React.Component {
     const projects = [
       {
         id: 1,
-        imgSrc: './images/askora/1.jpg',
+        imgSrc: './images/Askora/1.jpg',
         title: 'Marketing',
         name: 'Askora Translation',
         text: 'The webpage was created for the needs of company Askora based in the town of Kardzhali, Bulgaria',
