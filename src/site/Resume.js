@@ -1,15 +1,15 @@
 import React from 'react';
-import { withNamespaces } from 'react-i18next';
-import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+import {withNamespaces} from 'react-i18next';
+import {MDBContainer, MDBRow, MDBCol} from 'mdbreact';
 
 import './Resume.scss';
 
 class Resume extends React.Component {
-  componentDidMount() {
+  componentDidMount () {
     document.title = 'Resume';
   }
-  render() {
-    const { t } = this.props;
+  render () {
+    const {t} = this.props;
     return (
       <section id="resume">
         <MDBContainer className="resume-container">
@@ -109,13 +109,32 @@ class Resume extends React.Component {
 
             <MDBCol size="9" className="pl-5 mt-2">
               <MDBRow>
-                <MDBCol size="6" className="mb-1">
-                  <h3 className="text-center">Skills</h3>
-                  <h5>ssss</h5>
+                <MDBCol size="4" className="mb-1">
+                  <h4 className="text-center">LANGUAGES</h4>
+                  <ul>
+                    <li>HTML5 - Twig, Liquid</li>
+                    <li>CSS und CSS extension und preprocessor - SASS, LESS</li>
+                    <li>JS(ES6)</li>
+                  </ul>
                 </MDBCol>
-                <MDBCol size="6" className="mb-1">
-                  <h3 className="text-center">Tools</h3>
-                  <h5>ssss</h5>
+                <MDBCol size="4" className="mb-1">
+                  <h4 className="text-center">FRAMEWORKS & LIBS</h4>
+                  <ul>
+                    <li>React</li>
+                    <li>jQuery</li>
+                    <li>JS(ES6)</li>
+                    <li>Symfony</li>
+                    <li>Wordpress</li>
+                  </ul>
+                </MDBCol>
+                <MDBCol size="4" className="mb-1">
+                  <h4 className="text-center">ADDITIONAL</h4>
+                  <ul>
+                    <li>Shopify</li>
+                    <li>Odoo </li>
+                    <li>Git version control system</li>
+
+                  </ul>
                 </MDBCol>
               </MDBRow>
             </MDBCol>
@@ -126,4 +145,4 @@ class Resume extends React.Component {
   }
 }
 
-export default withNamespaces()(Resume);
+export default withNamespaces () (Resume);

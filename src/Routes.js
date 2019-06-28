@@ -10,16 +10,17 @@ import AdvancedNavPage from './pages/AdvancedNavPage';
 import ComponentsNavPage from './pages/ComponentsNavPage';
 
 // SITE
+import HomePage from './site/HomePage';
+import Story from './site/MyStory';
 import Portfolio from './site/Portfolio';
-import Background from './site/Background';
+import Resume from './site/Resume';
 import Contact from './site/Contact';
+
 // FREE
 import AnimationPage from './pages/AnimationPage';
 import AlertPage from './pages/AlertPage';
-import HomePage from './pages/HomePage';
-import HomePageBart from './pages/HomePageBart';
-import Story from './pages/MyStory';
-import Resume from './pages/Resume';
+import HomePageOld from './pages/HomePage';
+import Background from './site/Background';
 import ButtonPage from './pages/ButtonPage';
 import CSSPage from './pages/CSSPage';
 import TablePage from './pages/TablePage';
@@ -61,7 +62,7 @@ class Routes extends React.Component {
   render () {
     return (
       <Switch>
-        <Route exact path="/" component={HomePageBart} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/story" component={Story} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/resume" component={Resume} />
@@ -76,7 +77,7 @@ class Routes extends React.Component {
         <Route exact path="/modals" component={ModalsNavPage} />
         <Route exact path="/addons" component={AddonsNavPage} />
         <Route exact path="/background" component={Background} />
-        <Route exact path="/homeOld" component={HomePage} />
+        <Route exact path="/homeOld" component={HomePageOld} />
 
         {/* FREE */}
         <Route path="/css/animations" component={AnimationPage} />
