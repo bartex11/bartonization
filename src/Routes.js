@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import NavigationNavPage from './pages/NavigationNavPage';
 import FormsNavPage from './pages/FormsNavPage';
@@ -15,6 +15,7 @@ import AlertPage from './pages/AlertPage';
 import HomePage from './pages/HomePage';
 import HomePageBart from './pages/HomePageBart';
 import Story from './pages/MyStory';
+import Resume from './pages/Resume';
 import ButtonPage from './pages/ButtonPage';
 import CSSPage from './pages/CSSPage';
 import TablePage from './pages/TablePage';
@@ -56,12 +57,12 @@ import Background from './pages_new/Background';
 import Contact from './pages_new/Contact';
 
 class Routes extends React.Component {
-  render () {
+  render() {
     return (
       <Switch>
-
         <Route exact path="/" component={HomePageBart} />
         <Route exact path="/story" component={Story} />
+        <Route exact path="/resume" component={Resume} />
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />
         <Route exact path="/advanced" component={AdvancedNavPage} />
@@ -78,10 +79,7 @@ class Routes extends React.Component {
         {/* FREE */}
         <Route path="/css/animations" component={AnimationPage} />
         <Route exact path="/tables/table" component={TablePage} />
-        <Route
-          path="/tables/table-responsive"
-          component={TableResponsivePage}
-        />
+        <Route path="/tables/table-responsive" component={TableResponsivePage} />
         <Route path="/tables/table-scroll" component={TableScrollPage} />
         <Route path="/tables/table-styles" component={TableStylesPage} />
         <Route path="/components/badge" component={BadgePage} />
@@ -118,7 +116,7 @@ class Routes extends React.Component {
         <Route path="/addons/iframe" component={IframePage} />
         <Route path="/advanced/alerts" component={AlertPage} />
         <Route
-          render={function () {
+          render={function() {
             return <h1>Not Found</h1>;
           }}
         />

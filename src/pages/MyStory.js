@@ -39,7 +39,7 @@ class MyStory extends React.Component {
           <p>{t('Story3')}</p>
           <br />
           <br />
-          <p>Ivan Vasilev</p>
+          <p> Ivan Vasilev &#125</p>
         </div>
       </div>
     );
