@@ -136,6 +136,7 @@ h6 {
 
 .free-bird {
     margin-top: -150px;
+
     @include for-phone-only {
         padding-right: 30px;
         padding-left: 30px;
@@ -144,65 +145,7 @@ h6 {
 }
 
 
-/*********************
-REACT TABS
-*********************/
 
-.react-tabs {
-    -webkit-tap-highlight-color: transparent;
-    &__tab-list {
-        margin: 0 0 2rem 0;
-        padding: 0;
-        text-align: left;
-        @media (max-width: 1200px) {
-            text-align: center;
-            margin: 0;
-        }
-    }
-    &__tab {
-        display: inline-block;
-        border-bottom: none;
-        bottom: -1px;
-        position: relative;
-        list-style: none;
-        padding: 6px 12px;
-        cursor: pointer;
-        &--selected {
-            background: #fff;
-            border-bottom: 1px solid #3DAC71;
-            color: #3DAC71;
-            font-weight: bold
-        }
-        &--disabled {
-            color: GrayText;
-            cursor: default;
-        }
-        &:focus {
-            outline: none;
-            &:after {
-                content: "";
-                position: absolute;
-                height: 5px;
-                left: -4px;
-                right: -4px;
-                bottom: -5px;
-                background: #fff;
-            }
-        }
-    }
-    &__tab-panel {
-        display: none;
-        text-align: left;
-        &--selected {
-            display: block;
-        }
-    }
-}
-
-
-/*********************
-END REACT TABS
-*********************/
 
 
 /*********************
