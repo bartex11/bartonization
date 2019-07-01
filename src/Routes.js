@@ -16,6 +16,7 @@ import Portfolio from './site/Portfolio';
 import Resume from './site/Resume';
 import Contact from './site/Contact';
 
+import Askora from './projects/AskoraPage';
 // FREE
 import AnimationPage from './pages/AnimationPage';
 import AlertPage from './pages/AlertPage';
@@ -67,6 +68,8 @@ class Routes extends React.Component {
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/contact" component={Contact} />
+
+        <Route exact path="/askora" component={Askora} />
 
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />

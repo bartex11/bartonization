@@ -126,6 +126,14 @@ class App extends Component {
                   <NavItem>
                     <NavLink
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
+                      to="/askora"
+                    >
+                      Askora
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/css"
                     >
                       CSS
