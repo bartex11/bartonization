@@ -1,13 +1,5 @@
 import React, {Component} from 'react';
-import {
-  Carousel,
-  CarouselInner,
-  CarouselItem,
-  View,
-  Container,
-  Col,
-  Row,
-} from 'mdbreact';
+import {Carousel, CarouselInner, CarouselItem, View, Container} from 'mdbreact';
 
 import './projects.scss';
 
@@ -50,28 +42,19 @@ class AskoraPage extends Component {
     ));
     return (
       <Container>
-        <Row>
-          <Col>
-            <h4 className="mt-5 mb-2">Askora Page</h4>
-            <Carousel
-              activeItem={1}
-              length={4}
-              showControls={true}
-              showIndicators={true}
-              className="z-depth-1"
-            >
-              <CarouselInner>
-                {image}
-              </CarouselInner>
-            </Carousel>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h1 class="text-center">What i did</h1>
 
-          </Col>
-        </Row>
+        <h4 className="mt-5 mb-2">Katerina Page</h4>
+        <Carousel
+          activeItem={1}
+          length={4}
+          showControls={true}
+          showIndicators={true}
+          className="z-depth-1"
+        >
+          <CarouselInner>
+            {image}
+          </CarouselInner>
+        </Carousel>
       </Container>
     );
   }

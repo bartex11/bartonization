@@ -23,31 +23,31 @@ class HomePage extends React.Component {
       {
         id: 1,
         imgSrc: './images/Askora/1.jpg',
-        title: 'Marketing',
-        name: 'Askora Translation',
-        text: 'The webpage was created for the needs of company Askora based in the town of Kardzhali, Bulgaria',
+        title: 'Translation',
+        name: 'Askora',
         button: 'Learn more >>',
+        link: '/askora',
       },
       {
         id: 2,
         imgSrc: './images/KK/1-3.jpg',
-        title: 'AAAAAAAAAAAAAAAAAAAA',
-        text: 'This page provides information about the services, products and prices of beauty salon Katerina located in Düsseldorf, Germany',
-        name: 'Kosmetikstudio Katerina',
+        title: 'Kosmetikstudio',
+        name: 'Katerina',
         button: 'Learn more >>',
+        link: '/katerina',
       },
       {
         id: 1,
         imgSrc: './images/NN/1.png',
-        title: 'BBBBBB',
-        text: 'This page provides information about the services of dentist Chlosta located in Duisburg, Germany',
-        name: 'Dentist Chlosta',
+        title: 'Dentist',
+        name: ' Chlosta',
         button: 'Learn more >>',
+        link: '/chlosta',
       },
     ];
 
     const project = projects.map (project => (
-      <MDBCol md="3" xl="3" className="mb-5" key={projects.id}>
+      <MDBCol md="4" xl="4" className="mb-5" key={projects.id}>
         <MDBView className="overlay rounded z-depth-2" waves>
           <img src={project.imgSrc} alt="" className="img-fluid" />
           <a href="#!">
@@ -62,12 +62,12 @@ class HomePage extends React.Component {
             </h5>
           </a>
           <h4 className="font-weight-bold mb-3">{project.name}</h4>
-          <p>
-            {project.text}
-          </p>
-          <MDBBtn color="success" rounded>
-            {project.button}
-          </MDBBtn>
+
+          <Link to={project.link}>
+            <MDBBtn color="success" rounded>
+              {project.button}
+            </MDBBtn>
+          </Link>
         </MDBCardBody>
       </MDBCol>
     ));
@@ -106,7 +106,7 @@ class HomePage extends React.Component {
 
         <section className="text-center my-5 project-section">
           <h2 className="h1-responsive font-weight-bold my-5">
-            My projects
+            Frelance projects
           </h2>
           <p className="grey-text w-responsive mx-auto mb-5">
             Duisyaute irure dolor in reprehenderit in voluptate velit esse
@@ -114,11 +114,13 @@ class HomePage extends React.Component {
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             est laborum.
           </p>
-
-          <MDBRow className="d-flex justify-content-center">
-            {project}
-          </MDBRow>
+          <Container>
+            <MDBRow className="d-flex justify-content-center">
+              {project}
+            </MDBRow>
+          </Container>
         </section>
+
       </div>
     );
   }

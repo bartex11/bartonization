@@ -17,6 +17,9 @@ import Resume from './site/Resume';
 import Contact from './site/Contact';
 
 import Askora from './projects/AskoraPage';
+import Katerina from './projects/KaterinaPage';
+import Chlosta from './projects/ChlostaPage';
+
 // FREE
 import AnimationPage from './pages/AnimationPage';
 import AlertPage from './pages/AlertPage';
@@ -70,6 +73,8 @@ class Routes extends React.Component {
         <Route exact path="/contact" component={Contact} />
 
         <Route exact path="/askora" component={Askora} />
+        <Route exact path="/katerina" component={Katerina} />
+        <Route exact path="/chlosta" component={Chlosta} />
 
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />
