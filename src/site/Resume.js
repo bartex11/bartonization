@@ -119,8 +119,22 @@ class Resume extends React.Component {
                         <MDBCardBody>
                           <MDBCardTitle>Frontend Web Deweloper</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio possimus nulla rem quasi, corrupti repellendus. Dolorem eaque quam debitis necessitatibus
-                            quod, accusantium ab ea corporis, tenetur mollitia porro dignissimos!
+                            <p>
+                              <b>About Spycymedia: </b>
+                              Die SPICY Media GmbH ist eine junge Agentur aus Düsseldorf mit dem Schwerpunkt Neue Medien
+                            </p>
+                            <p>
+                              <b>Ziele/Aufgeben: </b>
+                              Umsetzung und Entwicklung von UI/UX im Frontend der WebApplikation.
+                            </p>
+                            <p>
+                              <b>Projects: </b>Washeroo, Spa, FF
+                            </p>
+                            <p>
+                              <b>Angewandte Technologien: </b>
+                              HTML5, CSS3, Java Script, Angular, React, Symfony, Shopify, Odoo ....
+                            </p>
+
                           </MDBCardText>
 
                         </MDBCardBody>
@@ -221,18 +235,36 @@ class Resume extends React.Component {
                         <MDBCardBody>
                           <MDBCardTitle>Special title treatment</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-                            <ToolsList>
+                            <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
-                                <Toolstext>HTML5 - Twig, Liquid</Toolstext>
+                                <Toolstext><b>Semantic HTML5</b></Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  CSS und CSS extension und preprocessor - SASS, LESS
+                                  <b>CSS</b>
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
-                                <Toolstext>Java Script(ES6)</Toolstext>
+                                <Toolstext><b>Java Script</b> (ES6)</Toolstext>
                               </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <b>Twig </b>Template engine for PHP
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <b>Liquid </b>
+                                  Template language written in Ruby
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <b>SASS, LESS </b>
+                                  CSS extension und preprocessor
+                                </Toolstext>
+                              </ToolsListItem>
+
                             </ToolsList>
                           </MDBCardText>
                         </MDBCardBody>
@@ -247,21 +279,29 @@ class Resume extends React.Component {
                         <MDBCardBody>
                           <MDBCardTitle>Special title treatment</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-                            <ToolsList>
+                            <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
-                                <Toolstext>React</Toolstext>
+                                <Toolstext><b>React</b></Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
-                                <Toolstext>jQuery</Toolstext>
+                                <Toolstext><b>Styled components</b></Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
-                                <Toolstext>JS(ES6)</Toolstext>
+                                <Toolstext><b>jQuery</b></Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
-                                <Toolstext>Symfony</Toolstext>
+                                <Toolstext><b>Bootstrap</b></Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
-                                <Toolstext>Wordpress</Toolstext>
+                                <Toolstext>
+                                  <b>Symfony </b>Set of PHP Components
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext><b>Wordpress</b></Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext><b>Angular</b></Toolstext>
                               </ToolsListItem>
                             </ToolsList>
                           </MDBCardText>
@@ -277,16 +317,32 @@ class Resume extends React.Component {
                         <MDBCardBody>
                           <MDBCardTitle>Special title treatment</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-                            <ToolsList>
-                              <ToolsListItem>
-                                <Toolstext>Shopify</Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem>
-                                <Toolstext>Odoo</Toolstext>{' '}
-                              </ToolsListItem>
-                              <ToolsListItem>
+                            <ToolsList className="tool-list">
+                              <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  Git version control system
+                                  <b>Atlassian </b>Jira, Trello, Bitbucket...
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <b>Git</b> Version control system
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <b>SEO </b>
+                                  Google tools, Yandex,Metrica, Hotjar..
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <b>Shopify </b>
+                                  E-Commerce-Software/Cloud-Shopsystem
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <b>Odoo </b>Management-Software/Cloud Platform
                                 </Toolstext>
                               </ToolsListItem>
 
@@ -299,26 +355,12 @@ class Resume extends React.Component {
                 </TabPanel>
                 <TabPanel>
 
-                  <Row className="contact-container">
+                  <Row>
                     <Col size="12" className="mt-1 mb-2 text-right">
                       <h2>Contact</h2>
                     </Col>
-                    <Col size="12" className="pl-1">
-                      <MDBCard>
-                        <MDBCardHeader color="indigo lighten-1">
-                          Hello, my name is Ivan Vasilev.
-                        </MDBCardHeader>
-                        <MDBCardBody>
-                          <MDBCardTitle>Special title treatment</MDBCardTitle>
-                          <MDBCardText style={{fontSize: '1.25rem'}}>
-                            I live and work by the mantra "Never stop learning..." I’ve always been good at math and science that’s why I graduated as a
-                            mechanical engineer. After many years working in the logistics, I decided to learn web development. I find great interest in all new digital technologies and latest
-                            design practices. So I came into the world of WEB. Relatively quickly I learned the basics, because I think logically and I understand the technical part of the
-                            projects. I developed some projects and continue to improve them. I also made without a budget their SEO-optimization.
-                          </MDBCardText>
-                        </MDBCardBody>
-                      </MDBCard>
-                    </Col>
+                  </Row>
+                  <Row className="contact-container">
                     <Col size="4">
                       <MDBCard>
                         <MDBCardHeader
@@ -339,12 +381,14 @@ class Resume extends React.Component {
                               <div class="address-card-info-group">
                                 <ContactIcon className="fa fa-phone icon-phone" />
                                 <p class="contact-info-text">
-                                  0211/1234568
+                                  +49 157 376 22 367
                                 </p>
                               </div>
                               <div class="address-card-info-group">
                                 <ContactIcon className="fa fa-envelope-o icon-mail" />
-                                <p class="contact-info-text">info@test.de</p>
+                                <p class="contact-info-text">
+                                  i_vasilev@ymail.com
+                                </p>
                               </div>
                             </div>
                           </MDBCardText>
@@ -363,17 +407,20 @@ class Resume extends React.Component {
                           <MDBCardText>
                             <ul class="social">
                               <li class="list-xing">
-                                <a href="">
+                                <a
+                                  href="https://www.xing.com/profile/Ivan_Vasilev19"
+                                  target="_blank"
+                                >
                                   <SocialIcon icon="xing" size="3x" />
                                 </a>
                               </li>
                               <li class="list-linkedin">
-                                <a href="">
+                                <a href="linkedin.com/in/bartonization">
                                   <SocialIcon icon="linkedin" size="3x" />
                                 </a>
                               </li>
                               <li class="list-github">
-                                <a href="">
+                                <a href="https://github.com/bartex11">
                                   <SocialIcon icon="github" size="3x" />
                                 </a>
                               </li>
@@ -393,16 +440,7 @@ class Resume extends React.Component {
                         </MDBCardHeader>
                         <MDBCardBody>
                           <MDBCardText style={{textAlign: 'center'}}>
-                            <MDBBtn
-                              outline
-                              color="indigo"
-                              style={{
-                                fontSize: '1.25rem',
-                                margin: '20px auto',
-                                padding: '0.3rem 1rem',
-                                textTransform: 'none',
-                              }}
-                            >
+                            <MDBBtn outline color="indigo">
                               My CV
                             </MDBBtn>
                           </MDBCardText>
@@ -471,8 +509,12 @@ class Resume extends React.Component {
                 <MDBCardBody>
                   <MDBCardTitle>Frontend Web Deweloper</MDBCardTitle>
                   <MDBCardText style={{fontSize: '1.25rem'}}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio possimus nulla rem quasi, corrupti repellendus. Dolorem eaque quam debitis necessitatibus
-                    quod, accusantium ab ea corporis, tenetur mollitia porro dignissimos!
+                    <p>
+                      <b>Ziele/Aufgeben: </b>
+                      Entwicklung eines repräsentativen Internetauftritts.
+                    </p>
+                    <p><b>Angewandte Technologien:</b>HTML5, CSS3, jQuery</p>
+
                   </MDBCardText>
 
                 </MDBCardBody>
@@ -542,7 +584,7 @@ class Resume extends React.Component {
             <Col size="12" className="tools-container">
               <ToolsList>
                 <ToolsListItem className="tool-item">
-                  <Toolstext>HTML5 - Twig, Liquid</Toolstext>
+                  <Toolstext>Semantic HTML5 - Twig, Liquid</Toolstext>
                 </ToolsListItem>
                 <ToolsListItem className="tool-item">
                   <Toolstext>
@@ -591,7 +633,9 @@ class Resume extends React.Component {
                 <ToolsListItem>
                   <Toolstext>Git version control system</Toolstext>
                 </ToolsListItem>
-
+                <ToolsListItem>
+                  <Toolstext>Responsive Web Design</Toolstext>
+                </ToolsListItem>
               </ToolsList>
             </Col>
           </Row>
