@@ -2,22 +2,16 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {withNamespaces} from 'react-i18next';
 
-import './HomePage.css';
 import View from '../components/View';
 import Mask from '../components/Mask';
 import Container from '../components/Container';
 import Row from '../components/Row';
+import Col from '../components/Col';
 import Button from '../components/Button';
-import {
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
-  MDBIcon,
-  MDBBtn,
-  MDBView,
-  MDBMask,
-} from 'mdbreact';
+import CardBody from '../components/CardBody';
+import {MDBIcon, MDBBtn, MDBView, MDBMask} from 'mdbreact';
 
+import './HomePage.css';
 class HomePage extends React.Component {
   componentDidMount () {
     document.title = 'Bartonization Home';
@@ -53,14 +47,14 @@ class HomePage extends React.Component {
     ];
 
     const project = projects.map (project => (
-      <MDBCol md="4" xl="4" className="mb-5" key={projects.id}>
+      <Col md="4" xl="4" className="mb-5" key={projects.id}>
         <MDBView className="overlay rounded z-depth-2" waves>
           <img src={project.imgSrc} alt="" className="img-fluid" />
           <a href="#!">
             <MDBMask overlay="white-slight" />
           </a>
         </MDBView>
-        <MDBCardBody className="pb-0">
+        <CardBody className="pb-0">
           <a href="#!" className="green-text">
             <h5 className="font-weight-bold mt-2 mb-3">
               <MDBIcon icon="twitter" className="pr-2" />
@@ -74,8 +68,8 @@ class HomePage extends React.Component {
               {project.button}
             </MDBBtn>
           </Link>
-        </MDBCardBody>
-      </MDBCol>
+        </CardBody>
+      </Col>
     ));
 
     return (
@@ -121,9 +115,9 @@ class HomePage extends React.Component {
             est laborum.
           </p>
           <Container>
-            <MDBRow className="d-flex justify-content-center">
+            <Row className="d-flex justify-content-center">
               {project}
-            </MDBRow>
+            </Row>
           </Container>
         </section>
 
