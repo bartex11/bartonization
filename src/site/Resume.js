@@ -14,6 +14,7 @@ import {
   MDBBtn,
 } from 'mdbreact';
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import Head from '../components/PageHeading';
 
 import './Resume.scss';
 
@@ -55,14 +56,8 @@ class Resume extends React.Component {
     const {t} = this.props;
     return (
       <section id="resume">
+        <Head title={t ('Portfolio')} />
         <Container className="resume-container resume-desktop">
-          <h1>Desktop</h1>
-          <Row>
-            <Col size="12">
-              <h1>Ivan Vasilev</h1>
-              <h3>Frontend Web Developer</h3>
-            </Col>
-          </Row>
 
           <Row>
 
