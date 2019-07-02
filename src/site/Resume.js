@@ -154,8 +154,18 @@ class Resume extends React.Component {
                         <MDBCardBody>
                           <MDBCardTitle>Web Deweloper</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio possimus nulla rem quasi, corrupti repellendus. Dolorem eaque quam debitis necessitatibus
-                            quod, accusantium ab ea corporis, tenetur mollitia porro dignissimos!
+
+                            <p>
+                              <b>Ziele/Aufgeben: </b>
+                              Umsetzung und Entwicklung von Web pages.
+                            </p>
+                            <p>
+                              <b>Projects: </b>NN, KK, Askora
+                            </p>
+                            <p>
+                              <b>Angewandte Technologien: </b>
+                              HTML5, CSS3, Java Script, Bootsrtap, SEO....
+                            </p>
                           </MDBCardText>
 
                         </MDBCardBody>
