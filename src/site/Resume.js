@@ -89,7 +89,9 @@ class Resume extends React.Component {
                           Hello, my name is Ivan Vasilev.
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Special title treatment</MDBCardTitle>
+                          <MDBCardTitle>
+                            I'm a Frontend Webdeveloper living in Düsseldorf, Germany.
+                          </MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             I live and work by the mantra "Never stop learning..." I’ve always been good at math and science that’s why I graduated as a
                             mechanical engineer. After many years working in the logistics, I decided to learn web development. I find great interest in all new digital technologies and latest
@@ -121,14 +123,20 @@ class Resume extends React.Component {
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <p>
                               <b>About Spycymedia: </b>
-                              Die SPICY Media GmbH ist eine junge Agentur aus Düsseldorf mit dem Schwerpunkt Neue Medien
+                              Die SPICY Media GmbH ist ein Startup aus Düsseldorf mit dem Schwerpunkt Neue Medien.
                             </p>
                             <p>
                               <b>Ziele/Aufgeben: </b>
-                              Umsetzung und Entwicklung von UI/UX im Frontend der WebApplikation.
+                              Building a component-based front-end (JS/CSS) framework.
+                              <br />
+                              Developing a responsive web app with HTML, CSS, JavaScript and AngularJS.
+                              <br />
+                              Web Development with PHP and Symfony.
+
                             </p>
                             <p>
-                              <b>Projects: </b>Washeroo, Spa, FF
+                              <b>Projects: </b>
+                              Washeroo, Spa Group Europe, FabFoods
                             </p>
                             <p>
                               <b>Angewandte Technologien: </b>
@@ -368,6 +376,9 @@ class Resume extends React.Component {
                   <Row>
                     <Col size="12" className="mt-1 mb-2 text-right">
                       <h2>Contact</h2>
+                      <h5 class="mt-1 mb-2 text-left">
+                        Ich bin per Mail zu erreichen. Schreiben Sie mich an! Ich stehe für jede Frage zur Verfügung und freue mich weiterzuhelfen zu können. Fragen kostet nichts! Ansonsten natürlich auch über die sozialen Kanäle. Code Beispiele und Arbeiten gibt es auf GitHub.
+                      </h5>
                     </Col>
                   </Row>
                   <Row className="contact-container">

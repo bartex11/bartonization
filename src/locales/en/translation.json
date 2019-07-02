@@ -1,28 +1,51 @@
 {
-  "Introduction": "Introduction",
-  "Description": "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop",
-  "Plugins to detect the user language": "Plugins to detect the user language",
-  "Plugins to load translations": "Plugins to load translations",
-  "Optionally cache the translations": "Optionally cache the translations",
-  "Advantages": "Advantages",
-  "Flexibility to use other packages": "Flexibility to use other packages",
-  "Story": "Hello, my name is Ivan Vasilev. I live and work by the mantra \"Never stop learning...\" I’ve always been good at math and science that’s why I graduated as a mechanical engineer. After many years working in the logistics, I decided to learn web development. I find great interest in all new digital technologies and latest design practices. So I came into the world of WEB. Relatively quickly I learned the basics, because I think logically and I understand the technical part of the projects. I developed some projects and continue to improve them. I also made without a budget their SEO-optimization.",
-  "Story1": "When I am not working, I spend as much time I can with my wife and my son, who motivate me to do my best.",
-  "Story2": "I would love to participate in larger projects, to work in a team of developers where I would be able to enlarge my current skills and knowledge and learn new technologies. Currently I am looking for a full time job, but I would be glad also to join freelance projects.",
-  "Story3": "If you find my portfolio, experience and my projects interesting, please contact me.",
-  "Story4": "When I am not working, I spend as much time I can with my wife and my son, who motivate me to do my best.",
-  "Spicy": "Since 2019 I have been working in a spymedia. The company is a small startup with various interesting projects. During that time I learned a lot from my colleagues.",
-  "Chlosta": "This page provides information about the services of dentist Chlosta located in Duisburg, Germany",
-  "Katerina": "This page provides information about the services, products and prices of beauty salon Katerina located in Düsseldorf, Germany",
-  "Askora": "The webpage was created for the needs of company Askora based in the town of Kardzhali, Bulgaria.",
-  "Html": "Valid HTML5 & CSS3",
-  "UI": "User interface design (UI)",
-  "Mobil": "Mobile Frendly",
-  "SEO": "Search Engine Optimization",
-  "Bootstrap": "Bootstrap Fremework",
-  "jQuery": "Custom jQuery",
-  "WEB": "Configuring of the web",
-  "PHP": "Contact forms with validation",
-  "NavStory": "My Story"
+
+    "Brand": "Bartonization",
+    "Home": "Home",
+    "About": "About me",
+    "Portfolio": "Portfolio",
+    "Resume": "Resume",
+    "Contact": "Contact",
+    "ContactMe": "Contact me",
+    "Translation": "Translation company",
+    "More": "Learn more",
+    "Beauty": "Beauty studio",
+    "Dentist": "Dentist",
+    "Hi": " Hi, my name is Ivan",
+    "Duss": "I'm a Frontend Webdeveloper living in Düsseldorf, Germany.",
+
+
+
+
+
+
+
+
+
+    "Introduction": "Introduction",
+    "Description": "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop",
+    "Plugins to detect the user language": "Plugins to detect the user language",
+    "Plugins to load translations": "Plugins to load translations",
+    "Optionally cache the translations": "Optionally cache the translations",
+    "Advantages": "Advantages",
+    "Flexibility to use other packages": "Flexibility to use other packages",
+    "Story": "Hello, my name is Ivan Vasilev. I live and work by the mantra \"Never stop learning...\" I’ve always been good at math and science that’s why I graduated as a mechanical engineer. After many years working in the logistics, I decided to learn web development. I find great interest in all new digital technologies and latest design practices. So I came into the world of WEB. Relatively quickly I learned the basics, because I think logically and I understand the technical part of the projects. I developed some projects and continue to improve them. I also made without a budget their SEO-optimization.",
+    "Story1": "When I am not working, I spend as much time I can with my wife and my son, who motivate me to do my best.",
+    "Story2": "I would love to participate in larger projects, to work in a team of developers where I would be able to enlarge my current skills and knowledge and learn new technologies. Currently I am looking for a full time job, but I would be glad also to join freelance projects.",
+    "Story3": "If you find my portfolio, experience and my projects interesting, please contact me.",
+    "Story4": "When I am not working, I spend as much time I can with my wife and my son, who motivate me to do my best.",
+    "Spicy": "Since 2019 I have been working in a spymedia. The company is a small startup with various interesting projects. During that time I learned a lot from my colleagues.",
+    "Chlosta": "This page provides information about the services of dentist Chlosta located in Duisburg, Germany",
+    "Katerina": "This page provides information about the services, products and prices of beauty salon Katerina located in Düsseldorf, Germany",
+    "Askora": "The webpage was created for the needs of company Askora based in the town of Kardzhali, Bulgaria.",
+    "Html": "Valid HTML5 & CSS3",
+    "UI": "User interface design (UI)",
+    "Mobil": "Mobile Frendly",
+    "SEO": "Search Engine Optimization",
+    "Bootstrap": "Bootstrap Fremework",
+    "jQuery": "Custom jQuery",
+    "WEB": "Configuring of the web",
+    "PHP": "Contact forms with validation",
+    "NavStory": "My Story"
 
 }

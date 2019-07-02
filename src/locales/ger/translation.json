@@ -1,4 +1,19 @@
 {
+  "Brand": "Bartonization",
+  "Home": "Home",
+  "About": "Über mich",
+  "Portfolio": "Portfolio",
+  "Resume": "Resume",
+  "Contact": "Kontakt",
+  "ContactMe": "Jetzt kontaktieren",
+  "Translation": "Übersetzungsbüro",
+  "More": "Mehr",
+  "Beauty": "Kosmetikstudio",
+  "Dentist": "Zahnarzt",
+  "Hi": " Hi, ich bin Ivan",
+  "Duss": "Ich bin Frontend Webdeveloper und ich wohne in Düsseldorf.",
+
+
   "Introduction": "Einführung",
   "Description": "ist ein Internationalisierungs-Framework, das eine Komplettlösung für die Lokalisierung Ihres Produkts vom Web auf das Handy und den Desktop bietet",
   "Plugins to detect the user language": "Plugins zur Erkennung der Benutzersprache",

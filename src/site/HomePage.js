@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {withNamespaces} from 'react-i18next';
 
 import './HomePage.css';
 import View from '../components/View';
@@ -18,30 +19,35 @@ import {
 } from 'mdbreact';
 
 class HomePage extends React.Component {
+  componentDidMount () {
+    document.title = 'Bartonization Home';
+  }
   render () {
+    const {t} = this.props;
+
     const projects = [
       {
         id: 1,
         imgSrc: './images/Askora/1.jpg',
-        title: 'Translation',
+        title: t ('Translation'),
         name: 'Askora',
-        button: 'Learn more >>',
+        button: t ('More'),
         link: '/askora',
       },
       {
         id: 2,
         imgSrc: './images/KK/1-3.jpg',
-        title: 'Kosmetikstudio',
+        title: t ('Beauty'),
         name: 'Katerina',
-        button: 'Learn more >>',
+        button: t ('More'),
         link: '/katerina',
       },
       {
         id: 1,
         imgSrc: './images/NN/1.png',
-        title: 'Dentist',
+        title: t ('Dentist'),
         name: ' Chlosta',
-        button: 'Learn more >>',
+        button: t ('More'),
         link: '/chlosta',
       },
     ];
@@ -83,18 +89,18 @@ class HomePage extends React.Component {
               <Row>
                 <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
                   <h1 className="h1-responsive font-weight-bold mt-sm-5">
-                    Hi, my name is Ivan{' '}
+                    {t ('Hi')}
                   </h1>
                   <hr className="hr-light" />
                   <h6 className="mb-4">
-                    I'm a Frontend Webdeveloper living in Düsseldorf.
+                    {t ('Duss')}
                   </h6>
                   <Link to="/portfolio">
-                    <Button color="white">Portfolio</Button>
+                    <Button color="white">{t ('Portfolio')}</Button>
                   </Link>
                   <Link to="/contact">
                     <Button outline color="white">
-                      Contact me
+                      {t ('ContactMe')}
                     </Button>
                   </Link>
                 </div>
@@ -126,4 +132,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default HomePage;
+export default withNamespaces () (HomePage);

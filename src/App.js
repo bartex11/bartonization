@@ -70,8 +70,7 @@ class App extends Component {
                   height="40"
                   style={{marginRight: '10px'}}
                 />
-                {' '}
-                Bartex React
+                {t ('Brand')}
               </NavbarBrand>
               <NavbarToggler
                 onClick={this.toggleCollapse ('mainNavbarCollapse')}
@@ -88,7 +87,7 @@ class App extends Component {
                       to="/"
                       exact
                     >
-                      Home
+                      {t ('Home')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -96,7 +95,7 @@ class App extends Component {
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/story"
                     >
-                      {t ('NavStory')}
+                      {t ('About')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -104,7 +103,7 @@ class App extends Component {
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/portfolio"
                     >
-                      Portfolio
+                      {t ('Portfolio')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -112,7 +111,7 @@ class App extends Component {
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/resume"
                     >
-                      Resume
+                      {t ('Resume')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -120,10 +119,11 @@ class App extends Component {
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/contact"
                     >
-                      Contact
+                      {t ('Contact')}
                     </NavLink>
                   </NavItem>
-                  <NavItem>
+
+                  {/* <NavItem>
                     <NavLink
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/askora"
@@ -203,7 +203,6 @@ class App extends Component {
                       HomeOld
                     </NavLink>
                   </NavItem>
-
                   <NavItem>
                     <NavLink
                       onClick={this.closeCollapse ('mainNavbarCollapse')}
@@ -211,9 +210,18 @@ class App extends Component {
                     >
                       BgImage
                     </NavLink>
-                  </NavItem>
+                  </NavItem> */}
+
                 </NavbarNav>
+
               </Collapse>
+              <NavbarNav right>
+                <div className="language-change">
+                  <button onClick={() => changeLanguage ('de')}>de</button>
+                  <button onClick={() => changeLanguage ('en')}>en</button>
+                  <button onClick={() => changeLanguage ('bg')}>bg</button>
+                </div>
+              </NavbarNav>
             </Navbar>
             {this.state.collapseID && overlay}
             <ThemeProvider theme={DefaultTheme}>
@@ -235,13 +243,10 @@ class App extends Component {
                     height="50"
                     style={{marginRight: '10px'}}
                   />
-                  Bartonization{' '}
+                  Bartonization
                 </a>
               </p>
-              <div className="language-change">
-                <button onClick={() => changeLanguage ('de')}>de</button>
-                <button onClick={() => changeLanguage ('en')}>en</button>
-              </div>
+
             </Footer>
           </div>
         </div>
