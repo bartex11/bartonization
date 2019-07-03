@@ -64,10 +64,10 @@ class TestPage extends React.Component {
       },
     ],
   };
-  renderImages = test => {
+  renderImages = projects => {
     let photoIndex = -1;
 
-    return test.map (project => {
+    return projects.map (project => {
       photoIndex++;
 
       return (
