@@ -1,62 +1,25 @@
 import React from 'react';
 import {translate} from 'react-i18next';
 import styled from 'styled-components';
-import Icon from '../components/Fa';
+import {Link} from 'react-router-dom';
 import {
   Container,
   Col,
   Row,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardHeader,
-  MDBBadge,
+  Button,
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardHeader,
+  CardImage,
 } from 'mdbreact';
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+
 import Head from '../components/PageHeading';
 
-import './Lightbox.css';
-import Lightbox from 'react-image-lightbox';
-
-const SocialIcon = styled (Icon)`
-
-`;
-const Pill = styled (MDBBadge)`
-  background-color: ${props => props.theme.colors.primary}a6!important;
-  padding: .5em 1em .5em 1em;
-  margin: .2em
-`;
-const ContactIcon = styled.i`
-  margin: 2px 15px 0 0;
-  color: ${props => props.theme.colors.primary};
-`;
 const ProjectImg = styled.div`
 
-`;
-
-const ToolsList = styled.ul`
-  list-style-type:none;
-  padding: 0;
-`;
-const ToolsListItem = styled.li`
-  margin: 5px;
-  display: inline-block;
-  padding: 6px 16px;
-  background-color: ${props => props.theme.colors.primary};
-
-  &:hover {
-    background-color: #617fbb;
-  }
-`;
-
-const Toolstext = styled.p`
-   font-size: 20px;
-   margin: 0;
-   color: #fff
 `;
 
 class TestPage extends React.Component {
@@ -66,55 +29,75 @@ class TestPage extends React.Component {
 
   state = {
     photoIndex: 0,
-    all: [
+    free: [
       {
-        name: 1,
+        name: 'Askora',
         imgSrc: './images/Askora/1.jpg',
+        link: '/askora',
       },
-      './images/Askora/1.jpg',
-      './images/NN/1.png',
-      './images/KK/1-3.jpg',
-      './images/FF/1.png',
-      './images/Spa/1.png',
-      './images/WROO/1.png',
+      {
+        name: 'NN',
+        imgSrc: './images/NN/1.png',
+        link: '/askora',
+      },
+      {
+        name: 'KK',
+        imgSrc: './images/KK/1-3.jpg',
+        link: '/askora',
+      },
     ],
-    free: ['./images/Askora/1.jpg', './images/NN/1.png', './images/KK/1-3.jpg'],
-    spicy: ['./images/FF/1.png', './images/Spa/1.png', './images/WROO/1.png'],
-    allProjekt: ['Askora', 'NN', 'KK', 'FF', 'Spa', 'WROO'],
-    freeProjekt: ['Askora', 'NN', 'KK'],
-    spicyProjekt: ['FF', 'Spa', 'WROO'],
+    spicy: [
+      {
+        name: 'FF',
+        imgSrc: './images/FF/1.png',
+        link: '/askora',
+      },
+      {
+        name: 'Spa',
+        imgSrc: './images/Spa/1.png',
+        link: '/askora',
+      },
+      {
+        name: 'Wash',
+        imgSrc: './images/WROO/1.png',
+        link: '/askora',
+      },
+    ],
   };
   renderImages = test => {
     let photoIndex = -1;
 
-    return test.map ((imageSrc, ProjectName) => {
+    return test.map (project => {
       photoIndex++;
 
       return (
-        <MDBCol md="3" key={photoIndex}>
-          <figure>
-            <img
-              src={imageSrc}
-              alt={ProjectName}
-              className="img-fluid z-depth-1"
+        <Col md="4" className="mb-4" key={photoIndex}>
+          <Card>
+            <CardImage
+              className="img-fluid"
+              src={project.imgSrc}
+              alt={project.name}
+              waves
             />
-            <p class="text-uppercase font-weight-bold blue-grey-text mt-4">
-              {ProjectName}
-            </p>
-          </figure>
-        </MDBCol>
+            <CardBody>
+              <CardTitle>{project.name}</CardTitle>
+              <CardText>
+                Projekt text
+              </CardText>
+              <Link to={project.link}>
+                <Button color="success" rounded>
+                  {project.name}
+                </Button>
+              </Link>
+            </CardBody>
+          </Card>
+
+        </Col>
       );
     });
   };
   render () {
-    const {
-      all,
-      free,
-      spicy,
-      allProjekt,
-      freeProjekt,
-      spicyProjekt,
-    } = this.state;
+    const {free, spicy} = this.state;
     const {t} = this.props;
 
     return (
@@ -124,7 +107,7 @@ class TestPage extends React.Component {
         <Container className="resume-container resume-desktop">
           <Row>
 
-            <Tabs style={{marginTop: '3rem'}}>
+            <Tabs style={{margin: '3rem 0'}}>
               <Col size="2" className="tabs-menu">
                 <TabList>
                   <Tab><p>All</p></Tab>
@@ -137,78 +120,79 @@ class TestPage extends React.Component {
                 <TabPanel>
                   <Row>
                     <Col size="12">
-                      <MDBCard>
-                        <MDBCardHeader color="indigo lighten-1">
+                      <Card>
+                        <CardHeader color="indigo lighten-1">
                           All
-                        </MDBCardHeader>
-                        <MDBCardBody>
-                          <MDBCardTitle>
+                        </CardHeader>
+                        <CardBody>
+                          <CardTitle>
                             Alll
-                          </MDBCardTitle>
-                          <MDBCardText style={{fontSize: '1.25rem'}}>
+                          </CardTitle>
+                          <CardText style={{fontSize: '1.25rem'}}>
                             All text
-                          </MDBCardText>
+                          </CardText>
                           <ProjectImg>
-                            <div className="mdb-lightbox p-3">
-                              <MDBRow>
-                                {this.renderImages (all, allProjekt)}
-                              </MDBRow>
+                            <div className="-lightbox p-3">
+                              <Row>
+                                {this.renderImages (spicy)}
+                                {this.renderImages (free)}
+                              </Row>
                             </div>
                           </ProjectImg>
-                        </MDBCardBody>
-                      </MDBCard>
+                        </CardBody>
+                      </Card>
                     </Col>
                   </Row>
                 </TabPanel>
                 <TabPanel>
                   <Row>
                     <Col size="12">
-                      <MDBCard>
-                        <MDBCardHeader color="indigo lighten-1">
+                      <Card>
+                        <CardHeader color="indigo lighten-1">
                           Freee
-                        </MDBCardHeader>
-                        <MDBCardBody>
-                          <MDBCardTitle>
+                        </CardHeader>
+                        <CardBody>
+                          <CardTitle>
                             Freeee
-                          </MDBCardTitle>
-                          <MDBCardText style={{fontSize: '1.25rem'}}>
+                          </CardTitle>
+                          <CardText style={{fontSize: '1.25rem'}}>
                             Freee text
-                          </MDBCardText>
+                          </CardText>
                           <ProjectImg>
-                            <div className="mdb-lightbox p-3">
-                              <MDBRow>
-                                {this.renderImages (free, freeProjekt)}
-                              </MDBRow>
+                            <div className="-lightbox p-3">
+                              <Row>
+                                {this.renderImages (free)}
+                              </Row>
                             </div>
                           </ProjectImg>
-                        </MDBCardBody>
-                      </MDBCard>
+                        </CardBody>
+                      </Card>
                     </Col>
                   </Row>
                 </TabPanel>
                 <TabPanel>
                   <Row>
                     <Col size="12">
-                      <MDBCard>
-                        <MDBCardHeader color="indigo lighten-1">
+                      <Card>
+                        <CardHeader color="indigo lighten-1">
                           Spicy
-                        </MDBCardHeader>
-                        <MDBCardBody>
-                          <MDBCardTitle>
+                        </CardHeader>
+                        <CardBody>
+                          <CardTitle>
                             Spicy
-                          </MDBCardTitle>
-                          <MDBCardText style={{fontSize: '1.25rem'}}>
+                          </CardTitle>
+                          <CardText style={{fontSize: '1.25rem'}}>
                             Spicy text
-                          </MDBCardText>
+                          </CardText>
                           <ProjectImg>
-                            <div className="mdb-lightbox p-3">
-                              <MDBRow>
-                                {this.renderImages (spicy, spicyProjekt)}
-                              </MDBRow>
+                            <div className="-lightbox p-3">
+                              <Row>
+                                {this.renderImages (spicy)}
+                              </Row>
                             </div>
                           </ProjectImg>
-                        </MDBCardBody>
-                      </MDBCard>
+                        </CardBody>
+                      </Card>
                     </Col>
                   </Row>
                 </TabPanel>
