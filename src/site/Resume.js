@@ -12,6 +12,7 @@ import {
   MDBCardText,
   MDBCardHeader,
   MDBBtn,
+  MDBBadge,
 } from 'mdbreact';
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import Head from '../components/PageHeading';
@@ -21,7 +22,11 @@ import './Resume.scss';
 const SocialIcon = styled (Icon)`
 
 `;
-
+const Pill = styled (MDBBadge)`
+  background-color: ${props => props.theme.colors.primary}a6!important;
+  padding: .5em 1em .5em 1em;
+  margin: .2em
+`;
 const ContactIcon = styled.i`
   margin: 2px 15px 0 0;
   color: ${props => props.theme.colors.primary};
@@ -56,13 +61,13 @@ class Resume extends React.Component {
     const {t} = this.props;
     return (
       <section id="resume">
-        <Head title={t ('Portfolio')} />
+        <Head title={t ('Resume')} />
         <Container className="resume-container resume-desktop">
 
           <Row>
 
             <Tabs style={{marginTop: '3rem'}}>
-              <Col size="2">
+              <Col size="2" className="tabs-menu">
                 <TabList>
                   <Tab><p>Profile</p></Tab>
                   <Tab><p>Experience</p></Tab>
@@ -71,7 +76,7 @@ class Resume extends React.Component {
                   <Tab><p>Contact</p></Tab>
                 </TabList>
               </Col>
-              <Col size="10">
+              <Col size="10" className="tabs-content">
                 <TabPanel>
                   <Row>
                     <Col size="12" className="mt-1 mb-2 text-right">
@@ -104,23 +109,44 @@ class Resume extends React.Component {
                     </Col>
                   </Row>
                   <Row className="mb-2">
-                    <Col size="2" className="text-right">
-                      <h6>Januar 2017 – Jetzt</h6>
+                    <Col size="2" className="text-right p-0">
+                      <h6 class="mt-3"><strong>Januar 2017 – Jetzt</strong></h6>
+                      <div class="mt-3">
+                        <Pill pill>
+                          HTML5
+                        </Pill>
+                        <Pill pill>
+                          CSS3
+                        </Pill>
+                        <Pill pill>
+                          Java Script
+                        </Pill>
+                        <Pill pill>
+                          Angular
+                        </Pill>
+                        <Pill pill>
+                          React
+                        </Pill>
+                        <Pill pill>
+                          Shopify
+                        </Pill>
+                      </div>
+
                     </Col>
                     <Col size="10">
                       <MDBCard style={{marginBottom: '25px'}}>
                         <MDBCardHeader color="indigo lighten-1">
-                          Spycymedia GmbH
+                          Spycymedia GmbH, Düsseldorf
                         </MDBCardHeader>
                         <MDBCardBody>
                           <MDBCardTitle>Frontend Web Deweloper</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <p>
-                              <b>About Spycymedia: </b>
+                              <strong>About Spycymedia: </strong>
                               Die SPICY Media GmbH ist ein Startup aus Düsseldorf mit dem Schwerpunkt Neue Medien.
                             </p>
                             <p>
-                              <b>Ziele/Aufgeben: </b>
+                              <strong>Ziele/Aufgeben: </strong>
                               Building a component-based front-end (JS/CSS) framework.
                               <br />
                               Developing a responsive web app with HTML, CSS, JavaScript and AngularJS.
@@ -129,11 +155,11 @@ class Resume extends React.Component {
 
                             </p>
                             <p>
-                              <b>Projects: </b>
+                              <strong>Projects: </strong>
                               Washeroo, Spa Group Europe, FabFoods
                             </p>
                             <p>
-                              <b>Angewandte Technologien: </b>
+                              <strong>Angewandte Technologien: </strong>
                               HTML5, CSS3, Java Script, Angular, React, Symfony, Shopify, Odoo ....
                             </p>
 
@@ -145,8 +171,8 @@ class Resume extends React.Component {
                     </Col>
                   </Row>
                   <Row className="mb-2">
-                    <Col size="2" className="text-right">
-                      <h6>Januar 2016 – Jetzt</h6>
+                    <Col size="2" className="text-right p-0">
+                      <h6 class="mt-3"><strong>Januar 2016 – Jetzt</strong></h6>
                     </Col>
                     <Col size="10">
                       <MDBCard style={{marginBottom: '25px'}}>
@@ -156,16 +182,15 @@ class Resume extends React.Component {
                         <MDBCardBody>
                           <MDBCardTitle>Web Deweloper</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-
                             <p>
-                              <b>Ziele/Aufgeben: </b>
+                              <strong>Ziele/Aufgeben: </strong>
                               Umsetzung und Entwicklung von Web pages.
                             </p>
                             <p>
-                              <b>Projects: </b>NN, KK, Askora
+                              <strong>Projects: </strong>NN, KK, Askora
                             </p>
                             <p>
-                              <b>Angewandte Technologien: </b>
+                              <strong>Angewandte Technologien: </strong>
                               HTML5, CSS3, Java Script, Bootsrtap, SEO....
                             </p>
                           </MDBCardText>
@@ -186,20 +211,26 @@ class Resume extends React.Component {
                   </Row>
 
                   <Row className="mb-2">
-                    <Col size="2" className="text-right">
-                      <h4>TU Sofia</h4>
-                      <h6>Long Time Ago</h6>
+                    <Col size="3" className="text-right p-0">
+                      <h5><strong>Technische Universität Sofia</strong> </h5>
+                      <h6>09.2005 – 05.2008</h6>
                     </Col>
-                    <Col size="10">
+                    <Col size="9">
                       <MDBCard style={{marginBottom: '25px'}}>
                         <MDBCardHeader color="indigo lighten-1">
-                          Magister
+                          <strong>Abschluss: </strong>Master of Engineering
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Web Deweloper</MDBCardTitle>
+                          <MDBCardTitle>
+                            <strong>Studium: </strong>
+                            Maschinen- und Gerätebau mit Schwerpunkt Logistik
+                          </MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio possimus nulla rem quasi, corrupti repellendus. Dolorem eaque quam debitis necessitatibus
-                            quod, accusantium ab ea corporis, tenetur mollitia porro dignissimos!
+                            <strong>Berufsqualifikation: </strong>
+                            Maschinenbauingenieur
+                            <br />
+                            <strong>Thema der Masterarbeit: </strong>
+                            Entwicklung eines Logistiksystems für die Lieferung, Verteilung und Lagerung von Ersatzteilen zur Modernisierung elektrischer Lokomotiven.
                           </MDBCardText>
 
                         </MDBCardBody>
@@ -209,20 +240,26 @@ class Resume extends React.Component {
                   </Row>
 
                   <Row className="mb-2">
-                    <Col size="2" className="text-right">
-                      <h4>TU Sofia</h4>
-                      <h6>Long Time Ago</h6>
+                    <Col size="3" className="text-right p-0">
+                      <h5><strong>Technische Universität Sofia</strong></h5>
+                      <h6>09.1998 – 05.2002</h6>
                     </Col>
-                    <Col size="10">
+                    <Col size="9">
                       <MDBCard style={{marginBottom: '25px'}}>
                         <MDBCardHeader color="indigo lighten-1">
-                          Bachelor
+                          <strong>Abschluss: </strong>Bachelor of Engineering
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Web Deweloper</MDBCardTitle>
+                          <MDBCardTitle>
+                            <strong>Studiengang: </strong>
+                            Maschinen- und Gerätebau
+                          </MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio possimus nulla rem quasi, corrupti repellendus. Dolorem eaque quam debitis necessitatibus
-                            quod, accusantium ab ea corporis, tenetur mollitia porro dignissimos!
+                            <strong>Berufsqualifikation: </strong>
+                            Maschinenbauingenieur
+                            <br />
+                            <strong>Thema der Diplomarbeit: </strong>
+                            Entwicklung eines innenbetrieblichen Transportsystems für den Herstellungssektor eines Elektronikbetrieb
                           </MDBCardText>
 
                         </MDBCardBody>
@@ -249,30 +286,34 @@ class Resume extends React.Component {
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
-                                <Toolstext><b>Semantic HTML5</b></Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>CSS</b>
-                                </Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext><b>Java Script</b> (ES6)</Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext>
-                                  <b>Twig </b>Template engine for PHP
+                                  <strong>Semantic HTML5</strong>
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>Liquid </b>
+                                  <strong>CSS</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Java Script</strong> (ES6)
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Twig </strong>Template engine for PHP
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Liquid </strong>
                                   Template language written in Ruby
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>SASS, LESS </b>
+                                  <strong>SASS, LESS </strong>
                                   CSS extension und preprocessor
                                 </Toolstext>
                               </ToolsListItem>
@@ -293,27 +334,33 @@ class Resume extends React.Component {
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
-                                <Toolstext><b>React</b></Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext><b>Styled components</b></Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext><b>jQuery</b></Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext><b>Bootstrap</b></Toolstext>
+                                <Toolstext><strong>React</strong></Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>Symfony </b>Set of PHP Components
+                                  <strong>Styled components</strong>
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
-                                <Toolstext><b>Wordpress</b></Toolstext>
+                                <Toolstext><strong>jQuery</strong></Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
-                                <Toolstext><b>Angular</b></Toolstext>
+                                <Toolstext>
+                                  <strong>Bootstrap</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Symfony </strong>Set of PHP Components
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Wordpress</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext><strong>Angular</strong></Toolstext>
                               </ToolsListItem>
                             </ToolsList>
                           </MDBCardText>
@@ -332,29 +379,31 @@ class Resume extends React.Component {
                             <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>Atlassian </b>Jira, Trello, Bitbucket...
+                                  <strong>Atlassian </strong>
+                                  Jira, Trello, Bitbucket...
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>Git</b> Version control system
+                                  <strong>Git</strong> Version control system
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>SEO </b>
+                                  <strong>SEO </strong>
                                   Google tools, Yandex,Metrica, Hotjar..
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>Shopify </b>
+                                  <strong>Shopify </strong>
                                   E-Commerce-Software/Cloud-Shopsystem
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <b>Odoo </b>Management-Software/Cloud Platform
+                                  <strong>Odoo </strong>
+                                  Management-Software/Cloud Platform
                                 </Toolstext>
                               </ToolsListItem>
 
@@ -467,6 +516,9 @@ class Resume extends React.Component {
                             <MDBBtn outline color="indigo">
                               My CV
                             </MDBBtn>
+                            <MDBBtn color="indigo">
+                              Resume
+                            </MDBBtn>
                           </MDBCardText>
                         </MDBCardBody>
                       </MDBCard>
@@ -534,10 +586,13 @@ class Resume extends React.Component {
                   <MDBCardTitle>Frontend Web Deweloper</MDBCardTitle>
                   <MDBCardText style={{fontSize: '1.25rem'}}>
                     <p>
-                      <b>Ziele/Aufgeben: </b>
+                      <strong>Ziele/Aufgeben: </strong>
                       Entwicklung eines repräsentativen Internetauftritts.
                     </p>
-                    <p><b>Angewandte Technologien:</b>HTML5, CSS3, jQuery</p>
+                    <p>
+                      <strong>Angewandte Technologien:</strong>
+                      HTML5, CSS3, jQuery
+                    </p>
 
                   </MDBCardText>
 
