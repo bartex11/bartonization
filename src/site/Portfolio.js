@@ -13,15 +13,20 @@ import {
   CardText,
   CardHeader,
   CardImage,
+  MDBBadge,
 } from 'mdbreact';
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
 import Head from '../components/PageHeading';
+import './Portfolio.scss';
 
 const ProjectImg = styled.div`
 
 `;
-
+const Pill = styled (MDBBadge)`
+  padding: .5em 1em .5em 1em;
+  margin: .2em
+`;
 class Protfolio extends React.Component {
   componentDidMount () {
     document.title = 'Portfolio';
@@ -31,36 +36,48 @@ class Protfolio extends React.Component {
     photoIndex: 0,
     free: [
       {
-        name: 'Askora',
+        name: 'Askora Translation',
         imgSrc: './images/Askora/1.jpg',
         link: '/askora',
+        technologies: 'HTML5,CSS3,jQuery,PHP, Responsive Web Design ',
+        tools: 'Google SEO Tools',
       },
       {
-        name: 'NN',
+        name: 'Dentist Chlosta',
         imgSrc: './images/NN/1.png',
-        link: '/askora',
+        link: '/chlosta',
+        technologies: 'HTML5, CSS3, jQuery,',
+        tools: 'Wordpress, Google SEO tools, User interface design (UI)',
       },
       {
-        name: 'KK',
+        name: 'Kosmetik Katerina',
         imgSrc: './images/KK/1-3.jpg',
-        link: '/askora',
+        link: '/katerina',
+        technologies: 'HTML5,CSS3,JavaScript,Responsive Web Design',
+        tools: 'Bootstrap, Git, SEO Tools, Git',
       },
     ],
     spicy: [
       {
-        name: 'FF',
+        name: 'FabFoods',
         imgSrc: './images/FF/1.png',
-        link: '/askora',
+        link: '/fabfoods',
+        technologies: 'React, Styled components, Liquid',
+        tools: 'Trello, Git, Shopify, Oddo ',
       },
       {
-        name: 'Spa',
+        name: 'Spa Group Europe',
         imgSrc: './images/Spa/1.png',
-        link: '/askora',
+        link: '/spa-group',
+        technologies: 'React, Styled components',
+        tools: 'Trello, Git',
       },
       {
-        name: 'Wash',
+        name: 'Washeroo',
         imgSrc: './images/WROO/1.png',
-        link: '/askora',
+        link: '/washeroo',
+        technologies: 'Angular, CSS3, SASS, Symfony, Twig  ',
+        tools: 'Jira, Bitbucket, Git',
       },
     ],
   };
@@ -70,8 +87,16 @@ class Protfolio extends React.Component {
     return projects.map (project => {
       photoIndex++;
 
+      let techno = project.technologies.split (',').map (item => {
+        return <Pill pill>{item}</Pill>;
+      });
+
+      let tool = project.tools.split (',').map (item => {
+        return <Pill pill>{item}</Pill>;
+      });
+
       return (
-        <Col md="4" className="mb-4" key={photoIndex}>
+        <Col md="6" className="mb-4" key={photoIndex}>
           <Card>
             <CardImage
               className="img-fluid"
@@ -82,7 +107,14 @@ class Protfolio extends React.Component {
             <CardBody>
               <CardTitle>{project.name}</CardTitle>
               <CardText>
-                Projekt text
+                <div class="techno-container">
+                  <strong>Angewandte Technologien: </strong><br />
+                  {techno}
+                </div>
+                <div class="tools-container">
+                  <strong>Frameworks & Build-Tools: </strong><br />
+                  {tool}
+                </div>
               </CardText>
               <Link to={project.link}>
                 <Button color="success" rounded>
@@ -101,7 +133,7 @@ class Protfolio extends React.Component {
     const {t} = this.props;
 
     return (
-      <div>
+      <div class="portfolio-container">
         <Head title={t ('Portfolio')} />
 
         <Container className="resume-container resume-desktop">
@@ -110,9 +142,9 @@ class Protfolio extends React.Component {
 
               <Col size="2" className="tabs-menu">
                 <TabList>
-                  <Tab><p>All</p></Tab>
-                  <Tab><p>Free</p></Tab>
-                  <Tab><p>Spicy</p></Tab>
+                  <Tab><p>All Projects</p></Tab>
+                  <Tab><p>Freelancer</p></Tab>
+                  <Tab><p>Spicy Media</p></Tab>
                 </TabList>
               </Col>
 
@@ -125,19 +157,13 @@ class Protfolio extends React.Component {
                           All
                         </CardHeader>
                         <CardBody>
-                          <CardTitle>
-                            Alll
-                          </CardTitle>
-                          <CardText style={{fontSize: '1.25rem'}}>
-                            All text
-                          </CardText>
                           <ProjectImg>
-                            <div className="-lightbox p-3">
-                              <Row>
-                                {this.renderImages (spicy)}
-                                {this.renderImages (free)}
-                              </Row>
-                            </div>
+
+                            <Row>
+                              {this.renderImages (spicy)}
+                              {this.renderImages (free)}
+                            </Row>
+
                           </ProjectImg>
                         </CardBody>
                       </Card>
@@ -153,12 +179,7 @@ class Protfolio extends React.Component {
                           Freee
                         </CardHeader>
                         <CardBody>
-                          <CardTitle>
-                            Freeee
-                          </CardTitle>
-                          <CardText style={{fontSize: '1.25rem'}}>
-                            Freee text
-                          </CardText>
+
                           <ProjectImg>
                             <div className="-lightbox p-3">
                               <Row>
@@ -180,12 +201,7 @@ class Protfolio extends React.Component {
                           Spicy
                         </CardHeader>
                         <CardBody>
-                          <CardTitle>
-                            Spicy
-                          </CardTitle>
-                          <CardText style={{fontSize: '1.25rem'}}>
-                            Spicy text
-                          </CardText>
+
                           <ProjectImg>
                             <div className="-lightbox p-3">
                               <Row>

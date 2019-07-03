@@ -1,0 +1,29 @@
+.portfolio-container {
+  .card {
+    .view {
+      height: 130px;
+    }
+
+    .card-body {
+      text-align: center;
+
+      .card-text {
+        font-size: 1.25rem;
+        text-align: left;
+
+        .techno-container {
+          .badge {
+            background-color: red !important;
+          }
+        }
+
+        .tools-container {
+          .badge {
+            background-color: blue !important
+          }
+        }
+      }
+    }
+  }
+
+}
