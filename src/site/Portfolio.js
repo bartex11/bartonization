@@ -22,7 +22,7 @@ const ProjectImg = styled.div`
 
 `;
 
-class TestPage extends React.Component {
+class Protfolio extends React.Component {
   componentDidMount () {
     document.title = 'Portfolio';
   }
@@ -106,16 +106,16 @@ class TestPage extends React.Component {
 
         <Container className="resume-container resume-desktop">
           <Row>
-
             <Tabs style={{margin: '3rem 0'}}>
+
               <Col size="2" className="tabs-menu">
                 <TabList>
                   <Tab><p>All</p></Tab>
                   <Tab><p>Free</p></Tab>
                   <Tab><p>Spicy</p></Tab>
-
                 </TabList>
               </Col>
+
               <Col size="10" className="tabs-content">
                 <TabPanel>
                   <Row>
@@ -144,6 +144,7 @@ class TestPage extends React.Component {
                     </Col>
                   </Row>
                 </TabPanel>
+
                 <TabPanel>
                   <Row>
                     <Col size="12">
@@ -170,6 +171,7 @@ class TestPage extends React.Component {
                     </Col>
                   </Row>
                 </TabPanel>
+
                 <TabPanel>
                   <Row>
                     <Col size="12">
@@ -198,16 +200,12 @@ class TestPage extends React.Component {
                 </TabPanel>
 
               </Col>
-
             </Tabs>
-
           </Row>
-
         </Container>
-
       </div>
     );
   }
 }
 
-export default translate ('translations') (TestPage);
+export default translate ('translations') (Protfolio);

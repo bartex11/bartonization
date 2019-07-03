@@ -1,10 +1,7 @@
 import React from 'react';
 import {withNamespaces} from 'react-i18next';
-import Icon from '../components/Fa';
-import Container from '../components/Container';
-import Row from '../components/Row';
-import Col from '../components/Col';
 import styled from 'styled-components';
+
 import {
   MDBCard,
   MDBCardBody,
@@ -15,7 +12,12 @@ import {
   MDBBadge,
 } from 'mdbreact';
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+
 import Head from '../components/PageHeading';
+import Icon from '../components/Fa';
+import Container from '../components/Container';
+import Row from '../components/Row';
+import Col from '../components/Col';
 
 import './Resume.scss';
 
