@@ -753,17 +753,29 @@ class Resume extends React.Component {
 
                   <ul class="social">
                     <li class="list-xing">
-                      <a href="">
+                      <a
+                        href="https://www.xing.com/profile/Ivan_Vasilev19"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <SocialIcon icon="xing" size="3x" />
                       </a>
                     </li>
                     <li class="list-linkedin">
-                      <a href="">
+                      <a
+                        href="linkedin.com/in/bartonization"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <SocialIcon icon="linkedin" size="3x" />
                       </a>
                     </li>
                     <li class="list-github">
-                      <a href="">
+                      <a
+                        href="https://github.com/bartex11"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <SocialIcon icon="github" size="3x" />
                       </a>
                     </li>

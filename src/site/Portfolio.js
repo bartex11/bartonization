@@ -1,32 +1,8 @@
 import React from 'react';
-import {translate, Trans} from 'react-i18next';
+import {translate} from 'react-i18next';
 
-import {
-  EdgeHeader,
-  FreeBird,
-  Col,
-  Row,
-  CardBody,
-  Fa,
-  Card,
-  CardImage,
-  CardTitle,
-  CardText,
-  Button,
-  Container,
-  MDBContainer,
-  MDBCarousel,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBView,
-  MDBMask,
-  Animation,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
-} from 'mdbreact';
+import {Container, Col, Row, MDBRow, MDBCol, MDBBtn} from 'mdbreact';
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
-import styled from 'styled-components';
 import Head from '../components/PageHeading';
 
 import './Lightbox.css';

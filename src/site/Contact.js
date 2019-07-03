@@ -84,17 +84,26 @@ class Contact extends React.Component {
                           <a
                             href="https://www.xing.com/profile/Ivan_Vasilev19"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             <SocialIcon icon="xing" size="3x" />
                           </a>
                         </li>
                         <li class="list-linkedin">
-                          <a href="linkedin.com/in/bartonization">
+                          <a
+                            href="linkedin.com/in/bartonization"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <SocialIcon icon="linkedin" size="3x" />
                           </a>
                         </li>
                         <li class="list-github">
-                          <a href="https://github.com/bartex11">
+                          <a
+                            href="https://github.com/bartex11"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <SocialIcon icon="github" size="3x" />
                           </a>
                         </li>
