@@ -13,6 +13,12 @@ BREAKPOINTS
     }
 }
 
+@mixin for-mobile {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
 @mixin for-tablet-only {
     @media (min-width: 600px) and (max-width: 900px) {
         @content;
@@ -196,7 +202,7 @@ REACT TABS
     -webkit-tap-highlight-color: transparent;
     width: 100%;
     display: flex;
-    @include for-tablet-only() {
+    @include for-mobile() {
         display: block
     }
     .tabs-menu {
@@ -216,7 +222,7 @@ REACT TABS
         z-index: 999;
         text-align: center;
         margin: 0;
-        @include for-tablet-only() {
+        @include for-mobile() {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -233,7 +239,7 @@ REACT TABS
         height: 80px;
         border-bottom: 1px solid white;
         color: #fff;
-        @include for-tablet-only() {
+        @include for-mobile() {
             width: 120px;
             border: none
         }
@@ -241,7 +247,7 @@ REACT TABS
             background: #fff;
             color: #3f51b5;
             font-weight: bold;
-            @include for-tablet-only() {
+            @include for-mobile() {
                 background: #3f51b5;
                 color: #fff
             }
