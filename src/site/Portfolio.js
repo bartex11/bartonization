@@ -18,6 +18,7 @@ import {
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
 import Head from '../components/PageHeading';
+import Test from '../components/ImgText';
 import './Portfolio.scss';
 
 const ProjectImg = styled.div`
@@ -120,7 +121,7 @@ class Protfolio extends React.Component {
                 </div>
               </CardText>
               <Link to={project.link}>
-                <Button color="success" rounded>
+                <Button color="indigo" rounded>
                   {project.name}
                 </Button>
               </Link>

@@ -64,7 +64,7 @@ class HomePage extends React.Component {
           <h4 className="font-weight-bold mb-3">{project.name}</h4>
 
           <Link to={project.link}>
-            <MDBBtn color="success" rounded>
+            <MDBBtn color="indigo" rounded>
               {project.button}
             </MDBBtn>
           </Link>

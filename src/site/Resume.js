@@ -182,6 +182,14 @@ class Resume extends React.Component {
                       <h6 class="mt-3">
                         <strong>Januar 2016 – Jetzt</strong>
                       </h6>
+                      <div class="mt-3">
+                        <Pill pill>HTML5</Pill>
+                        <Pill pill>CSS3</Pill>
+                        <Pill pill>Java Script</Pill>
+                        <Pill pill>Wordpress</Pill>
+                        <Pill pill>UI/UX</Pill>
+                        <Pill pill>SEO</Pill>
+                      </div>
                     </Col>
                     <Col xs="12" sm="12" md="12" lg="10">
                       <MDBCard style={{marginBottom: '25px'}}>
@@ -522,7 +530,7 @@ class Resume extends React.Component {
                       </MDBCard>
                     </Col>
 
-                    <Col xs="12" sm="12" md="12" lg="10">
+                    <Col xs="12" sm="12" md="12" lg="4">
                       <MDBCard>
                         <MDBCardHeader
                           color="indigo lighten-1"
