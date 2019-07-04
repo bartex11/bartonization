@@ -1,27 +1,27 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import Waves from "./Waves";
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import Waves from './Waves';
 
 class View extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
     this.state = {
-      cursorPos: {}
+      cursorPos: {},
     };
   }
 
-  handleClick(e) {
+  handleClick (e) {
     // Get Cursor Position
     let cursorPos = {
       top: e.clientY,
       left: e.clientX,
-      time: Date.now()
+      time: Date.now (),
     };
-    this.setState({ cursorPos: cursorPos });
+    this.setState ({cursorPos: cursorPos});
   }
 
-  render() {
+  render () {
     const {
       cascade,
       children,
@@ -36,33 +36,32 @@ class View extends React.Component {
       ...attributes
     } = this.props;
 
-    const classes = classNames(
-      "view",
-      rounded && "rounded",
-      zoom && "zoom",
-      hover && "overlay",
-      cascade && "view-cascade",
-      waves ? "Ripple-parent" : false,
+    const classes = classNames (
+      'view',
+      rounded && 'rounded',
+      zoom && 'zoom',
+      hover && 'overlay',
+      cascade && 'view-cascade',
+      waves ? 'Ripple-parent' : false,
       className
     );
 
-    const viewStyle = src 
+    const viewStyle = src
       ? {
-      backgroundImage: `url("${src}")`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-        height: "100vh",
-        backgroundAttachment: fixed ? "fixed" : null
-      }
+          backgroundImage: `url("${src}")`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          height: '100vh',
+          backgroundAttachment: fixed ? 'fixed' : null,
+        }
       : {};
 
     return (
       <Tag
         {...attributes}
         className={classes}
-        onMouseDown={this.handleClick.bind(this)}
-        onTouchStart={this.handleClick.bind(this)}
+        onMouseDown={this.handleClick.bind (this)}
+        onTouchStart={this.handleClick.bind (this)}
         style={viewStyle}
       >
         {children}
@@ -74,13 +73,13 @@ class View extends React.Component {
 
 View.defaultProps = {
   cascade: false,
-  className: "",
+  className: '',
   hover: false,
   rounded: false,
-  src: "",
-  tag: "div",
+  src: '',
+  tag: 'div',
   waves: false,
-  zoom: false
+  zoom: false,
 };
 
 View.propTypes = {
@@ -96,4 +95,4 @@ View.propTypes = {
 };
 
 export default View;
-export { View as MDBView };
+export {View as MDBView};

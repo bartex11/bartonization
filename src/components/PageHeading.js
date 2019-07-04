@@ -7,7 +7,7 @@ import Col from './Col';
 import styled from 'styled-components';
 
 const PageHeading = styled.h1`
-  font-size: 3em;
+
   margin: 3rem auto 2rem auto;
   width: max-content;
   border-top: 2px solid ${props => props.theme.colors.primary};
@@ -23,10 +23,11 @@ const PageHeading = styled.h1`
 
 class Headline extends React.Component {
   render () {
-    const {title, blue, red, animate} = this.props;
+    const {title, blue, red, animate, small} = this.props;
 
     const styles = {
       color: red ? 'red' : blue ? 'blue' : '',
+      fontSize: small ? '2rem' : '3rem',
     };
 
     if (animate) {

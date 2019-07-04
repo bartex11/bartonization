@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rock+Salt&display=swap');
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 600px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+.about-container {
+  .paper-background {
+    display: block;
+    position: relative;
+    width: 860px;
+    height: auto;
+    padding: 70px 0;
+    margin: 30px auto;
+    color: #333;
+    background-color: #f9f9f9;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+
+    @include for-tablet-only() {
+      width: 90%;
+    }
+
+    @include for-phone-only {
+      display: none
+    }
+
+    &:before {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 96px;
+      z-index: 3;
+      width: 4px;
+      height: 100%;
+      border-left: 4px double #fca1a1;
+
+
+    }
+
+    &:after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 96px;
+      z-index: 4;
+      width: 4px;
+      height: 100%;
+      border-left: 1px solid #fca1a1;
+    }
+
+    .coffee-stain {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      bottom: -24px;
+      right: -24px;
+      z-index: 6;
+      opacity: 0.35;
+      width: 200px;
+      height: 200px;
+      background-image: url(https://bartex11.github.io/bartonization/images/coffeering.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 200px 200px;
+    }
+
+    .duss {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 315px;
+      z-index: 6;
+      opacity: 0.35;
+      width: 50px;
+      height: 130px;
+      background-image: url(https://bartex11.github.io/bartonization/images/duss.png);
+      background-repeat: no-repeat;
+    }
+
+    .paper-date {
+      position: absolute;
+      z-index: 5;
+      width: 300px;
+      background-color: transparent;
+      font-size: 20px;
+      border: none;
+      vertical-align: baseline;
+      right: 120px;
+      z-index: 5;
+      text-align: right;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .paper-content {
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      padding: 76px 106px;
+      height: 100%;
+      background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 23px, #6ba2d8 1px, #f9f9f9);
+      background-size: 100% 24px;
+      line-height: 24px;
+
+      &:before,
+      &:after {
+        -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+        box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+      }
+
+      &:before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: 28%;
+        left: 34px;
+        z-index: 3;
+        width: 24px;
+        height: 24px;
+        background-color: #ededed;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+
+      &:after {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: 58%;
+        left: 34px;
+        z-index: 3;
+        width: 24px;
+        height: 24px;
+        background-color: #ededed;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+
+      & p {
+        line-height: 24px;
+        text-indent: 1.5em;
+        margin-bottom: 0;
+      }
+
+
+
+
+      &.paper-signature {
+        margin-top: -3px;
+        font-size: 30px;
+        letter-spacing: 0;
+        text-indent: .5em;
+      }
+
+
+
+
+
+    }
+
+
+
+  }
+
+  .about-mobile {
+    display: none;
+
+    @include for-phone-only {
+      display: block
+    }
+
+    .paper-signature {
+      font-size: 1.25rem
+    }
+
+  }
+}
