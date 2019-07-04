@@ -26,12 +26,19 @@ class MyStory extends React.Component {
   }
   render () {
     const {t} = this.props;
+
+    function formatDate (date) {
+      return date.toLocaleDateString ();
+    }
+
     return (
       <div class="about-container">
         <div className="paper-background">
           <span className="coffee-stain" />
           <span className="duss" />
-          <span className="paper-date">Düsseldorf, 21.06.2019</span>
+          <span className="paper-date">
+            Düsseldorf, {formatDate (new Date ('dd mm yyyy'))}
+          </span>
           <section className="paper-content">
             <p>{t ('Story')}</p>
             <br />
