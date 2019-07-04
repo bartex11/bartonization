@@ -23,10 +23,13 @@ import './Portfolio.scss';
 const ProjectImg = styled.div`
 
 `;
+
 const Pill = styled (MDBBadge)`
+  background-color: ${props => props.theme.colors.primary}a6!important;
   padding: .5em 1em .5em 1em;
   margin: .2em
 `;
+
 class Protfolio extends React.Component {
   componentDidMount () {
     document.title = 'Portfolio';
@@ -136,11 +139,11 @@ class Protfolio extends React.Component {
       <div class="portfolio-container">
         <Head title={t ('Portfolio')} />
 
-        <Container className="resume-container resume-desktop">
+        <Container>
           <Row>
-            <Tabs style={{margin: '3rem 0'}}>
+            <Tabs>
 
-              <Col size="2" className="tabs-menu">
+              <Col xs="12" sm="12" md="12" lg="2" className="tabs-menu">
                 <TabList>
                   <Tab><p>All Projects</p></Tab>
                   <Tab><p>Freelancer</p></Tab>
@@ -148,7 +151,7 @@ class Protfolio extends React.Component {
                 </TabList>
               </Col>
 
-              <Col size="10" className="tabs-content">
+              <Col xs="12" sm="12" md="12" lg="10" className="tabs-content">
                 <TabPanel>
                   <Row>
                     <Col size="12">
