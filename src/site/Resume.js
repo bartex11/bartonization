@@ -540,8 +540,13 @@ class Resume extends React.Component {
                         </MDBCardHeader>
                         <MDBCardBody>
                           <MDBCardText style={{textAlign: 'center'}}>
-                            {/* <MDBBtn outline color="indigo" href="./content/CV-new.docx" download> */}
-                            <MDBBtn outline color="indigo">
+                            <MDBBtn
+                              outline
+                              color="indigo"
+                              href="./content/CV.pdf"
+                              download="Vasilev-CV"
+                            >
+
                               My CV
                             </MDBBtn>
                             <MDBBtn color="indigo">Resume</MDBBtn>
