@@ -1,23 +1,35 @@
 import React from 'react';
-import { translate } from 'react-i18next';
+import {translate} from 'react-i18next';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { Container, Col, Row, Button, Card, CardBody, CardTitle, CardText, CardHeader, CardImage, MDBBadge } from 'mdbreact';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import {Link} from 'react-router-dom';
+import {
+  Container,
+  Col,
+  Row,
+  Button,
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardHeader,
+  CardImage,
+  MDBBadge,
+} from 'mdbreact';
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
 import Head from '../components/PageHeading';
 import './Portfolio.scss';
 
 const ProjectImg = styled.div``;
 
-const Pill = styled(MDBBadge)`
-  background-color: ${(props) => props.theme.colors.primary}a6!important;
+const Pill = styled (MDBBadge)`
+  background-color: ${props => props.theme.colors.primary}a6!important;
   padding: .5em 1em .5em 1em;
   margin: .2em
 `;
 
 class Protfolio extends React.Component {
-  componentDidMount() {
+  componentDidMount () {
     document.title = 'Portfolio';
   }
 
@@ -70,24 +82,29 @@ class Protfolio extends React.Component {
       },
     ],
   };
-  renderImages = (projects) => {
+  renderImages = projects => {
     let photoIndex = -1;
 
-    return projects.map((project) => {
+    return projects.map (project => {
       photoIndex++;
 
-      let techno = project.technologies.split(',').map((item) => {
+      let techno = project.technologies.split (',').map (item => {
         return <Pill pill>{item}</Pill>;
       });
 
-      let tool = project.tools.split(',').map((item) => {
+      let tool = project.tools.split (',').map (item => {
         return <Pill pill>{item}</Pill>;
       });
 
       return (
         <Col md="6" className="mb-4" key={photoIndex}>
           <Card>
-            <CardImage className="img-fluid" src={project.imgSrc} alt={project.name} waves />
+            <CardImage
+              className="img-fluid"
+              src={project.imgSrc}
+              alt={project.name}
+              waves
+            />
             <CardBody>
               <CardTitle>{project.name}</CardTitle>
               <CardText>
@@ -113,13 +130,13 @@ class Protfolio extends React.Component {
       );
     });
   };
-  render() {
-    const { free, spicy } = this.state;
-    const { t } = this.props;
+  render () {
+    const {free, spicy} = this.state;
+    const {t} = this.props;
 
     return (
       <div class="portfolio-container">
-        <Head title={t('Portfolio')} />
+        <Head title={t ('Portfolio')} />
 
         <Container>
           <Row>
@@ -147,12 +164,12 @@ class Protfolio extends React.Component {
                           <CardHeader color="indigo lighten-1">All</CardHeader>
                           <CardBody>
                             <ProjectImg>
-                              <Container>
-                                <Row>
-                                  {this.renderImages(spicy)}
-                                  {this.renderImages(free)}
-                                </Row>
-                              </Container>
+
+                              <Row>
+                                {this.renderImages (spicy)}
+                                {this.renderImages (free)}
+                              </Row>
+
                             </ProjectImg>
                           </CardBody>
                         </Card>
@@ -166,13 +183,15 @@ class Protfolio extends React.Component {
                     <Row>
                       <Col size="12">
                         <Card>
-                          <CardHeader color="indigo lighten-1">Freee</CardHeader>
+                          <CardHeader color="indigo lighten-1">
+                            Freee
+                          </CardHeader>
                           <CardBody>
                             <ProjectImg>
                               <div className="-lightbox p-3">
-                                <Container>
-                                  <Row>{this.renderImages(free)}</Row>
-                                </Container>
+
+                                <Row>{this.renderImages (free)}</Row>
+
                               </div>
                             </ProjectImg>
                           </CardBody>
@@ -187,13 +206,15 @@ class Protfolio extends React.Component {
                     <Row>
                       <Col size="12">
                         <Card>
-                          <CardHeader color="indigo lighten-1">Spicy</CardHeader>
+                          <CardHeader color="indigo lighten-1">
+                            Spicy
+                          </CardHeader>
                           <CardBody>
                             <ProjectImg>
                               <div className="-lightbox p-3">
-                                <Container>
-                                  <Row>{this.renderImages(spicy)}</Row>
-                                </Container>
+
+                                <Row>{this.renderImages (spicy)}</Row>
+
                               </div>
                             </ProjectImg>
                           </CardBody>
@@ -211,4 +232,4 @@ class Protfolio extends React.Component {
   }
 }
 
-export default translate('translations')(Protfolio);
+export default translate ('translations') (Protfolio);
