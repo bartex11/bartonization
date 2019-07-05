@@ -7,12 +7,69 @@ import {
   Container,
   Col,
   Row,
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardImage,
 } from 'mdbreact';
 
 import './projects.scss';
 
 class AskoraPage extends Component {
+  componentDidMount () {
+    document.title = 'Askora';
+  }
+
+  state = {
+    photoIndex: 0,
+    tools: [
+      {
+        name: 'HTML',
+        imgSrc: './images/Tools/HTML.png',
+        description: 'HTML description',
+      },
+      {
+        name: 'CSS',
+        imgSrc: './images/Tools/CSS.png',
+        description: 'CSS description',
+      },
+      {
+        name: 'JS',
+        imgSrc: './images/Tools/JS.png',
+        description: 'Javascript description',
+      },
+    ],
+  };
+  renderImages = projects => {
+    let photoIndex = -1;
+
+    return projects.map (project => {
+      photoIndex++;
+
+      return (
+        <Col size="4" className="mb-4" key={photoIndex}>
+          <Card>
+            <CardImage
+              className="img-fluid"
+              src={project.imgSrc}
+              alt={project.name}
+              waves
+            />
+            <CardBody>
+              <CardTitle>{project.name}</CardTitle>
+              <CardText>
+                {project.description}
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
+      );
+    });
+  };
+
   render () {
+    const {tools} = this.state;
     const images = [
       {
         id: 1,
@@ -66,11 +123,11 @@ class AskoraPage extends Component {
             </Carousel>
           </Col>
         </Row>
+        <h1 class="text-center">What i did</h1>
         <Row>
-          <Col>
-            <h1 class="text-center">What i did</h1>
 
-          </Col>
+          {this.renderImages (tools)}
+
         </Row>
       </Container>
     );
