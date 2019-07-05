@@ -7,13 +7,16 @@ import {
   NavbarBrand,
   NavbarNav,
   NavbarToggler,
-  Collapse,
   NavItem,
-  Footer,
   NavLink,
 } from 'mdbreact';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Container from './components/Container';
+import Row from './components/Row';
+import Col from './components/Col';
+import Collapse from './components/Collapse';
 import './index.scss';
 import Routes from './Routes';
 import DefaultTheme from './DefaultTheme';
@@ -229,25 +232,68 @@ class App extends Component {
                 <Routes />
               </main>
             </ThemeProvider>
-            <Footer>
-              <p className="footer-copyright mb-0 py-3 text-center">
-                &copy; 2016 Copyright:{' '}
-                <a
-                  href="http://www.bartonization.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="./images/bart-simpson-picture-png-image-723.png"
-                    alt=""
-                    height="50"
-                    style={{marginRight: '10px'}}
-                  />
-                  Bartonization
-                </a>
-              </p>
 
+            <Footer className="text-center">
+              <Container className="text-center text-md-left footer-links-container">
+                <Row>
+                  <Col md="4">
+                    <h5 className="title">Bartonization</h5>
+                    <ul>
+                      <li className="list-unstyled">
+                        <a href="#!">Home</a>
+                      </li>
+                      <li className="list-unstyled">
+                        <a href="#!">About</a>
+                      </li>
+                      <li className="list-unstyled">
+                        <a href="#!">Contact</a>
+                      </li>
+                      <li className="list-unstyled">
+                        <a href="#!">Resume</a>
+                      </li>
+                    </ul>
+                  </Col>
+                  <Col md="4">
+                    <h5 className="title">GET IN TOUCH</h5>
+                    <ul>
+                      <li className="list-unstyled">
+                        <a href="#!">Linkedin</a>
+                      </li>
+                      <li className="list-unstyled">
+                        <a href="#!">Xing</a>
+                      </li>
+                      <li className="list-unstyled">
+                        <a href="#!">Socia</a>
+                      </li>
+                      <li className="list-unstyled">
+                        <a href="#!">Socia</a>
+                      </li>
+                    </ul>
+                  </Col>
+                  <Col md="4">
+                    <h5 className="title">Language</h5>
+                    <div className="language-change">
+                      <button onClick={() => changeLanguage ('de')}>de</button>
+                      <button onClick={() => changeLanguage ('en')}>en</button>
+                      <button onClick={() => changeLanguage ('bg')}>bg</button>
+                    </div>
+                    <h5 className="title">GET IN TOUCH</h5>
+                    <div className="language-change">
+                      <button>Social</button>
+                      <button>Social</button>
+                      <button>Social</button>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+              <div className="footer-copyright text-center ">
+                <p>
+                  &copy; {new Date ().getFullYear ()} Copyright:{' '}
+                  <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+                </p>
+              </div>
             </Footer>
+
           </div>
         </div>
       </Router>

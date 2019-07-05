@@ -73,7 +73,7 @@ class HomePage extends React.Component {
     ));
 
     return (
-      <div id="background-image">
+      <div class="home-container">
         <View className="index-image" src="./images/Me/vasilev.jpg">
           <Mask
             className="d-flex justify-content-center align-items-center"
