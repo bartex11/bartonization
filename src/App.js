@@ -225,13 +225,7 @@ class App extends Component {
                 </NavbarNav>
 
               </Collapse>
-              <NavbarNav right>
-                <div className="language-change">
-                  <button onClick={() => changeLanguage ('de')}>de</button>
-                  <button onClick={() => changeLanguage ('en')}>en</button>
-                  <button onClick={() => changeLanguage ('bg')}>bg</button>
-                </div>
-              </NavbarNav>
+
             </Navbar>
             {this.state.collapseID && overlay}
             <ThemeProvider theme={DefaultTheme}>
@@ -244,7 +238,7 @@ class App extends Component {
               <Container className="text-center footer-links-container">
                 <Row>
                   <Col md="4">
-                    <h5 className="title">Bartonization</h5>
+                    <h5 className="title">BARTEX</h5>
                     <ul>
                       <li className="list-unstyled">
                         <a href="#!">Home</a>
@@ -293,18 +287,34 @@ class App extends Component {
                     </ul>
                   </Col>
                   <Col md="4">
-                    <h5 className="title">Language</h5>
+                    <h5 className="title">LANGUAGE</h5>
                     <div className="language-change">
-                      <button onClick={() => changeLanguage ('de')}>de</button>
-                      <button onClick={() => changeLanguage ('en')}>en</button>
-                      <button onClick={() => changeLanguage ('bg')}>bg</button>
+                      <span onClick={() => changeLanguage ('de')}>
+                        <img
+                          src="images/de.png"
+                          alt="Smiley face"
+                          height="42"
+                          width="42"
+                        />
+                      </span>
+                      <span onClick={() => changeLanguage ('en')}>
+                        <img
+                          src="images/uk.png"
+                          alt="Smiley face"
+                          height="42"
+                          width="42"
+                        />
+                      </span>
+                      <span onClick={() => changeLanguage ('bg')}>
+                        <img
+                          src="images/bg.png"
+                          alt="Smiley face"
+                          height="42"
+                          width="42"
+                        />
+                      </span>
                     </div>
-                    <h5 className="title">GET IN TOUCH</h5>
-                    <div className="language-change">
-                      <button>Social</button>
-                      <button>Social</button>
-                      <button>Social</button>
-                    </div>
+
                   </Col>
                 </Row>
               </Container>
