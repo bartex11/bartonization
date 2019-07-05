@@ -3,6 +3,7 @@ import {withNamespaces} from 'react-i18next';
 import {HashRouter as Router} from 'react-router-dom';
 import {ThemeProvider} from 'styled-components';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 import {
   NavbarBrand,
@@ -239,18 +240,18 @@ class App extends Component {
                 <Row>
                   <Col md="4">
                     <h5 className="title">BARTEX</h5>
-                    <ul>
+                    <ul style={{padding: '0'}}>
                       <li className="list-unstyled">
-                        <a href="#!">Home</a>
+                        <Link to="/">{t ('Home')}</Link>
                       </li>
                       <li className="list-unstyled">
-                        <a href="#!">About</a>
+                        <Link to="/story">{t ('About')}</Link>
                       </li>
                       <li className="list-unstyled">
-                        <a href="#!">Contact</a>
+                        <Link to="/contact">{t ('Contact')}</Link>
                       </li>
                       <li className="list-unstyled">
-                        <a href="#!">Resume</a>
+                        <Link to="/resume">{t ('Resume')}</Link>
                       </li>
                     </ul>
                   </Col>
@@ -318,7 +319,7 @@ class App extends Component {
                   </Col>
                 </Row>
               </Container>
-              <div className="footer-copyright text-center ">
+              <div className="footer-copy text-center ">
                 <p>
                   &copy; {new Date ().getFullYear ()} Copyright:{' '}
                   <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
