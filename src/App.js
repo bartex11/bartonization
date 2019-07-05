@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {withNamespaces} from 'react-i18next';
 import {HashRouter as Router} from 'react-router-dom';
 import {ThemeProvider} from 'styled-components';
+import styled from 'styled-components';
 
 import {
   NavbarBrand,
@@ -17,9 +18,15 @@ import Container from './components/Container';
 import Row from './components/Row';
 import Col from './components/Col';
 import Collapse from './components/Collapse';
-import './index.scss';
+import Icon from './components/Fa';
 import Routes from './Routes';
 import DefaultTheme from './DefaultTheme';
+
+import './index.scss';
+
+const SocialIcon = styled (Icon)`
+
+`;
 
 class App extends Component {
   constructor (props) {
@@ -234,7 +241,7 @@ class App extends Component {
             </ThemeProvider>
 
             <Footer className="text-center">
-              <Container className="text-center text-md-left footer-links-container">
+              <Container className="text-center footer-links-container">
                 <Row>
                   <Col md="4">
                     <h5 className="title">Bartonization</h5>
@@ -255,18 +262,33 @@ class App extends Component {
                   </Col>
                   <Col md="4">
                     <h5 className="title">GET IN TOUCH</h5>
-                    <ul>
-                      <li className="list-unstyled">
-                        <a href="#!">Linkedin</a>
+                    <ul class="footer-social">
+                      <li class="footer-xing">
+                        <a
+                          href="https://www.xing.com/profile/Ivan_Vasilev19"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <SocialIcon icon="xing" size="3x" />
+                        </a>
                       </li>
-                      <li className="list-unstyled">
-                        <a href="#!">Xing</a>
+                      <li class="footer-linkedin">
+                        <a
+                          href="linkedin.com/in/bartonization"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <SocialIcon icon="linkedin" size="3x" />
+                        </a>
                       </li>
-                      <li className="list-unstyled">
-                        <a href="#!">Socia</a>
-                      </li>
-                      <li className="list-unstyled">
-                        <a href="#!">Socia</a>
+                      <li class="footer-github">
+                        <a
+                          href="https://github.com/bartex11"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <SocialIcon icon="github" size="3x" />
+                        </a>
                       </li>
                     </ul>
                   </Col>

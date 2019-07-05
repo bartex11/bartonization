@@ -1,16 +1,12 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 class Footer extends Component {
-  render() {
-    const { color, children, className, tag: Tag, ...attributes } = this.props;
+  render () {
+    const {color, children, className, tag: Tag, ...attributes} = this.props;
 
-    const classes = classNames(
-      "page-footer",
-      color ? color : "",
-      className
-    );
+    const classes = classNames ('page-footer', color ? color : '', className);
 
     return (
       <Tag {...attributes} className={classes}>
@@ -22,14 +18,14 @@ class Footer extends Component {
 
 Footer.propTypes = {
   color: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  tag: PropTypes.oneOfType ([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 Footer.defaultProps = {
-  tag: "footer"
+  tag: 'footer',
 };
 
 export default Footer;
-export { Footer as MDBFooter };
+export {Footer as MDBFooter};

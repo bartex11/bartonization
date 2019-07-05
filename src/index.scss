@@ -153,6 +153,7 @@ Header Styles
 Footer Styles
 *********************/
 
+
 footer {
     margin-top: 0 !important;
     background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
@@ -161,6 +162,44 @@ footer {
 
     .footer-links-container {
         padding: 3rem 0;
+
+        .footer-social {
+
+            li {
+                display: inline-block;
+                height: 4em;
+                width: 4em;
+                line-height: 4em;
+
+                a {
+                    color: #fffdf0;
+                    display: inline-flex;
+                    align-items: center;
+                    height: 4em;
+                    line-height: 6em;
+                    text-align: center;
+                    width: 4em;
+
+                    i {
+                        margin: 0 auto
+                    }
+                }
+
+                &.footer-xing {
+                    background: #155b9d;
+                }
+
+                &.footer-linkedin {
+                    background: #1a9ec4;
+                }
+
+                &.footer-github {
+                    background: #3f7aa3;
+                }
+
+            }
+
+        }
     }
 
     .footer-copyright {
