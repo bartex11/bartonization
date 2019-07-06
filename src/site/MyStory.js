@@ -25,7 +25,7 @@ class MyStory extends React.Component {
         <div className="paper-background">
           <span className="coffee-stain" />
           <span className="duss" />
-          <span className="paper-date">Düsseldorf, {formatDate(new Date('dd mm yyyy'))}</span>
+          <span className="paper-date">Düsseldorf, 07.06.2019</span>
           <section className="paper-content">
             <p>{t('Story')}</p>
             <br />
