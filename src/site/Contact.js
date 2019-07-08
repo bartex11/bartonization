@@ -36,7 +36,7 @@ class Contact extends React.Component {
             <Row>
               <Col size="12" className="mt-1 mb-2 text-right">
                 <h5 class="mt-1 mb-4 text-justify">
-                  Ich bin per Mail zu erreichen. Schreiben Sie mich an! Ich stehe für jede Frage zur Verfügung und freue mich weiterzuhelfen zu können. Fragen kostet nichts! Ansonsten natürlich auch über die sozialen Kanäle. Code Beispiele und Arbeiten gibt es auf GitHub.
+                  {t ('ContactText')}
                 </h5>
               </Col>
             </Row>
@@ -44,7 +44,7 @@ class Contact extends React.Component {
               <Col lg="4" md="12" className="mb-2">
                 <Card>
                   <CardHeader color="indigo lighten-1" className="text-center">
-                    Kontaktdaten
+                    {t ('ContactDetails')}
                   </CardHeader>
                   <CardBody>
                     <CardText style={{fontSize: '1.25rem'}}>
@@ -75,7 +75,7 @@ class Contact extends React.Component {
               <Col lg="4" md="12" className="mb-2">
                 <Card>
                   <CardHeader color="indigo lighten-1" className="text-center">
-                    Social networks
+                    {t ('Social')}
                   </CardHeader>
                   <CardBody>
                     <CardText>
