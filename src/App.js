@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-import { withNamespaces } from 'react-i18next';
-import { HashRouter as Router } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
+import React, {Component} from 'react';
+import {withNamespaces} from 'react-i18next';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {ThemeProvider} from 'styled-components';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 import {
   NavbarBrand,
@@ -25,45 +24,46 @@ import DefaultTheme from './DefaultTheme';
 
 import './index.scss';
 
-const SocialIcon = styled(Icon)`
+const SocialIcon = styled (Icon)`
 
 `;
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
     this.state = {
       collapseID: '',
       value: 'en',
     };
   }
-  componentDidMount() {
+  componentDidMount () {
     document.title = 'Bartonization';
+    window.scrollTo (0, 0);
   }
 
   toggleCollapse = collapseID => () =>
-    this.setState(prevState => ({
+    this.setState (prevState => ({
       collapseID: prevState.collapseID !== collapseID ? collapseID : '',
     }));
 
   closeCollapse = collapseID => () =>
-    this.state.collapseID === collapseID && this.setState({ collapseID: '' });
+    this.state.collapseID === collapseID && this.setState ({collapseID: ''});
 
-  render() {
+  render () {
     const overlay = (
       <div
         id="sidenav-overlay"
-        style={{ backgroundColor: 'transparent' }}
-        onClick={this.toggleCollapse('mainNavbarCollapse')}
+        style={{backgroundColor: 'transparent'}}
+        onClick={this.toggleCollapse ('mainNavbarCollapse')}
       />
     );
-    const { t, i18n } = this.props;
+    const {t, i18n} = this.props;
     const changeLanguage = lng => {
-      i18n.changeLanguage(lng);
+      i18n.changeLanguage (lng);
     };
 
     return (
-      <Router>
+      <Router onUpdate={() => window.scrollTo (0, 0)}>
         <div>
           <div className="flyout">
             <Navbar
@@ -79,12 +79,12 @@ class App extends Component {
                   src="./images/bart-simpson-picture-png-image-723.png"
                   alt=""
                   height="40"
-                  style={{ marginRight: '10px' }}
+                  style={{marginRight: '10px'}}
                 />
-                {t('Brand')}
+                {t ('Brand')}
               </NavbarBrand>
               <NavbarToggler
-                onClick={this.toggleCollapse('mainNavbarCollapse')}
+                onClick={this.toggleCollapse ('mainNavbarCollapse')}
               />
               <Collapse
                 id="mainNavbarCollapse"
@@ -94,43 +94,43 @@ class App extends Component {
                 <NavbarNav>
                   <NavItem>
                     <NavLink
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
+                      onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/"
                       exact
                     >
-                      {t('Home')}
+                      {t ('Home')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
+                      onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/story"
                     >
-                      {t('About')}
+                      {t ('About')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
+                      onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/portfolio"
                     >
-                      {t('Portfolio')}
+                      {t ('Portfolio')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
+                      onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/resume"
                     >
-                      {t('Resume')}
+                      {t ('Resume')}
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
+                      onClick={this.closeCollapse ('mainNavbarCollapse')}
                       to="/contact"
                     >
-                      {t('Contact')}
+                      {t ('Contact')}
                     </NavLink>
                   </NavItem>
 
@@ -240,24 +240,24 @@ class App extends Component {
                 <Row>
                   <Col md="3">
                     <h5 className="title">BARTEX</h5>
-                    <ul style={{ padding: '0' }}>
+                    <ul style={{padding: '0'}}>
                       <li className="list-unstyled">
-                        <Link to="/">{t('Home')}</Link>
+                        <Link to="/">{t ('Home')}</Link>
                       </li>
                       <li className="list-unstyled">
-                        <Link to="/story">{t('About')}</Link>
+                        <Link to="/story">{t ('About')}</Link>
                       </li>
                       <li className="list-unstyled">
-                        <Link to="/contact">{t('Contact')}</Link>
+                        <Link to="/contact">{t ('Contact')}</Link>
                       </li>
                       <li className="list-unstyled">
-                        <Link to="/resume">{t('Resume')}</Link>
+                        <Link to="/resume">{t ('Resume')}</Link>
                       </li>
                     </ul>
                   </Col>
                   <Col md="3">
                     <h5 className="title">PROJECT</h5>
-                    <ul style={{ padding: '0' }}>
+                    <ul style={{padding: '0'}}>
                       <li className="list-unstyled">
                         <Link to="/">Project 1</Link>
                       </li>
@@ -307,7 +307,7 @@ class App extends Component {
                   <Col md="3">
                     <h5 className="title">LANGUAGE</h5>
                     <div className="language-change">
-                      <span onClick={() => changeLanguage('de')}>
+                      <span onClick={() => changeLanguage ('de')}>
                         <img
                           src="images/de.png"
                           alt="Smiley face"
@@ -315,7 +315,7 @@ class App extends Component {
                           width="42"
                         />
                       </span>
-                      <span onClick={() => changeLanguage('en')}>
+                      <span onClick={() => changeLanguage ('en')}>
                         <img
                           src="images/uk.png"
                           alt="Smiley face"
@@ -323,7 +323,7 @@ class App extends Component {
                           width="42"
                         />
                       </span>
-                      <span onClick={() => changeLanguage('bg')}>
+                      <span onClick={() => changeLanguage ('bg')}>
                         <img
                           src="images/bg.png"
                           alt="Smiley face"
@@ -338,7 +338,7 @@ class App extends Component {
               </Container>
               <div className="footer-copy text-center ">
                 <p>
-                  &copy; {new Date().getFullYear()} Copyright:{' '}
+                  &copy; {new Date ().getFullYear ()} Copyright:{' '}
                   <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
                 </p>
               </div>
@@ -351,4 +351,4 @@ class App extends Component {
   }
 }
 
-export default withNamespaces()(App);
+export default withNamespaces () (App);

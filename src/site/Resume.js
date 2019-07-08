@@ -1,9 +1,17 @@
 import React from 'react';
-import { withNamespaces } from 'react-i18next';
+import {withNamespaces} from 'react-i18next';
 import styled from 'styled-components';
 
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardHeader, MDBBtn, MDBBadge } from 'mdbreact';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardHeader,
+  MDBBtn,
+  MDBBadge,
+} from 'mdbreact';
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
 import Head from '../components/PageHeading';
 import Icon from '../components/Fa';
@@ -13,17 +21,17 @@ import Col from '../components/Col';
 
 import './Resume.scss';
 
-const SocialIcon = styled(Icon)`
+const SocialIcon = styled (Icon)`
 
 `;
-const Pill = styled(MDBBadge)`
-  background-color: ${(props) => props.theme.colors.primary}a6!important;
+const Pill = styled (MDBBadge)`
+  background-color: ${props => props.theme.colors.primary}a6!important;
   padding: .5em 1em .5em 1em;
   margin: .2em
 `;
 const ContactIcon = styled.i`
   margin: 2px 15px 0 0;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${props => props.theme.colors.primary};
 `;
 
 const ToolsList = styled.ul`
@@ -34,7 +42,7 @@ const ToolsListItem = styled.li`
   margin: 5px;
   display: inline-block;
   padding: 6px 16px;
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${props => props.theme.colors.primary};
 
   &:hover {
     background-color: #617fbb;
@@ -48,14 +56,15 @@ const Toolstext = styled.p`
 `;
 
 class Resume extends React.Component {
-  componentDidMount() {
+  componentDidMount () {
     document.title = 'Resume';
+    window.scrollTo (0, 0);
   }
-  render() {
-    const { t } = this.props;
+  render () {
+    const {t} = this.props;
     return (
       <div className="resume-container">
-        <Head title={t('Resume')} />
+        <Head title={t ('Resume')} />
         <Container>
           <Row>
             <Tabs>
@@ -87,10 +96,14 @@ class Resume extends React.Component {
                       </Col>
                       <Col size="12">
                         <MDBCard>
-                          <MDBCardHeader color="indigo lighten-1">Hello, my name is Ivan Vasilev.</MDBCardHeader>
+                          <MDBCardHeader color="indigo lighten-1">
+                            Hello, my name is Ivan Vasilev.
+                          </MDBCardHeader>
                           <MDBCardBody>
-                            <MDBCardTitle>I'm a Frontend Webdeveloper living in Düsseldorf, Germany.</MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardTitle>
+                              I'm a Frontend Webdeveloper living in Düsseldorf, Germany.
+                            </MDBCardTitle>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               I live and work by the mantra "Never stop learning..." I’ve always been good at math and science that’s why I graduated as a mechanical engineer.
                               After many years working in the logistics, I decided to learn web development. I find great interest in all new digital technologies and latest design
                               practices. So I came into the world of WEB. Relatively quickly I learned the basics, because I think logically and I understand the technical part of
@@ -110,7 +123,13 @@ class Resume extends React.Component {
                       </Col>
                     </Row>
                     <Row className="mb-2">
-                      <Col xs="12" sm="12" md="12" lg="2" className="text-right p-0">
+                      <Col
+                        xs="12"
+                        sm="12"
+                        md="12"
+                        lg="2"
+                        className="text-right p-0"
+                      >
                         <h6 class="mt-3">
                           <strong>Januar 2017 – Jetzt</strong>
                         </h6>
@@ -124,11 +143,13 @@ class Resume extends React.Component {
                         </div>
                       </Col>
                       <Col xs="12" sm="12" md="12" lg="10">
-                        <MDBCard style={{ marginBottom: '25px' }}>
-                          <MDBCardHeader color="indigo lighten-1">Spycymedia GmbH, Düsseldorf</MDBCardHeader>
+                        <MDBCard style={{marginBottom: '25px'}}>
+                          <MDBCardHeader color="indigo lighten-1">
+                            Spycymedia GmbH, Düsseldorf
+                          </MDBCardHeader>
                           <MDBCardBody>
                             <MDBCardTitle>Frontend Web Deweloper</MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <p>
                                 <strong>About Spycymedia: </strong>
                                 Die SPICY Media GmbH ist ein Startup aus Düsseldorf mit dem Schwerpunkt Neue Medien.
@@ -155,7 +176,13 @@ class Resume extends React.Component {
                       </Col>
                     </Row>
                     <Row className="mb-2">
-                      <Col xs="12" sm="12" md="12" lg="2" className="text-right p-0">
+                      <Col
+                        xs="12"
+                        sm="12"
+                        md="12"
+                        lg="2"
+                        className="text-right p-0"
+                      >
                         <h6 class="mt-3">
                           <strong>Januar 2016 – Jetzt</strong>
                         </h6>
@@ -169,11 +196,13 @@ class Resume extends React.Component {
                         </div>
                       </Col>
                       <Col xs="12" sm="12" md="12" lg="10">
-                        <MDBCard style={{ marginBottom: '25px' }}>
-                          <MDBCardHeader color="indigo lighten-1">Freelance</MDBCardHeader>
+                        <MDBCard style={{marginBottom: '25px'}}>
+                          <MDBCardHeader color="indigo lighten-1">
+                            Freelance
+                          </MDBCardHeader>
                           <MDBCardBody>
                             <MDBCardTitle>Web Deweloper</MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <p>
                                 <strong>Ziele/Aufgeben: </strong>
                                 Umsetzung und Entwicklung von Web pages.
@@ -201,14 +230,20 @@ class Resume extends React.Component {
                     </Row>
 
                     <Row className="mb-2">
-                      <Col xs="12" sm="12" md="12" lg="3" className="text-right p-0">
+                      <Col
+                        xs="12"
+                        sm="12"
+                        md="12"
+                        lg="3"
+                        className="text-right p-0"
+                      >
                         <h5>
                           <strong>Technische Universität Sofia</strong>{' '}
                         </h5>
                         <h6>09.2005 – 05.2008</h6>
                       </Col>
                       <Col xs="12" sm="12" md="12" lg="9">
-                        <MDBCard style={{ marginBottom: '25px' }}>
+                        <MDBCard style={{marginBottom: '25px'}}>
                           <MDBCardHeader color="indigo lighten-1">
                             <strong>Abschluss: </strong>Master of Engineering
                           </MDBCardHeader>
@@ -217,7 +252,7 @@ class Resume extends React.Component {
                               <strong>Studium: </strong>
                               Maschinen- und Gerätebau mit Schwerpunkt Logistik
                             </MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <strong>Berufsqualifikation: </strong>
                               Maschinenbauingenieur
                               <br />
@@ -230,14 +265,20 @@ class Resume extends React.Component {
                     </Row>
 
                     <Row className="mb-2">
-                      <Col xs="12" sm="12" md="12" lg="3" className="text-right p-0">
+                      <Col
+                        xs="12"
+                        sm="12"
+                        md="12"
+                        lg="3"
+                        className="text-right p-0"
+                      >
                         <h5>
                           <strong>Technische Universität Sofia</strong>
                         </h5>
                         <h6>09.1998 – 05.2002</h6>
                       </Col>
                       <Col xs="12" sm="12" md="12" lg="9">
-                        <MDBCard style={{ marginBottom: '25px' }}>
+                        <MDBCard style={{marginBottom: '25px'}}>
                           <MDBCardHeader color="indigo lighten-1">
                             <strong>Abschluss: </strong>Bachelor of Engineering
                           </MDBCardHeader>
@@ -246,7 +287,7 @@ class Resume extends React.Component {
                               <strong>Studiengang: </strong>
                               Maschinen- und Gerätebau
                             </MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <strong>Berufsqualifikation: </strong>
                               Maschinenbauingenieur
                               <br />
@@ -269,10 +310,12 @@ class Resume extends React.Component {
 
                       <Col size="12" className="mb-2">
                         <MDBCard>
-                          <MDBCardHeader color="indigo lighten-1">LANGUAGES</MDBCardHeader>
+                          <MDBCardHeader color="indigo lighten-1">
+                            LANGUAGES
+                          </MDBCardHeader>
                           <MDBCardBody>
                             <MDBCardTitle>Special title treatment</MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <ToolsList className="tool-list">
                                 <ToolsListItem className="tool-item">
                                   <Toolstext>
@@ -291,7 +334,8 @@ class Resume extends React.Component {
                                 </ToolsListItem>
                                 <ToolsListItem className="tool-item">
                                   <Toolstext>
-                                    <strong>Twig </strong>Template engine for PHP
+                                    <strong>Twig </strong>
+                                    Template engine for PHP
                                   </Toolstext>
                                 </ToolsListItem>
                                 <ToolsListItem className="tool-item">
@@ -314,10 +358,12 @@ class Resume extends React.Component {
 
                       <Col size="12" className="mb-2">
                         <MDBCard>
-                          <MDBCardHeader color="indigo lighten-1">FRAMEWORKS & LIBS</MDBCardHeader>
+                          <MDBCardHeader color="indigo lighten-1">
+                            FRAMEWORKS & LIBS
+                          </MDBCardHeader>
                           <MDBCardBody>
                             <MDBCardTitle>Special title treatment</MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <ToolsList className="tool-list">
                                 <ToolsListItem className="tool-item">
                                   <Toolstext>
@@ -341,7 +387,8 @@ class Resume extends React.Component {
                                 </ToolsListItem>
                                 <ToolsListItem className="tool-item">
                                   <Toolstext>
-                                    <strong>Symfony </strong>Set of PHP Components
+                                    <strong>Symfony </strong>
+                                    Set of PHP Components
                                   </Toolstext>
                                 </ToolsListItem>
                                 <ToolsListItem className="tool-item">
@@ -362,10 +409,12 @@ class Resume extends React.Component {
 
                       <Col size="12" className="mb-2">
                         <MDBCard>
-                          <MDBCardHeader color="indigo lighten-1">ADDITIONAL</MDBCardHeader>
+                          <MDBCardHeader color="indigo lighten-1">
+                            ADDITIONAL
+                          </MDBCardHeader>
                           <MDBCardBody>
                             <MDBCardTitle>Special title treatment</MDBCardTitle>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <ToolsList className="tool-list">
                                 <ToolsListItem className="tool-item">
                                   <Toolstext>
@@ -418,23 +467,32 @@ class Resume extends React.Component {
                     <Row className="contact-container">
                       <Col xs="12" sm="12" md="12" lg="4">
                         <MDBCard>
-                          <MDBCardHeader color="indigo lighten-1" className="text-center">
+                          <MDBCardHeader
+                            color="indigo lighten-1"
+                            className="text-center"
+                          >
                             Kontaktdaten
                           </MDBCardHeader>
                           <MDBCardBody>
-                            <MDBCardText style={{ fontSize: '1.25rem' }}>
+                            <MDBCardText style={{fontSize: '1.25rem'}}>
                               <div class="adress-card-info">
                                 <div class="address-card-info-group">
                                   <ContactIcon className="fa fa-map-marker icon-location" />
-                                  <p class="contact-info-text">40597 Düsseldorf</p>
+                                  <p class="contact-info-text">
+                                    40597 Düsseldorf
+                                  </p>
                                 </div>
                                 <div class="address-card-info-group">
                                   <ContactIcon className="fa fa-phone icon-phone" />
-                                  <p class="contact-info-text">+49 157 376 22 367</p>
+                                  <p class="contact-info-text">
+                                    +49 157 376 22 367
+                                  </p>
                                 </div>
                                 <div class="address-card-info-group">
                                   <ContactIcon className="fa fa-envelope-o icon-mail" />
-                                  <p class="contact-info-text">i_vasilev@ymail.com</p>
+                                  <p class="contact-info-text">
+                                    i_vasilev@ymail.com
+                                  </p>
                                 </div>
                               </div>
                             </MDBCardText>
@@ -443,24 +501,39 @@ class Resume extends React.Component {
                       </Col>
                       <Col xs="12" sm="12" md="12" lg="4">
                         <MDBCard>
-                          <MDBCardHeader color="indigo lighten-1" className="text-center">
+                          <MDBCardHeader
+                            color="indigo lighten-1"
+                            className="text-center"
+                          >
                             Social networks
                           </MDBCardHeader>
                           <MDBCardBody>
                             <MDBCardText>
                               <ul class="social">
                                 <li class="list-xing">
-                                  <a href="https://www.xing.com/profile/Ivan_Vasilev19" target="_blank" rel="noopener noreferrer">
+                                  <a
+                                    href="https://www.xing.com/profile/Ivan_Vasilev19"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
                                     <SocialIcon icon="xing" size="3x" />
                                   </a>
                                 </li>
                                 <li class="list-linkedin">
-                                  <a href="linkedin.com/in/bartonization" target="_blank" rel="noopener noreferrer">
+                                  <a
+                                    href="linkedin.com/in/bartonization"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
                                     <SocialIcon icon="linkedin" size="3x" />
                                   </a>
                                 </li>
                                 <li class="list-github">
-                                  <a href="https://github.com/bartex11" target="_blank" rel="noopener noreferrer">
+                                  <a
+                                    href="https://github.com/bartex11"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
                                     <SocialIcon icon="github" size="3x" />
                                   </a>
                                 </li>
@@ -472,12 +545,20 @@ class Resume extends React.Component {
 
                       <Col xs="12" sm="12" md="12" lg="4">
                         <MDBCard>
-                          <MDBCardHeader color="indigo lighten-1" className="text-center">
+                          <MDBCardHeader
+                            color="indigo lighten-1"
+                            className="text-center"
+                          >
                             Downloads
                           </MDBCardHeader>
                           <MDBCardBody>
-                            <MDBCardText style={{ textAlign: 'center' }}>
-                              <MDBBtn outline color="indigo" href="./content/CV.pdf" download="Vasilev-CV">
+                            <MDBCardText style={{textAlign: 'center'}}>
+                              <MDBBtn
+                                outline
+                                color="indigo"
+                                href="./content/CV.pdf"
+                                download="Vasilev-CV"
+                              >
                                 My CV
                               </MDBBtn>
                               <MDBBtn color="indigo">Resume</MDBBtn>
@@ -497,4 +578,4 @@ class Resume extends React.Component {
   }
 }
 
-export default withNamespaces()(Resume);
+export default withNamespaces () (Resume);

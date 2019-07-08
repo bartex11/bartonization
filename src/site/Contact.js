@@ -24,6 +24,7 @@ const SocialIcon = styled (Icon)`
 class Contact extends React.Component {
   componentDidMount () {
     document.title = 'Contact';
+    window.scrollTo (0, 0);
   }
   render () {
     const {t} = this.props;

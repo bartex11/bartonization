@@ -19,6 +19,7 @@ import './projects.scss';
 class AskoraPage extends Component {
   componentDidMount () {
     document.title = 'Askora';
+    window.scrollTo (0, 0);
   }
 
   state = {

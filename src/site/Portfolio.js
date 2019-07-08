@@ -31,6 +31,7 @@ const Pill = styled (MDBBadge)`
 class Protfolio extends React.Component {
   componentDidMount () {
     document.title = 'Portfolio';
+    window.scrollTo (0, 0);
   }
 
   state = {
