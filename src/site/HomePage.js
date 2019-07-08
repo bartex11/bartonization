@@ -15,7 +15,6 @@ import './HomePage.css';
 class HomePage extends React.Component {
   componentDidMount () {
     document.title = 'Bartonization Home';
-    window.scrollTo (0, 0);
   }
   render () {
     const {t} = this.props;
