@@ -56,7 +56,7 @@ class Protfolio extends React.Component {
         imgSrc: './images/KK/1-3.jpg',
         link: '/katerina',
         technologies: 'HTML5,CSS3,JavaScript,Responsive Web Design',
-        tools: 'Bootstrap, Git, SEO Tools, Git',
+        tools: 'Bootstrap, Git, SEO Tools,',
       },
     ],
     spicy: [
@@ -90,11 +90,11 @@ class Protfolio extends React.Component {
       photoIndex++;
 
       let techno = project.technologies.split (',').map (item => {
-        return <Pill pill>{item}</Pill>;
+        return <Pill pill key={item}>{item}</Pill>;
       });
 
       let tool = project.tools.split (',').map (item => {
-        return <Pill pill>{item}</Pill>;
+        return <Pill pill key={item}>{item}</Pill>;
       });
 
       return (
@@ -108,13 +108,13 @@ class Protfolio extends React.Component {
             />
             <CardBody>
               <CardTitle>{project.name}</CardTitle>
-              <CardText>
-                <div class="techno-container">
+              <CardText tag="div">
+                <div className="techno-container">
                   <strong>Angewandte Technologien: </strong>
                   <br />
                   {techno}
                 </div>
-                <div class="tools-container">
+                <div className="tools-container">
                   <strong>Frameworks & Build-Tools: </strong>
                   <br />
                   {tool}
@@ -136,7 +136,7 @@ class Protfolio extends React.Component {
     const {t} = this.props;
 
     return (
-      <div class="portfolio-container">
+      <div className="portfolio-container">
         <Head title={t ('Portfolio')} />
 
         <Container>

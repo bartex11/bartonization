@@ -36,7 +36,7 @@ class Contact extends React.Component {
           <Container>
             <Row>
               <Col size="12" className="mt-1 mb-2 text-right">
-                <h5 class="mt-1 mb-4 text-justify">
+                <h5 className="mt-1 mb-4 text-justify">
                   {t ('ContactText')}
                 </h5>
               </Col>
@@ -48,23 +48,23 @@ class Contact extends React.Component {
                     {t ('ContactDetails')}
                   </CardHeader>
                   <CardBody>
-                    <CardText style={{fontSize: '1.25rem'}}>
-                      <div class="adress-card-info">
-                        <div class="address-card-info-group">
+                    <CardText style={{fontSize: '1.25rem'}} tag="div">
+                      <div className="adress-card-info">
+                        <div className="address-card-info-group">
                           <ContactIcon className="fa fa-map-marker icon-location" />
-                          <p class="contact-info-text">
+                          <p className="contact-info-text">
                             40597 Düsseldorf
                           </p>
                         </div>
-                        <div class="address-card-info-group">
+                        <div className="address-card-info-group">
                           <ContactIcon className="fa fa-phone icon-phone" />
-                          <p class="contact-info-text">
+                          <p className="contact-info-text">
                             +49 157 376 22 367
                           </p>
                         </div>
-                        <div class="address-card-info-group">
+                        <div className="address-card-info-group">
                           <ContactIcon className="fa fa-envelope-o icon-mail" />
-                          <p class="contact-info-text">
+                          <p className="contact-info-text">
                             i_vasilev@ymail.com
                           </p>
                         </div>
@@ -79,9 +79,9 @@ class Contact extends React.Component {
                     {t ('Social')}
                   </CardHeader>
                   <CardBody>
-                    <CardText>
-                      <ul class="social">
-                        <li class="list-xing">
+                    <CardText tag="div">
+                      <ul className="social">
+                        <li className="list-xing">
                           <a
                             href="https://www.xing.com/profile/Ivan_Vasilev19"
                             target="_blank"
@@ -90,7 +90,7 @@ class Contact extends React.Component {
                             <SocialIcon icon="xing" size="3x" />
                           </a>
                         </li>
-                        <li class="list-linkedin">
+                        <li className="list-linkedin">
                           <a
                             href="linkedin.com/in/bartonization"
                             target="_blank"
@@ -99,7 +99,7 @@ class Contact extends React.Component {
                             <SocialIcon icon="linkedin" size="3x" />
                           </a>
                         </li>
-                        <li class="list-github">
+                        <li className="list-github">
                           <a
                             href="https://github.com/bartex11"
                             target="_blank"
@@ -120,7 +120,7 @@ class Contact extends React.Component {
                     Downloads
                   </CardHeader>
                   <CardBody>
-                    <CardText style={{textAlign: 'center'}}>
+                    <CardText style={{textAlign: 'center'}} tag="div">
                       <Button outline color="indigo">
                         My CV
                       </Button>

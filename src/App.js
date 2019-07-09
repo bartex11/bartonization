@@ -271,8 +271,8 @@ class App extends Component {
                     </Col>
                     <Col md="3">
                       <h5 className="title">GET IN TOUCH</h5>
-                      <ul class="footer-social">
-                        <li class="footer-xing">
+                      <ul className="footer-social">
+                        <li className="footer-xing">
                           <a
                             href="https://www.xing.com/profile/Ivan_Vasilev19"
                             target="_blank"
@@ -281,7 +281,7 @@ class App extends Component {
                             <SocialIcon icon="xing" size="3x" />
                           </a>
                         </li>
-                        <li class="footer-linkedin">
+                        <li className="footer-linkedin">
                           <a
                             href="linkedin.com/in/bartonization"
                             target="_blank"
@@ -290,7 +290,7 @@ class App extends Component {
                             <SocialIcon icon="linkedin" size="3x" />
                           </a>
                         </li>
-                        <li class="footer-github">
+                        <li className="footer-github">
                           <a
                             href="https://github.com/bartex11"
                             target="_blank"

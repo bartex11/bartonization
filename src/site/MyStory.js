@@ -18,7 +18,7 @@ class MyStory extends React.Component {
     const {t} = this.props;
 
     return (
-      <div class="about-container">
+      <div className="about-container">
         <div className="paper-background">
           <span className="coffee-stain" />
           <span className="duss" />
@@ -33,9 +33,10 @@ class MyStory extends React.Component {
             <p>{t ('Story3')}</p>
             <br />
             <br />
-            <p class="paper-signature">Ivan Vasilev</p>
+            <p className="paper-signature">Ivan Vasilev</p>
           </section>
         </div>
+
         <Container className="about-mobile">
           <Head title={t ('AboutHead')} small />
           <Row>
@@ -58,7 +59,7 @@ class MyStory extends React.Component {
                     {t ('Story3')}
                     <br />
                     <br />
-                    <p class="paper-signature">Ivan Vasilev</p>
+                    <span className="paper-signature">Ivan Vasilev</span>
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>

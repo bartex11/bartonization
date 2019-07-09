@@ -37,7 +37,7 @@ class HomePage extends React.Component {
         link: '/katerina',
       },
       {
-        id: 1,
+        id: 3,
         imgSrc: './images/NN/1.png',
         title: t ('Dentist'),
         name: ' Chlosta',
@@ -47,7 +47,7 @@ class HomePage extends React.Component {
     ];
 
     const project = projects.map (project => (
-      <Col md="4" xl="4" className="mb-5" key={projects.id}>
+      <Col md="4" xl="4" className="mb-5" key={project.id}>
         <MDBView className="overlay rounded z-depth-2" waves>
           <img src={project.imgSrc} alt="" className="img-fluid" />
           <a href="#!">
@@ -73,7 +73,7 @@ class HomePage extends React.Component {
     ));
 
     return (
-      <div class="home-container">
+      <div className="home-container">
         <View className="index-image" src="./images/Me/vasilev.jpg">
           <Mask
             className="d-flex justify-content-center align-items-center"
