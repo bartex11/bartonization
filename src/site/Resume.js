@@ -92,16 +92,16 @@ class Resume extends React.Component {
                   <Container>
                     <Row>
                       <Col size="12" className="mt-1 mb-2 text-right">
-                        <h2>About me</h2>
+                        <h2>{t ('About')}</h2>
                       </Col>
                       <Col size="12">
                         <MDBCard>
                           <MDBCardHeader color="indigo lighten-1">
-                            Hello, my name is Ivan Vasilev.
+                            {t ('Resume')}
                           </MDBCardHeader>
                           <MDBCardBody>
                             <MDBCardTitle>
-                              I'm a Frontend Webdeveloper living in Düsseldorf, Germany.
+                              {t ('Duss')}
                             </MDBCardTitle>
                             <MDBCardText style={{fontSize: '1.25rem'}}>
                               I live and work by the mantra "Never stop learning..." I’ve always been good at math and science that’s why I graduated as a mechanical engineer.
