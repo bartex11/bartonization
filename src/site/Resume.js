@@ -104,10 +104,7 @@ class Resume extends React.Component {
                               {t ('Duss')}
                             </MDBCardTitle>
                             <MDBCardText style={{fontSize: '1.25rem'}}>
-                              I live and work by the mantra "Never stop learning..." I’ve always been good at math and science that’s why I graduated as a mechanical engineer.
-                              After many years working in the logistics, I decided to learn web development. I find great interest in all new digital technologies and latest design
-                              practices. So I came into the world of WEB. Relatively quickly I learned the basics, because I think logically and I understand the technical part of
-                              the projects. I developed some projects and continue to improve them. I also made without a budget their SEO-optimization.
+                              {t ('AboutText')}
                             </MDBCardText>
                           </MDBCardBody>
                         </MDBCard>

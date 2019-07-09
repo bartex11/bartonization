@@ -55,6 +55,7 @@ class AskoraPage extends Component {
               className="img-fluid"
               src={project.imgSrc}
               alt={project.name}
+              style={{margin: '20px auto', height: '120px'}}
               waves
             />
             <CardBody>
