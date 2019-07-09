@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {withNamespaces} from 'react-i18next';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+/* import { HashRouter as Router } from 'react-router-dom'; */
 import {ThemeProvider} from 'styled-components';
 import styled from 'styled-components';
 
