@@ -63,21 +63,21 @@ class Protfolio extends React.Component {
       {
         name: 'FabFoods',
         imgSrc: './images/FF/1.png',
-        link: '/fabfoods',
+        url: 'https://fabfoods.de',
         technologies: 'React, Styled components, Liquid',
         tools: 'Trello, Git, Shopify, Oddo ',
       },
       {
         name: 'Spa Group Europe',
         imgSrc: './images/Spa/1.png',
-        link: '/spa-group',
+        url: 'https://entspannung-buchen.de/',
         technologies: 'React, Styled components',
         tools: 'Trello, Git',
       },
       {
         name: 'Washeroo',
         imgSrc: './images/WROO/1.png',
-        link: '/washeroo',
+        url: 'https://washeroo.de/',
         technologies: 'Angular, CSS3, SASS, Symfony, Twig  ',
         tools: 'Jira, Bitbucket, Git',
       },
@@ -96,6 +96,26 @@ class Protfolio extends React.Component {
       let tool = project.tools.split (',').map (item => {
         return <Pill pill key={item}>{item}</Pill>;
       });
+
+      let link;
+
+      if (project.link) {
+        link = (
+          <Link to={project.link}>
+            <Button color="indigo" rounded>
+              More details
+            </Button>
+          </Link>
+        );
+      } else {
+        link = (
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            <Button color="indigo" rounded>
+              View online
+            </Button>
+          </a>
+        );
+      }
 
       return (
         <Col md="6" className="mb-4" key={photoIndex}>
@@ -120,11 +140,9 @@ class Protfolio extends React.Component {
                   {tool}
                 </div>
               </CardText>
-              <Link to={project.link}>
-                <Button color="indigo" rounded>
-                  {project.name}
-                </Button>
-              </Link>
+
+              {link}
+
             </CardBody>
           </Card>
         </Col>
