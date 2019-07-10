@@ -237,7 +237,7 @@ class App extends Component {
               <Footer className="text-center">
                 <Container className="text-center footer-links-container">
                   <Row>
-                    <Col md="3">
+                    <Col xs="12" sm="12" md="3" lg="3">
                       <h5 className="title">BARTEX</h5>
                       <ul style={{padding: '0'}}>
                         <li className="list-unstyled">
@@ -254,7 +254,7 @@ class App extends Component {
                         </li>
                       </ul>
                     </Col>
-                    <Col md="3">
+                    <Col xs="12" sm="12" md="2" lg="3">
                       <h5 className="title">PROJECT</h5>
                       <ul style={{padding: '0'}}>
                         <li className="list-unstyled">
@@ -269,7 +269,7 @@ class App extends Component {
 
                       </ul>
                     </Col>
-                    <Col md="3">
+                    <Col xs="12" sm="12" md="4" lg="3">
                       <h5 className="title">GET IN TOUCH</h5>
                       <ul className="footer-social">
                         <li className="footer-xing">
@@ -301,7 +301,7 @@ class App extends Component {
                         </li>
                       </ul>
                     </Col>
-                    <Col md="3">
+                    <Col xs="12" sm="12" md="3" lg="3">
                       <h5 className="title">LANGUAGE</h5>
                       <div className="language-change">
                         <span onClick={() => changeLanguage ('de')}>

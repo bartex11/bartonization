@@ -49,7 +49,7 @@ class AskoraPage extends Component {
       photoIndex++;
 
       return (
-        <Col size="4" className="mb-4" key={photoIndex}>
+        <Col xs="12" sm="12" md="4" lg="4" className="mb-4" key={photoIndex}>
           <Card>
             <CardImage
               className="img-fluid"

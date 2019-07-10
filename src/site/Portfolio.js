@@ -158,71 +158,71 @@ class Protfolio extends React.Component {
 
               <Col xs="12" sm="12" md="12" lg="10" className="tabs-content">
                 <TabPanel>
-                  <Container>
-                    <Row>
-                      <Col size="12">
-                        <Card>
-                          <CardHeader color="indigo lighten-1">All</CardHeader>
-                          <CardBody>
-                            <ProjectImg>
 
-                              <Row>
-                                {this.renderImages (spicy)}
-                                {this.renderImages (free)}
-                              </Row>
+                  <Row>
+                    <Col size="12">
+                      <Card>
+                        <CardHeader color="indigo lighten-1">All</CardHeader>
+                        <CardBody>
+                          <ProjectImg>
 
-                            </ProjectImg>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    </Row>
-                  </Container>
+                            <Row>
+                              {this.renderImages (spicy)}
+                              {this.renderImages (free)}
+                            </Row>
+
+                          </ProjectImg>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
+
                 </TabPanel>
 
                 <TabPanel>
-                  <Container>
-                    <Row>
-                      <Col size="12">
-                        <Card>
-                          <CardHeader color="indigo lighten-1">
-                            Freee
-                          </CardHeader>
-                          <CardBody>
-                            <ProjectImg>
-                              <div className="-lightbox p-3">
 
-                                <Row>{this.renderImages (free)}</Row>
+                  <Row>
+                    <Col size="12">
+                      <Card>
+                        <CardHeader color="indigo lighten-1">
+                          Freee
+                        </CardHeader>
+                        <CardBody>
+                          <ProjectImg>
+                            <div className="-lightbox p-3">
 
-                              </div>
-                            </ProjectImg>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    </Row>
-                  </Container>
+                              <Row>{this.renderImages (free)}</Row>
+
+                            </div>
+                          </ProjectImg>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
+
                 </TabPanel>
 
                 <TabPanel>
-                  <Container>
-                    <Row>
-                      <Col size="12">
-                        <Card>
-                          <CardHeader color="indigo lighten-1">
-                            Spicy
-                          </CardHeader>
-                          <CardBody>
-                            <ProjectImg>
-                              <div className="-lightbox p-3">
 
-                                <Row>{this.renderImages (spicy)}</Row>
+                  <Row>
+                    <Col size="12">
+                      <Card>
+                        <CardHeader color="indigo lighten-1">
+                          Spicy
+                        </CardHeader>
+                        <CardBody>
+                          <ProjectImg>
+                            <div className="-lightbox p-3">
 
-                              </div>
-                            </ProjectImg>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    </Row>
-                  </Container>
+                              <Row>{this.renderImages (spicy)}</Row>
+
+                            </div>
+                          </ProjectImg>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
+
                 </TabPanel>
               </Col>
             </Tabs>
