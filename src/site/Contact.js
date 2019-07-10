@@ -117,15 +117,15 @@ class Contact extends React.Component {
               <Col lg="4" md="12">
                 <Card>
                   <CardHeader color="indigo lighten-1" className="text-center">
-                    Downloads
+                    {t ('Downloads')}
                   </CardHeader>
                   <CardBody>
                     <CardText style={{textAlign: 'center'}} tag="div">
                       <Button outline color="indigo">
-                        My CV
+                        {t ('Cv')}
                       </Button>
                       <Button color="indigo">
-                        Resume
+                        {t ('Resume')}
                       </Button>
                     </CardText>
                   </CardBody>

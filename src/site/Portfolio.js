@@ -166,7 +166,7 @@ class Protfolio extends React.Component {
                     <p>All Projects</p>
                   </Tab>
                   <Tab>
-                    <p>Freelancer</p>
+                    <p>Frelance projects</p>
                   </Tab>
                   <Tab>
                     <p>Spicy Media</p>

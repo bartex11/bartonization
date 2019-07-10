@@ -71,19 +71,19 @@ class Resume extends React.Component {
               <Col xs="12" sm="12" md="12" lg="2" className="tabs-menu">
                 <TabList>
                   <Tab>
-                    <p>Profile</p>
+                    <p>{t ('Profile')}</p>
                   </Tab>
                   <Tab>
-                    <p>Experience</p>
+                    <p>{t ('Experience')}</p>
                   </Tab>
                   <Tab>
-                    <p>Education</p>
+                    <p>{t ('Education')}</p>
                   </Tab>
                   <Tab>
-                    <p>Skills</p>
+                    <p>{t ('Skills')}</p>
                   </Tab>
                   <Tab>
-                    <p>Contact</p>
+                    <p>{t ('Contact')}</p>
                   </Tab>
                 </TabList>
               </Col>
@@ -116,7 +116,7 @@ class Resume extends React.Component {
 
                   <Row>
                     <Col size="12" className="mt-1 mb-2 text-right">
-                      <h2>Work Experience</h2>
+                      <h2>{t ('WorkExperience')}</h2>
                     </Col>
                   </Row>
                   <Row className="mb-2">
@@ -128,7 +128,7 @@ class Resume extends React.Component {
                       className="text-right p-0"
                     >
                       <h6 class="mt-3">
-                        <strong>Januar 2017 – Jetzt</strong>
+                        <strong>{t ('January')} 2017 – {t ('Present')}</strong>
                       </h6>
                       <div class="mt-3">
                         <Pill pill>HTML5</Pill>
@@ -145,14 +145,14 @@ class Resume extends React.Component {
                           Spycymedia GmbH, Düsseldorf
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Frontend Web Deweloper</MDBCardTitle>
+                          <MDBCardTitle>{t ('Frontend')}</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <p>
-                              <strong>About Spycymedia: </strong>
-                              Die SPICY Media GmbH ist ein Startup aus Düsseldorf mit dem Schwerpunkt Neue Medien.
+                              <strong>{t ('About')} Spicymedia: </strong>
+                              {t ('AboutSpicy')}
                             </p>
                             <p>
-                              <strong>Ziele/Aufgeben: </strong>
+                              <strong>{t ('Goals')}: </strong>
                               Building a component-based front-end (JS/CSS) framework.
                               <br />
                               Developing a responsive web app with HTML, CSS, JavaScript and AngularJS.
@@ -160,7 +160,7 @@ class Resume extends React.Component {
                               Web Development with PHP and Symfony.
                             </p>
                             <p>
-                              <strong>Projects: </strong>
+                              <strong>{t ('Projects')}: </strong>
                               Washeroo, Spa Group Europe, FabFoods
                             </p>
                             <p>
@@ -456,8 +456,7 @@ class Resume extends React.Component {
                     <Col size="12" className="mt-1 mb-2 text-right">
                       <h2>Contact</h2>
                       <h5 class="mt-1 mb-2 text-left">
-                        Ich bin per Mail zu erreichen. Schreiben Sie mich an! Ich stehe für jede Frage zur Verfügung und freue mich weiterzuhelfen zu können. Fragen kostet
-                        nichts! Ansonsten natürlich auch über die sozialen Kanäle. Code Beispiele und Arbeiten gibt es auf GitHub.
+                        {t ('ContactText')}
                       </h5>
                     </Col>
                   </Row>
@@ -468,7 +467,7 @@ class Resume extends React.Component {
                           color="indigo lighten-1"
                           className="text-center"
                         >
-                          Kontaktdaten
+                          {t ('Contact')}
                         </MDBCardHeader>
                         <MDBCardBody>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
@@ -546,7 +545,7 @@ class Resume extends React.Component {
                           color="indigo lighten-1"
                           className="text-center"
                         >
-                          Downloads
+                          {t ('Downloads')}
                         </MDBCardHeader>
                         <MDBCardBody>
                           <MDBCardText style={{textAlign: 'center'}}>
@@ -556,9 +555,9 @@ class Resume extends React.Component {
                               href="./content/CV.pdf"
                               download="Vasilev-CV"
                             >
-                              My CV
+                              {t ('Cv')}
                             </MDBBtn>
-                            <MDBBtn color="indigo">Resume</MDBBtn>
+                            <MDBBtn color="indigo">{t ('Resume')}</MDBBtn>
                           </MDBCardText>
                         </MDBCardBody>
                       </MDBCard>
