@@ -2,7 +2,7 @@
 VARIABLES
 *********************/
 
-$fontPrimary: -apple-system,
+$font-primary: -apple-system,
 BlinkMacSystemFont,
 'Segoe UI',
 Roboto,
@@ -13,6 +13,19 @@ Cantarell,
 'Helvetica Neue',
 sans-serif;
 ;
+$color-primary: #455acf;
+$color-secondary: #6F481E;
+$color-success: #4CAF50;
+$color-danger: #F44336;
+$color-warning: #FFEB3B;
+@mixin font($font-family, $font-size, $font-weight, $line-height, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $color
+}
+
 
 /*********************
 BREAKPOINTS
@@ -54,8 +67,13 @@ STYLES
 *********************/
 
 body {
-    font-family: $fontPrimary
+    font-family: $font-primary
 }
+
+
+/* h1 {
+    @include font($font-primary, 36px, bold, 20px, $color-primary);
+} */
 
 .h1,
 .h2,
@@ -69,7 +87,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $fontPrimary
+    font-family: $font-primary
 }
 
 .App {
@@ -79,7 +97,7 @@ h6 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: $fontPrimary
+    font-family: $font-primary
 }
 
 .App-logo {
@@ -127,7 +145,6 @@ h6 {
 
 .free-bird {
     margin-top: -150px;
-
     @include for-phone-only {
         padding-right: 30px;
         padding-left: 30px;
@@ -143,11 +160,9 @@ Header Styles
 .navbar {
     @include for-mobile {
         padding: .8rem;
-
         .navbar-brand {
             display: none
         }
-
         .language-change {
             display: flex;
             position: absolute;
@@ -174,19 +189,15 @@ footer {
     background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
     background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
     background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-
     .footer-links-container {
         padding: 3rem 0;
-
         .footer-social {
             padding: 0;
-
             li {
                 display: inline-block;
                 height: 4em;
                 width: 4em;
                 line-height: 4em;
-
                 a {
                     color: #fffdf0;
                     display: inline-flex;
@@ -195,33 +206,27 @@ footer {
                     line-height: 6em;
                     text-align: center;
                     width: 4em;
-
                     i {
                         margin: 0 auto
                     }
                 }
-
                 &.footer-xing {
                     background: #155b9d;
                 }
-
                 &.footer-linkedin {
                     background: #1a9ec4;
                 }
-
                 &.footer-github {
                     background: #3f7aa3;
                 }
             }
         }
     }
-
     .footer-copy {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: transperant;
-
         p {
             margin: 0;
             padding: 1rem
@@ -239,19 +244,15 @@ REACT TABS
     width: 100%;
     display: flex;
     margin-bottom: 3rem;
-
     @include for-mobile() {
         display: block;
     }
-
     .tabs-menu {
         padding: 0
     }
-
     .tabs-content {
         padding: 0
     }
-
     &__tab-list {
         float: none;
         margin: 0;
@@ -263,7 +264,6 @@ REACT TABS
         z-index: 999;
         text-align: center;
         margin: 0;
-
         @include for-mobile() {
             width: 100%;
             display: flex;
@@ -274,7 +274,6 @@ REACT TABS
             margin: 0 auto 30px auto;
         }
     }
-
     &__tab {
         display: flex;
         align-items: center;
@@ -282,37 +281,30 @@ REACT TABS
         height: 80px;
         border-bottom: 1px solid white;
         color: #fff;
-
         @include for-mobile() {
             width: 120px;
             border: none
         }
-
         @include for-phone-only() {
             width: auto;
             padding: 0 10px;
             border: none
         }
-
         &--selected {
             background: #fff;
             color: #3f51b5;
             font-weight: bold;
-
             @include for-mobile() {
                 background: #3f51b5;
                 color: #fff
             }
         }
-
         &--disabled {
             color: red;
             cursor: default;
         }
-
         &:focus {
             outline: none;
-
             &:after {
                 content: "";
                 position: absolute;
@@ -323,22 +315,18 @@ REACT TABS
                 background: #fff;
             }
         }
-
         &:hover {
             background: #ffffff24;
             color: #ededed;
         }
-
         p {
             margin: 0;
             cursor: pointer;
         }
     }
-
     &__tab-panel {
         display: none;
         text-align: left;
-
         &--selected {
             display: block;
         }
@@ -354,7 +342,6 @@ ADDRESS CARD
     .card {
         min-height: 240px;
         margin-bottom: 15px;
-
         .card-body {
             display: flex;
             padding: 0;
@@ -368,26 +355,21 @@ ADDRESS CARD
     color: #052422;
     font-size: 110%;
     margin-top: 20px;
-
     .address-card-info-group {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-
         .fa {
             &.icon-location {
                 font-size: 34px;
             }
-
             &.icon-phone {
                 font-size: 26px;
             }
-
             &.icon-mail {
                 font-size: 22px;
             }
         }
-
         .contact-info-text {
             margin: 0
         }
@@ -404,7 +386,6 @@ SOCIAL MEDIA WITH ICONS
     height: 3em;
     width: 13.5em;
     margin: 70px auto;
-
     li {
         display: block;
         height: 4em;
@@ -423,26 +404,22 @@ SOCIAL MEDIA WITH ICONS
         transform: rotate(45deg);
         text-align: center;
         width: 4em;
-
         &.list-xing {
             background: #155b9d;
             left: 50%;
             top: 0%;
             padding-top: 5px;
         }
-
         &.list-linkedin {
             background: #1a9ec4;
             bottom: 0;
             left: 25%;
         }
-
         &.list-github {
             background: #3f7aa3;
             bottom: 0;
             left: 75%;
         }
-
         a {
             color: #fffdf0;
             display: inline-flex;
@@ -456,7 +433,6 @@ SOCIAL MEDIA WITH ICONS
             -o-transform: rotate(-45deg);
             transform: rotate(-45deg);
             width: 4em;
-
             &:hover {
                 -webkit-transform: scale(1.3, 1.3) rotate(45deg);
                 -moz-transform: scale(1.3, 1.3) rotate(45deg);
@@ -464,7 +440,6 @@ SOCIAL MEDIA WITH ICONS
                 -o-transform: scale(1.3, 1.3) rotate(45deg);
                 transform: scale(1.3, 1.3) rotate(45deg);
             }
-
             i {
                 margin: 0 auto
             }
@@ -485,18 +460,15 @@ HOME PAGE
         background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
         background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
     }
-
     .index-image {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         height: 100vh;
-
         @include for-mobile {
             background-position: center right;
         }
     }
-
     h6 {
         line-height: 1.7;
     }

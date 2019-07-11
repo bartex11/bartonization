@@ -148,7 +148,7 @@ class Resume extends React.Component {
                           <MDBCardTitle>{t ('Frontend')}</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <p>
-                              <strong>{t ('About')} Spicymedia: </strong>
+                              <strong>{t ('About')}Spicymedia: </strong>
                               {t ('AboutSpicy')}
                             </p>
                             <p>
@@ -164,7 +164,7 @@ class Resume extends React.Component {
                               Washeroo, Spa Group Europe, FabFoods
                             </p>
                             <p>
-                              <strong>Angewandte Technologien: </strong>
+                              <strong>{t ('Technologies')}: </strong>
                               HTML5, CSS3, Java Script, Angular, React, Symfony, Shopify, Odoo ....
                             </p>
                           </MDBCardText>
@@ -181,7 +181,7 @@ class Resume extends React.Component {
                       className="text-right p-0"
                     >
                       <h6 class="mt-3">
-                        <strong>Januar 2016 – Jetzt</strong>
+                        <strong>{t ('January')} 2016 – {t ('Present')}</strong>
                       </h6>
                       <div class="mt-3">
                         <Pill pill>HTML5</Pill>
@@ -201,14 +201,14 @@ class Resume extends React.Component {
                           <MDBCardTitle>Web Deweloper</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <p>
-                              <strong>Ziele/Aufgeben: </strong>
+                              <strong>{t ('Goals')}: </strong>
                               Umsetzung und Entwicklung von Web pages.
                             </p>
                             <p>
-                              <strong>Projects: </strong>NN, KK, Askora
+                              <strong>{t ('Projects')}: </strong>NN, KK, Askora
                             </p>
                             <p>
-                              <strong>Angewandte Technologien: </strong>
+                              <strong>{t ('Technologies')}: </strong>
                               HTML5, CSS3, Java Script, Bootsrtap, SEO....
                             </p>
                           </MDBCardText>
