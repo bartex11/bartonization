@@ -237,9 +237,9 @@ class App extends Component {
               <Footer className="text-center">
                 <Container className="text-center footer-links-container">
                   <Row>
-                    <Col xs="12" sm="12" md="3" lg="3">
-                      <h5 className="title">BARTEX</h5>
-                      <ul style={{padding: '0'}}>
+                    <Col xs="12" sm="12" md="3" lg="3" className="footer-col">
+                      <h5 className="title footer-col-title">Bartonization</h5>
+                      <ul className="footer-list-links">
                         <li className="list-unstyled">
                           <Link to="/">{t ('Home')}</Link>
                         </li>
@@ -254,9 +254,11 @@ class App extends Component {
                         </li>
                       </ul>
                     </Col>
-                    <Col xs="12" sm="12" md="2" lg="3">
-                      <h5 className="title">PROJECT</h5>
-                      <ul style={{padding: '0'}}>
+                    <Col xs="12" sm="12" md="2" lg="3" className="footer-col">
+                      <h5 className="title footer-col-title">
+                        {t ('Projects')}
+                      </h5>
+                      <ul className="footer-list-links">
                         <li className="list-unstyled">
                           <Link to="/askora">Askora</Link>
                         </li>
@@ -269,8 +271,8 @@ class App extends Component {
 
                       </ul>
                     </Col>
-                    <Col xs="12" sm="12" md="4" lg="3">
-                      <h5 className="title">GET IN TOUCH</h5>
+                    <Col xs="12" sm="12" md="4" lg="3" className="footer-col">
+                      <h5 className="title footer-col-title">Get in touch</h5>
                       <ul className="footer-social">
                         <li className="footer-xing">
                           <a
@@ -301,8 +303,8 @@ class App extends Component {
                         </li>
                       </ul>
                     </Col>
-                    <Col xs="12" sm="12" md="3" lg="3">
-                      <h5 className="title">LANGUAGE</h5>
+                    <Col xs="12" sm="12" md="3" lg="3" className="footer-col">
+                      <h5 className="title footer-col-title">Language</h5>
                       <div className="language-change">
                         <span onClick={() => changeLanguage ('de')}>
                           <img
