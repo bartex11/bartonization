@@ -557,7 +557,13 @@ class Resume extends React.Component {
                             >
                               {t ('Cv')}
                             </MDBBtn>
-                            <MDBBtn color="indigo">{t ('Resume')}</MDBBtn>
+                            <MDBBtn
+                              color="indigo"
+                              href="./content/Resume.pdf"
+                              download="Vasilev-Resume"
+                            >
+                              {t ('Resume')}
+                            </MDBBtn>
                           </MDBCardText>
                         </MDBCardBody>
                       </MDBCard>
