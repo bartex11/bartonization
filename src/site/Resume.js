@@ -311,7 +311,7 @@ class Resume extends React.Component {
                           LANGUAGES
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Special title treatment</MDBCardTitle>
+                          <MDBCardTitle>Special title languages</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
@@ -359,7 +359,7 @@ class Resume extends React.Component {
                           FRAMEWORKS & LIBS
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Special title treatment</MDBCardTitle>
+                          <MDBCardTitle>Special title frameworks</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
@@ -410,7 +410,7 @@ class Resume extends React.Component {
                           ADDITIONAL
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Special title treatment</MDBCardTitle>
+                          <MDBCardTitle>Special title additional</MDBCardTitle>
                           <MDBCardText style={{fontSize: '1.25rem'}}>
                             <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
