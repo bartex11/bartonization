@@ -272,7 +272,9 @@ class App extends Component {
                       </ul>
                     </Col>
                     <Col xs="12" sm="12" md="4" lg="3" className="footer-col">
-                      <h5 className="title footer-col-title">Get in touch</h5>
+                      <h5 className="title footer-col-title">
+                        {t ('Social')}
+                      </h5>
                       <ul className="footer-social">
                         <li className="footer-xing">
                           <a
@@ -304,7 +306,9 @@ class App extends Component {
                       </ul>
                     </Col>
                     <Col xs="12" sm="12" md="3" lg="3" className="footer-col">
-                      <h5 className="title footer-col-title">Language</h5>
+                      <h5 className="title footer-col-title">
+                        {t ('Language')}
+                      </h5>
                       <div className="language-change">
                         <span onClick={() => changeLanguage ('de')}>
                           <img
