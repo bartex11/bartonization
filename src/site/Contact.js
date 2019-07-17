@@ -121,10 +121,19 @@ class Contact extends React.Component {
                   </CardHeader>
                   <CardBody>
                     <CardText style={{textAlign: 'center'}} tag="div">
-                      <Button outline color="indigo">
+                      <Button
+                        outline
+                        color="indigo"
+                        href="./content/CV.pdf"
+                        download="Vasilev-CV"
+                      >
                         {t ('Cv')}
                       </Button>
-                      <Button color="indigo">
+                      <Button
+                        color="indigo"
+                        href="./content/Resume.pdf"
+                        download="Vasilev-Resume"
+                      >
                         {t ('Resume')}
                       </Button>
                     </CardText>
