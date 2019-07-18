@@ -18,6 +18,7 @@ import {
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
 import Head from '../components/PageHeading';
+import Data from '../data/Data';
 import './Portfolio.scss';
 
 const ProjectImg = styled.div``;
@@ -36,52 +37,7 @@ class Protfolio extends React.Component {
 
   state = {
     photoIndex: 0,
-    free: [
-      {
-        name: 'Askora Translation',
-        imgSrc: './images/Askora/1.jpg',
-        link: '/askora',
-        technologies: 'HTML5,CSS3,jQuery,PHP, Responsive Web Design ',
-        tools: 'Google SEO Tools',
-      },
-      {
-        name: 'Dentist Chlosta',
-        imgSrc: './images/NN/1.png',
-        link: '/chlosta',
-        technologies: 'HTML5, CSS3, jQuery,',
-        tools: 'Wordpress, Google SEO tools, User interface design (UI)',
-      },
-      {
-        name: 'Kosmetik Katerina',
-        imgSrc: './images/KK/1-3.jpg',
-        link: '/katerina',
-        technologies: 'HTML5,CSS3,JavaScript,Responsive Web Design',
-        tools: 'Bootstrap, Git, SEO Tools,',
-      },
-    ],
-    spicy: [
-      {
-        name: 'FabFoods',
-        imgSrc: './images/FF/1.png',
-        url: 'https://fabfoods.de',
-        technologies: 'React, Styled components, Liquid',
-        tools: 'Trello, Git, Shopify, Oddo ',
-      },
-      {
-        name: 'Spa Group Europe',
-        imgSrc: './images/Spa/1.png',
-        url: 'https://entspannung-buchen.de/',
-        technologies: 'React, Styled components',
-        tools: 'Trello, Git',
-      },
-      {
-        name: 'Washeroo',
-        imgSrc: './images/WROO/1.png',
-        url: 'https://washeroo.de/',
-        technologies: 'Angular, CSS3, SASS, Symfony, Twig  ',
-        tools: 'Jira, Bitbucket, Git',
-      },
-    ],
+    data: Data,
   };
   renderImages = projects => {
     let photoIndex = -1;
@@ -150,7 +106,7 @@ class Protfolio extends React.Component {
     });
   };
   render () {
-    const {free, spicy} = this.state;
+    const {data} = this.state;
     const {t} = this.props;
 
     return (
@@ -185,8 +141,8 @@ class Protfolio extends React.Component {
                           <ProjectImg>
 
                             <Row>
-                              {this.renderImages (spicy)}
-                              {this.renderImages (free)}
+                              {this.renderImages (data.spicy)}
+                              {this.renderImages (data.free)}
                             </Row>
 
                           </ProjectImg>
@@ -209,7 +165,7 @@ class Protfolio extends React.Component {
                           <ProjectImg>
                             <div className="-lightbox p-3">
 
-                              <Row>{this.renderImages (free)}</Row>
+                              <Row>{this.renderImages (data.free)}</Row>
 
                             </div>
                           </ProjectImg>
@@ -232,7 +188,7 @@ class Protfolio extends React.Component {
                           <ProjectImg>
                             <div className="-lightbox p-3">
 
-                              <Row>{this.renderImages (spicy)}</Row>
+                              <Row>{this.renderImages (data.spicy)}</Row>
 
                             </div>
                           </ProjectImg>
