@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/bartonization/static/css/main.485dc627.chunk.css"
   },
   {
-    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
-    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
+    "revision": "df7b648ce5356ea1ebce435b3459fd60",
+    "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
     "revision": "4c958d8cd23126aa3478",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "b06871f281fee6b241d60582ae9369b9",
-    "url": "/bartonization/static/media/fontawesome-webfont.b06871f2.ttf"
-  },
-  {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "/bartonization/static/media/fontawesome-webfont.674f50d2.eot"
+  },
+  {
+    "revision": "b06871f281fee6b241d60582ae9369b9",
+    "url": "/bartonization/static/media/fontawesome-webfont.b06871f2.ttf"
   },
   {
     "revision": "912ec66d7572ff821749319396470bde",
@@ -92,20 +92,20 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Thin.7500519d.woff"
   },
   {
-    "revision": "3b813c2ae0d04909a33a18d792912ee7",
-    "url": "/bartonization/static/media/Roboto-Light.3b813c2a.woff"
-  },
-  {
     "revision": "ba3dcd8903e3d0af5de7792777f8ae0d",
     "url": "/bartonization/static/media/Roboto-Regular.ba3dcd89.woff"
   },
   {
-    "revision": "fc78759e93a6cac50458610e3d9d63a0",
-    "url": "/bartonization/static/media/Roboto-Medium.fc78759e.woff"
+    "revision": "3b813c2ae0d04909a33a18d792912ee7",
+    "url": "/bartonization/static/media/Roboto-Light.3b813c2a.woff"
   },
   {
     "revision": "dc81817def276b4f21395f7ea5e88dcd",
     "url": "/bartonization/static/media/Roboto-Bold.dc81817d.woff"
+  },
+  {
+    "revision": "fc78759e93a6cac50458610e3d9d63a0",
+    "url": "/bartonization/static/media/Roboto-Medium.fc78759e.woff"
   },
   {
     "revision": "94998475f6aea65f558494802416c1cf",
@@ -116,8 +116,8 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Light.46e48ce0.ttf"
   },
   {
-    "revision": "df7b648ce5356ea1ebce435b3459fd60",
-    "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
+    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
+    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
   },
   {
     "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
