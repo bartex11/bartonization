@@ -1,5 +1,5 @@
 import React from 'react';
-import {translate} from 'react-i18next';
+import {withNamespaces} from 'react-i18next';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {
@@ -41,6 +41,7 @@ class Protfolio extends React.Component {
   };
   renderImages = projects => {
     let photoIndex = -1;
+    const {t} = this.props;
 
     return projects.map (project => {
       photoIndex++;
@@ -59,7 +60,7 @@ class Protfolio extends React.Component {
         link = (
           <Link to={project.link}>
             <Button color="indigo" rounded>
-              More details
+              {t ('More')}
             </Button>
           </Link>
         );
@@ -67,7 +68,7 @@ class Protfolio extends React.Component {
         link = (
           <a href={project.url} target="_blank" rel="noopener noreferrer">
             <Button color="indigo" rounded>
-              View online
+              {t ('ViewOnline')}
             </Button>
           </a>
         );
@@ -86,7 +87,7 @@ class Protfolio extends React.Component {
               <CardTitle>{project.name}</CardTitle>
               <CardText tag="div">
                 <div className="techno-container">
-                  <strong>Angewandte Technologien: </strong>
+                  <strong>{t ('TechnologiesApplied')}: </strong>
                   <br />
                   {techno}
                 </div>
@@ -207,4 +208,4 @@ class Protfolio extends React.Component {
   }
 }
 
-export default translate ('translations') (Protfolio);
+export default withNamespaces () (Protfolio);
