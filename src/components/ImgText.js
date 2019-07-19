@@ -104,4 +104,7 @@ ImgText.propTypes = {
   alt: PropTypes.string,
 };
 
+/*  HOW TO USE <ImgText src="./images/Askora/1.jpg" text="asa, dad" />  */
+
+/* import ImgText from '../components/ImgText'; */
 export default ImgText;

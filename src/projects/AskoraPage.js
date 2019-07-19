@@ -14,8 +14,8 @@ import {
   CardImage,
 } from 'mdbreact';
 
-/* import ImgText from '../components/ImgText'; */
 import './projects.scss';
+import Data from '../data/Data';
 
 class AskoraPage extends Component {
   componentDidMount () {
@@ -24,33 +24,17 @@ class AskoraPage extends Component {
   }
 
   state = {
-    photoIndex: 0,
-    tools: [
-      {
-        name: 'HTML',
-        imgSrc: './images/Tools/HTML.png',
-        description: 'HTML description',
-      },
-      {
-        name: 'CSS',
-        imgSrc: './images/Tools/CSS.png',
-        description: 'CSS description',
-      },
-      {
-        name: 'JS',
-        imgSrc: './images/Tools/JS.png',
-        description: 'Javascript description',
-      },
-    ],
+    Index: 0,
+    data: Data,
   };
-  renderImages = projects => {
-    let photoIndex = -1;
+  renderTools = projects => {
+    let Index = -1;
 
     return projects.map (project => {
-      photoIndex++;
+      Index++;
 
       return (
-        <Col xs="12" sm="12" md="4" lg="4" className="mb-4" key={photoIndex}>
+        <Col xs="12" sm="12" md="4" lg="4" className="mb-4" key={Index}>
           <Card>
             <CardImage
               className="img-fluid"
@@ -71,43 +55,30 @@ class AskoraPage extends Component {
     });
   };
 
+  renderCarousel = images => {
+    let Index = -1;
+
+    return images.map (image => {
+      Index++;
+
+      return (
+        <CarouselItem itemId={image.id} key={Index}>
+          <View>
+            <img
+              className="d-block w-100"
+              src={image.imgSrc}
+              alt={image.name}
+            />
+          </View>
+
+        </CarouselItem>
+      );
+    });
+  };
+
   render () {
-    const {tools} = this.state;
-    const images = [
-      {
-        id: 1,
-        imgSrc: './images/Askora/1.jpg',
-        name: 'Askora Translation',
-      },
-      {
-        id: 2,
-        imgSrc: './images/Askora/2.jpg',
-        name: 'Kosmetikstudio Katerina',
-      },
-      {
-        id: 3,
-        imgSrc: './images/Askora/3.jpg',
-        name: 'Dentist Chlosta',
-      },
-      {
-        id: 4,
-        imgSrc: './images/Askora/4.jpg',
-        name: 'Dentist Chlosta',
-      },
-    ];
+    const {data} = this.state;
 
-    const image = images.map (project => (
-      <CarouselItem itemId={project.id} key={project.id}>
-        <View>
-          <img
-            className="d-block w-100"
-            src={project.imgSrc}
-            alt={project.name}
-          />
-        </View>
-
-      </CarouselItem>
-    ));
     return (
       <Container>
         <Row>
@@ -121,7 +92,7 @@ class AskoraPage extends Component {
               className="z-depth-1"
             >
               <CarouselInner>
-                {image}
+                {this.renderCarousel (data.imagesAskora)}
               </CarouselInner>
             </Carousel>
           </Col>
@@ -129,10 +100,10 @@ class AskoraPage extends Component {
         <h1 class="text-center">What i did</h1>
         <Row>
 
-          {this.renderImages (tools)}
+          {this.renderTools (data.tools)}
 
         </Row>
-        {/* <ImgText src="./images/Askora/1.jpg" text="asa, dad" /> */}
+
       </Container>
     );
   }

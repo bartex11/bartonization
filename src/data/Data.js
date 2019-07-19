@@ -45,6 +45,45 @@ var DATA = {
       tools: 'Jira, Bitbucket, Git',
     },
   ],
+  tools: [
+    {
+      name: 'HTML',
+      imgSrc: './images/Tools/HTML.png',
+      description: 'HTML description',
+    },
+    {
+      name: 'CSS',
+      imgSrc: './images/Tools/CSS.png',
+      description: 'CSS description',
+    },
+    {
+      name: 'JS',
+      imgSrc: './images/Tools/JS.png',
+      description: 'Javascript description',
+    },
+  ],
+  imagesAskora: [
+    {
+      id: 1,
+      imgSrc: './images/Askora/1.jpg',
+      name: 'Askora Translation',
+    },
+    {
+      id: 2,
+      imgSrc: './images/Askora/2.jpg',
+      name: 'Kosmetikstudio Katerina',
+    },
+    {
+      id: 3,
+      imgSrc: './images/Askora/3.jpg',
+      name: 'Dentist Chlosta',
+    },
+    {
+      id: 4,
+      imgSrc: './images/Askora/4.jpg',
+      name: 'Dentist Chlosta',
+    },
+  ],
 };
 
 export default DATA;
