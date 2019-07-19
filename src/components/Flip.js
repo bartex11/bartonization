@@ -32,28 +32,28 @@ class Flip extends React.Component {
     });
   }
   render() {
-    const { src, width, height, alt } = this.props;
+    const { src, alt, header, subHeader, description, footer } = this.props;
 
     return (
       <div class="member-item material-card">
         <h2>
-          <span>aöalal</span>
-          <strong>sdasfsd</strong>
+          <span>{header}</span>
+          <strong>{subHeader}</strong>
         </h2>
 
         <div class="mc-content">
           <div class="img-container">
-            <Image src={src} className="img-member" />
+            <Image src={src} alt={alt} className="img-member" />
           </div>
 
-          <div class="mc-description">asfasasfa</div>
+          <div class="mc-description">{description}</div>
         </div>
 
         <a class="mc-btn-action">
           <i class="fa fa-bars" />
         </a>
         <div class="mc-footer">
-          <p>lfslfsfl</p>
+          <p>{footer}</p>
         </div>
       </div>
     );
@@ -63,6 +63,10 @@ class Flip extends React.Component {
 Flip.defaultProps = {
   src: '',
   alt: 'image',
+  header: 'Header',
+  subHeader: 'Sub header',
+  description: 'Description',
+  footer: 'Footer',
 };
 
 Flip.propTypes = {

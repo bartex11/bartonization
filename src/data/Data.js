@@ -48,16 +48,19 @@ var DATA = {
   tools: [
     {
       name: 'HTML',
+      subName: 'Test',
       imgSrc: './images/Tools/HTML.png',
       description: 'HTML description',
     },
     {
       name: 'CSS',
+      subName: 'Test',
       imgSrc: './images/Tools/CSS.png',
       description: 'CSS description',
     },
     {
       name: 'JS',
+      subName: 'Test',
       imgSrc: './images/Tools/JS.png',
       description: 'Javascript description',
     },

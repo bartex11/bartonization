@@ -14,6 +14,7 @@ class AskoraPage extends Component {
     Index: 0,
     data: Data,
   };
+
   renderTools = (projects) => {
     let Index = -1;
 
@@ -33,7 +34,19 @@ class AskoraPage extends Component {
       );
     });
   };
+  renderFlip = (projects) => {
+    let Index = -1;
 
+    return projects.map((project) => {
+      Index++;
+
+      return (
+        <Col xs="12" sm="12" md="12" lg="4">
+          <Flip src={project.imgSrc} alt={project.name} key={Index} header={project.name} subHeader={project.subName} description={project.description} footer={project.name} />
+        </Col>
+      );
+    });
+  };
   renderCarousel = (images) => {
     let Index = -1;
 
@@ -68,11 +81,7 @@ class AskoraPage extends Component {
           <Row>{this.renderTools(data.tools)}</Row>
         </Container>
         <Container>
-          <Row>
-            <Col xs="12" sm="12" md="12" lg="4">
-              <Flip src="./images/Tools/HTML.png" />
-            </Col>
-          </Row>
+          <Row>{this.renderFlip(data.tools)}</Row>
         </Container>
       </div>
     );
