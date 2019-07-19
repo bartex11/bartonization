@@ -49,20 +49,23 @@ var DATA = {
     {
       name: 'HTML',
       subName: 'Test',
-      imgSrc: './images/Tools/HTML.png',
+      imgSrc: './images/Tools/HTML5.svg',
       description: 'HTML description',
+      btn: 'btn-html',
     },
     {
       name: 'CSS',
       subName: 'Test',
-      imgSrc: './images/Tools/CSS.png',
+      imgSrc: './images/Tools/CSS3.svg',
       description: 'CSS description',
+      btn: 'btn-css',
     },
     {
       name: 'JS',
       subName: 'Test',
-      imgSrc: './images/Tools/JS.png',
+      imgSrc: './images/Tools/javascript.svg',
       description: 'Javascript description',
+      btn: 'btn-js',
     },
   ],
   imagesAskora: [

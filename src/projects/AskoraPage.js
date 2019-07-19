@@ -42,7 +42,16 @@ class AskoraPage extends Component {
 
       return (
         <Col xs="12" sm="12" md="12" lg="4">
-          <Flip src={project.imgSrc} alt={project.name} key={Index} header={project.name} subHeader={project.subName} description={project.description} footer={project.name} />
+          <Flip
+            src={project.imgSrc}
+            alt={project.name}
+            key={Index}
+            btn={project.btn}
+            header={project.name}
+            subHeader={project.subName}
+            description={project.description}
+            footer={project.name}
+          />
         </Col>
       );
     });

@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import $ from 'jquery';
 import styled from 'styled-components';
+import classNames from 'classnames';
 
-import './Flip.css';
+import './Flip.scss';
 
 const Image = styled.img``;
 
@@ -32,11 +33,15 @@ class Flip extends React.Component {
     });
   }
   render() {
-    const { src, alt, header, subHeader, description, footer } = this.props;
+    const { src, alt, header, subHeader, description, footer, className, btn } = this.props;
+
+    const classes = classNames(btn, 'mc-btn-action', className);
+    const classHeader = classNames(header, className);
+    const classFooter = classNames(header, 'mc-footer', className);
 
     return (
       <div class="member-item material-card">
-        <h2>
+        <h2 className={classHeader}>
           <span>{header}</span>
           <strong>{subHeader}</strong>
         </h2>
@@ -49,10 +54,10 @@ class Flip extends React.Component {
           <div class="mc-description">{description}</div>
         </div>
 
-        <a class="mc-btn-action">
+        <div className={classes}>
           <i class="fa fa-bars" />
-        </a>
-        <div class="mc-footer">
+        </div>
+        <div className={classFooter}>
           <p>{footer}</p>
         </div>
       </div>
