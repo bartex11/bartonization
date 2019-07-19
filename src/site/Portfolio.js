@@ -1,57 +1,54 @@
 import React from 'react';
-import {withNamespaces} from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
-import {
-  Container,
-  Col,
-  Row,
-  Button,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText,
-  CardHeader,
-  CardImage,
-  MDBBadge,
-} from 'mdbreact';
-import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import { Link } from 'react-router-dom';
+import { Container, Col, Row, Button, Card, CardBody, CardTitle, CardText, CardHeader, CardImage, MDBBadge } from 'mdbreact';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import Head from '../components/PageHeading';
+
 import Data from '../data/Data';
 import './Portfolio.scss';
 
 const ProjectImg = styled.div``;
 
-const Pill = styled (MDBBadge)`
-  background-color: ${props => props.theme.colors.primary}a6!important;
+const Pill = styled(MDBBadge)`
+  background-color: ${(props) => props.theme.colors.primary}a6!important;
   padding: .5em 1em .5em 1em;
   margin: .2em
 `;
 
 class Protfolio extends React.Component {
-  componentDidMount () {
+  componentDidMount() {
     document.title = 'Portfolio';
-    window.scrollTo (0, 0);
+    window.scrollTo(0, 0);
   }
 
   state = {
     photoIndex: 0,
     data: Data,
   };
-  renderImages = projects => {
+  renderImages = (projects) => {
     let photoIndex = -1;
-    const {t} = this.props;
+    const { t } = this.props;
 
-    return projects.map (project => {
+    return projects.map((project) => {
       photoIndex++;
 
-      let techno = project.technologies.split (',').map (item => {
-        return <Pill pill key={item}>{item}</Pill>;
+      let techno = project.technologies.split(',').map((item) => {
+        return (
+          <Pill pill key={item}>
+            {item}
+          </Pill>
+        );
       });
 
-      let tool = project.tools.split (',').map (item => {
-        return <Pill pill key={item}>{item}</Pill>;
+      let tool = project.tools.split(',').map((item) => {
+        return (
+          <Pill pill key={item}>
+            {item}
+          </Pill>
+        );
       });
 
       let link;
@@ -60,7 +57,7 @@ class Protfolio extends React.Component {
         link = (
           <Link to={project.link}>
             <Button color="indigo" rounded>
-              {t ('More')}
+              {t('More')}
             </Button>
           </Link>
         );
@@ -68,7 +65,7 @@ class Protfolio extends React.Component {
         link = (
           <a href={project.url} target="_blank" rel="noopener noreferrer">
             <Button color="indigo" rounded>
-              {t ('ViewOnline')}
+              {t('ViewOnline')}
             </Button>
           </a>
         );
@@ -77,17 +74,12 @@ class Protfolio extends React.Component {
       return (
         <Col md="6" className="mb-4" key={photoIndex}>
           <Card>
-            <CardImage
-              className="img-fluid"
-              src={project.imgSrc}
-              alt={project.name}
-              waves
-            />
+            <CardImage className="img-fluid" src={project.imgSrc} alt={project.name} waves />
             <CardBody>
               <CardTitle>{project.name}</CardTitle>
               <CardText tag="div">
                 <div className="techno-container">
-                  <strong>{t ('TechnologiesApplied')}: </strong>
+                  <strong>{t('TechnologiesApplied')}: </strong>
                   <br />
                   {techno}
                 </div>
@@ -99,20 +91,19 @@ class Protfolio extends React.Component {
               </CardText>
 
               {link}
-
             </CardBody>
           </Card>
         </Col>
       );
     });
   };
-  render () {
-    const {data} = this.state;
-    const {t} = this.props;
+  render() {
+    const { data } = this.state;
+    const { t } = this.props;
 
     return (
       <div className="portfolio-container">
-        <Head title={t ('Portfolio')} />
+        <Head title={t('Portfolio')} />
 
         <Container>
           <Row>
@@ -133,71 +124,55 @@ class Protfolio extends React.Component {
 
               <Col xs="12" sm="12" md="12" lg="10" className="tabs-content">
                 <TabPanel>
-
                   <Row>
                     <Col size="12">
                       <Card>
                         <CardHeader color="indigo lighten-1">All</CardHeader>
                         <CardBody>
                           <ProjectImg>
-
                             <Row>
-                              {this.renderImages (data.spicy)}
-                              {this.renderImages (data.free)}
+                              {this.renderImages(data.spicy)}
+                              {this.renderImages(data.free)}
                             </Row>
-
                           </ProjectImg>
                         </CardBody>
                       </Card>
                     </Col>
                   </Row>
-
                 </TabPanel>
 
                 <TabPanel>
-
                   <Row>
                     <Col size="12">
                       <Card>
-                        <CardHeader color="indigo lighten-1">
-                          Freee
-                        </CardHeader>
+                        <CardHeader color="indigo lighten-1">Freee</CardHeader>
                         <CardBody>
                           <ProjectImg>
                             <div className="-lightbox p-3">
-
-                              <Row>{this.renderImages (data.free)}</Row>
-
+                              <Row>{this.renderImages(data.free)}</Row>
                             </div>
                           </ProjectImg>
                         </CardBody>
                       </Card>
                     </Col>
                   </Row>
-
                 </TabPanel>
 
                 <TabPanel>
-
                   <Row>
                     <Col size="12">
                       <Card>
-                        <CardHeader color="indigo lighten-1">
-                          Spicy
-                        </CardHeader>
+                        <CardHeader color="indigo lighten-1">Spicy</CardHeader>
                         <CardBody>
                           <ProjectImg>
                             <div className="-lightbox p-3">
-
-                              <Row>{this.renderImages (data.spicy)}</Row>
-
+                              <Row>{this.renderImages(data.spicy)}</Row>
                             </div>
                           </ProjectImg>
                         </CardBody>
                       </Card>
                     </Col>
                   </Row>
-
                 </TabPanel>
               </Col>
             </Tabs>
@@ -208,4 +183,4 @@ class Protfolio extends React.Component {
   }
 }
 
-export default withNamespaces () (Protfolio);
+export default withNamespaces()(Protfolio);
