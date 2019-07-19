@@ -7,11 +7,29 @@ import Animation from './Animation';
 import styled from 'styled-components';
 
 const Test = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+    grid-template-areas: "image-container text-container";
 
 `;
 const Image = styled.img`
 
 `;
+
+const TextBlock = styled.div`
+grid-area: text-container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f0e9;
+
+`;
+const ImageBlock = styled.div`
+  grid-area: image-container;
+
+`;
+
 class ImgText extends React.Component {
   render () {
     const {
@@ -49,16 +67,26 @@ class ImgText extends React.Component {
       return (
         <Animation type="bounce">
           <Test className={classes} style={imageStyles}>
-            <Image src={src} alt={alt} width={width} height={height} />
-            <p className={this.props.className} style={textStyles} />
+            <ImageBlock>
+              <Image src={src} alt={alt} width={width} height={height} />
+            </ImageBlock>
+            <TextBlock>
+              <p className={this.props.className} style={textStyles}>{text} </p>
+            </TextBlock>
           </Test>
         </Animation>
       );
     }
     return (
       <Test className={this.props.className} style={imageStyles}>
-        <img src={src} alt={alt} width={width} height={height} />
-        <p className={this.props.className} style={textStyles}>{text} </p>
+        <ImageBlock>
+          <Image src={src} alt={alt} width={width} height={height} />
+        </ImageBlock>
+
+        <TextBlock>
+          <p className={this.props.className} style={textStyles}>{text} </p>
+        </TextBlock>
+
       </Test>
     );
   }

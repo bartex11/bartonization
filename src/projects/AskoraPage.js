@@ -14,6 +14,7 @@ import {
   CardImage,
 } from 'mdbreact';
 
+/* import ImgText from '../components/ImgText'; */
 import './projects.scss';
 
 class AskoraPage extends Component {
@@ -131,6 +132,7 @@ class AskoraPage extends Component {
           {this.renderImages (tools)}
 
         </Row>
+        {/* <ImgText src="./images/Askora/1.jpg" text="asa, dad" /> */}
       </Container>
     );
   }
