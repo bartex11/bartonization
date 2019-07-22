@@ -9,35 +9,17 @@ import './Flip.scss';
 const Image = styled.img``;
 
 class Flip extends React.Component {
-  componentDidMount () {
-    $ (function () {
-      $ ('.material-card > .mc-btn-action').click (function () {
-        var card = $ (this).parent ('.material-card');
-        var icon = $ (this).children ('i');
-        icon.addClass ('fa-spin-fast');
+  componentDidMount () {}
 
-        if (card.hasClass ('mc-active')) {
-          card.removeClass ('mc-active');
-
-          window.setTimeout (function () {
-            icon
-              .removeClass ('fa-arrow-left')
-              .removeClass ('fa-spin-fast')
-              .addClass ('fa-bars');
-          }, 800);
-        } else {
-          card.addClass ('mc-active');
-
-          window.setTimeout (function () {
-            icon
-              .removeClass ('fa-bars')
-              .removeClass ('fa-spin-fast')
-              .addClass ('fa-arrow-left');
-          }, 800);
-        }
-      });
-    });
+  constructor (props) {
+    super (props);
+    this.state = {addClass: false};
   }
+
+  toggle () {
+    this.setState ({addClass: !this.state.addClass});
+  }
+
   render () {
     const {
       src,
@@ -50,12 +32,22 @@ class Flip extends React.Component {
       btn,
     } = this.props;
 
+    let boxClass = ['member-item material-card'];
+    let btnClass = ['fa fa-bars'];
+    if (this.state.addClass) {
+      boxClass.push ('mc-active');
+      btnClass.pop ();
+      btnClass.push ('fa fa-spin-fast');
+      btnClass.pop ();
+      btnClass.push ('fa fa-arrow-left');
+    }
+
     const classes = classNames (btn, 'mc-btn-action', className);
     const classHeader = classNames (header, className);
     const classFooter = classNames (header, 'mc-footer', className);
 
     return (
-      <div className="member-item material-card">
+      <div className={boxClass.join (' ')}>
         <h2 className={classHeader}>
           <span>{header}</span>
           <strong>{subHeader}</strong>
@@ -69,8 +61,8 @@ class Flip extends React.Component {
           <div className="mc-description">{description}</div>
         </div>
 
-        <div className={classes}>
-          <i className="fa fa-bars" />
+        <div className={classes} onClick={this.toggle.bind (this)}>
+          <i className={btnClass.join (' ')} />
         </div>
         <div className={classFooter}>
           <p>{footer}</p>
