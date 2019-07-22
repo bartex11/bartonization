@@ -68,6 +68,27 @@ var DATA = {
       description: 'JavaScript ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern',
       btn: 'btn-js',
     },
+    {
+      name: 'SEO',
+      subName: 'Search Engine Optimization',
+      imgSrc: './images/Tools/SEO.png',
+      description: 'Search Engine Optimization descr',
+      btn: 'btn-seo',
+    },
+    {
+      name: 'Botstrap',
+      subName: 'Botstrap',
+      imgSrc: './images/Tools/Bootstrap.png',
+      description: 'Bootsrtap descrt',
+      btn: 'btn-bootstrap',
+    },
+    {
+      name: 'Wordpress',
+      subName: 'Responsive WordPress theme',
+      imgSrc: './images/Tools/WordPress.png',
+      description: 'Responsive WordPress theme descrt',
+      btn: 'btn-wordpress',
+    },
   ],
   imagesAskora: [
     {
