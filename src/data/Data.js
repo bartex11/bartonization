@@ -53,6 +53,7 @@ var DATA = {
       description: 'HTML5 ist die fünfte Fassung der Hypertext Markup Language, einer Computersprache zur Auszeichnung und Vernetzung von Texten und anderen Inhalten elektronischer Dokumente, vorwiegend im World Wide Web. Unter Semantik versteht man im Allgemeinen die Bedeutungslehre, die die Bedeutung von Zeichen wie Wörter, Phrasen oder Symbole untersucht. Durch semantisch korrektes HTML verleiht man Inhalten eine Bedeutung. Eine Überschrift wird häufig in etwas größerer Schrift und fett dargestellt, aber nicht jeder fette und groß gedruckte Text ist zwangsläufig eine Überschrift, er könnte auch ein Motto oder ein Zitat sein.',
       btn: 'btn-html',
     },
+
     {
       name: 'CSS',
       subName: 'Cascading Style Sheets',

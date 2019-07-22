@@ -7,11 +7,6 @@ import {
   Container,
   Col,
   Row,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText,
-  CardImage,
 } from 'mdbreact';
 import Flip from '../components/Flip';
 import './projects.scss';
@@ -28,31 +23,6 @@ class AskoraPage extends Component {
     data: Data,
   };
 
-  renderTools = projects => {
-    let Index = -1;
-
-    return projects.map (project => {
-      Index++;
-
-      return (
-        <Col xs="12" sm="12" md="4" lg="4" className="mb-4" key={Index}>
-          <Card>
-            <CardImage
-              className="img-fluid"
-              src={project.imgSrc}
-              alt={project.name}
-              style={{margin: '20px auto', height: '120px'}}
-              waves
-            />
-            <CardBody>
-              <CardTitle>{project.name}</CardTitle>
-              <CardText>{project.description}</CardText>
-            </CardBody>
-          </Card>
-        </Col>
-      );
-    });
-  };
   renderFlip = projects => {
     let Index = -1;
 
@@ -60,11 +30,10 @@ class AskoraPage extends Component {
       Index++;
 
       return (
-        <Col xs="12" sm="12" md="12" lg="4">
+        <Col xs="12" sm="12" md="12" lg="4" key={Index}>
           <Flip
             src={project.imgSrc}
             alt={project.name}
-            key={Index}
             btn={project.btn}
             header={project.name}
             subHeader={project.subName}
@@ -118,12 +87,15 @@ class AskoraPage extends Component {
             </Col>
           </Row>
 
-          {/*    <Row>{this.renderTools (data.tools)}</Row> */}
         </Container>
         <Container>
-          <Row><h1 class="text-center">What i did</h1></Row>
+          <Row><h1 className="text-center">What i did</h1></Row>
 
-          <Row>{this.renderFlip (data.tools)}</Row>
+          <Row>
+
+            {this.renderFlip (data.tools)}
+
+          </Row>
         </Container>
       </div>
     );

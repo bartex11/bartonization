@@ -9,53 +9,68 @@ import './Flip.scss';
 const Image = styled.img``;
 
 class Flip extends React.Component {
-  componentDidMount() {
-    $(function() {
-      $('.material-card > .mc-btn-action').click(function() {
-        var card = $(this).parent('.material-card');
-        var icon = $(this).children('i');
-        icon.addClass('fa-spin-fast');
+  componentDidMount () {
+    $ (function () {
+      $ ('.material-card > .mc-btn-action').click (function () {
+        var card = $ (this).parent ('.material-card');
+        var icon = $ (this).children ('i');
+        icon.addClass ('fa-spin-fast');
 
-        if (card.hasClass('mc-active')) {
-          card.removeClass('mc-active');
+        if (card.hasClass ('mc-active')) {
+          card.removeClass ('mc-active');
 
-          window.setTimeout(function() {
-            icon.removeClass('fa-arrow-left').removeClass('fa-spin-fast').addClass('fa-bars');
+          window.setTimeout (function () {
+            icon
+              .removeClass ('fa-arrow-left')
+              .removeClass ('fa-spin-fast')
+              .addClass ('fa-bars');
           }, 800);
         } else {
-          card.addClass('mc-active');
+          card.addClass ('mc-active');
 
-          window.setTimeout(function() {
-            icon.removeClass('fa-bars').removeClass('fa-spin-fast').addClass('fa-arrow-left');
+          window.setTimeout (function () {
+            icon
+              .removeClass ('fa-bars')
+              .removeClass ('fa-spin-fast')
+              .addClass ('fa-arrow-left');
           }, 800);
         }
       });
     });
   }
-  render() {
-    const { src, alt, header, subHeader, description, footer, className, btn } = this.props;
+  render () {
+    const {
+      src,
+      alt,
+      header,
+      subHeader,
+      description,
+      footer,
+      className,
+      btn,
+    } = this.props;
 
-    const classes = classNames(btn, 'mc-btn-action', className);
-    const classHeader = classNames(header, className);
-    const classFooter = classNames(header, 'mc-footer', className);
+    const classes = classNames (btn, 'mc-btn-action', className);
+    const classHeader = classNames (header, className);
+    const classFooter = classNames (header, 'mc-footer', className);
 
     return (
-      <div class="member-item material-card">
+      <div className="member-item material-card">
         <h2 className={classHeader}>
           <span>{header}</span>
           <strong>{subHeader}</strong>
         </h2>
 
-        <div class="mc-content">
-          <div class="img-container">
+        <div className="mc-content">
+          <div className="img-container">
             <Image src={src} alt={alt} className="img-member" />
           </div>
 
-          <div class="mc-description">{description}</div>
+          <div className="mc-description">{description}</div>
         </div>
 
         <div className={classes}>
-          <i class="fa fa-bars" />
+          <i className="fa fa-bars" />
         </div>
         <div className={classFooter}>
           <p>{footer}</p>
