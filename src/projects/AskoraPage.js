@@ -1,13 +1,26 @@
-import React, { Component } from 'react';
-import { Carousel, CarouselInner, CarouselItem, View, Container, Col, Row, Card, CardBody, CardTitle, CardText, CardImage } from 'mdbreact';
+import React, {Component} from 'react';
+import {
+  Carousel,
+  CarouselInner,
+  CarouselItem,
+  View,
+  Container,
+  Col,
+  Row,
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardImage,
+} from 'mdbreact';
 import Flip from '../components/Flip';
 import './projects.scss';
 import Data from '../data/Data';
 
 class AskoraPage extends Component {
-  componentDidMount() {
+  componentDidMount () {
     document.title = 'Askora';
-    window.scrollTo(0, 0);
+    window.scrollTo (0, 0);
   }
 
   state = {
@@ -15,16 +28,22 @@ class AskoraPage extends Component {
     data: Data,
   };
 
-  renderTools = (projects) => {
+  renderTools = projects => {
     let Index = -1;
 
-    return projects.map((project) => {
+    return projects.map (project => {
       Index++;
 
       return (
         <Col xs="12" sm="12" md="4" lg="4" className="mb-4" key={Index}>
           <Card>
-            <CardImage className="img-fluid" src={project.imgSrc} alt={project.name} style={{ margin: '20px auto', height: '120px' }} waves />
+            <CardImage
+              className="img-fluid"
+              src={project.imgSrc}
+              alt={project.name}
+              style={{margin: '20px auto', height: '120px'}}
+              waves
+            />
             <CardBody>
               <CardTitle>{project.name}</CardTitle>
               <CardText>{project.description}</CardText>
@@ -34,10 +53,10 @@ class AskoraPage extends Component {
       );
     });
   };
-  renderFlip = (projects) => {
+  renderFlip = projects => {
     let Index = -1;
 
-    return projects.map((project) => {
+    return projects.map (project => {
       Index++;
 
       return (
@@ -56,24 +75,28 @@ class AskoraPage extends Component {
       );
     });
   };
-  renderCarousel = (images) => {
+  renderCarousel = images => {
     let Index = -1;
 
-    return images.map((image) => {
+    return images.map (image => {
       Index++;
 
       return (
         <CarouselItem itemId={image.id} key={Index}>
           <View>
-            <img className="d-block w-100" src={image.imgSrc} alt={image.name} />
+            <img
+              className="d-block w-100"
+              src={image.imgSrc}
+              alt={image.name}
+            />
           </View>
         </CarouselItem>
       );
     });
   };
 
-  render() {
-    const { data } = this.state;
+  render () {
+    const {data} = this.state;
 
     return (
       <div>
@@ -81,16 +104,26 @@ class AskoraPage extends Component {
           <Row>
             <Col>
               <h4 className="mt-5 mb-2">Askora Page</h4>
-              <Carousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1">
-                <CarouselInner>{this.renderCarousel(data.imagesAskora)}</CarouselInner>
+              <Carousel
+                activeItem={1}
+                length={4}
+                showControls={true}
+                showIndicators={true}
+                className="z-depth-1"
+              >
+                <CarouselInner>
+                  {this.renderCarousel (data.imagesAskora)}
+                </CarouselInner>
               </Carousel>
             </Col>
           </Row>
-          <h1 class="text-center">What i did</h1>
-          <Row>{this.renderTools(data.tools)}</Row>
+
+          {/*    <Row>{this.renderTools (data.tools)}</Row> */}
         </Container>
         <Container>
-          <Row>{this.renderFlip(data.tools)}</Row>
+          <Row><h1 class="text-center">What i did</h1></Row>
+
+          <Row>{this.renderFlip (data.tools)}</Row>
         </Container>
       </div>
     );
