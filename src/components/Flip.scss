@@ -89,7 +89,7 @@
       border-left-color: transparent;
     }
 
-    &.HTML {
+    &.HTML5 {
       background-color: #e34f26;
 
       &:after {
@@ -352,6 +352,7 @@
 
   .mc-description {
     top: 50px;
+    bottom: 30px;
     padding-top: 4em;
     opacity: 1;
     filter: alpha(opacity=100);
