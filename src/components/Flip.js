@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import $ from 'jquery';
 import styled from 'styled-components';
 import classNames from 'classnames';
 
