@@ -1,17 +1,17 @@
 {
-  "main.css": "/bartonization/static/css/main.c1a385c4.chunk.css",
-  "main.js": "/bartonization/static/js/main.7c55f4f6.chunk.js",
-  "main.js.map": "/bartonization/static/js/main.7c55f4f6.chunk.js.map",
+  "main.css": "/bartonization/static/css/main.0a513287.chunk.css",
+  "main.js": "/bartonization/static/js/main.098fa103.chunk.js",
+  "main.js.map": "/bartonization/static/js/main.098fa103.chunk.js.map",
   "static/css/1.c95e4472.chunk.css": "/bartonization/static/css/1.c95e4472.chunk.css",
   "static/js/1.b04b90fa.chunk.js": "/bartonization/static/js/1.b04b90fa.chunk.js",
   "static/js/1.b04b90fa.chunk.js.map": "/bartonization/static/js/1.b04b90fa.chunk.js.map",
   "runtime~main.js": "/bartonization/static/js/runtime~main.3d03dd08.js",
   "runtime~main.js.map": "/bartonization/static/js/runtime~main.3d03dd08.js.map",
-  "static/media/mdb.css": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf",
+  "static/media/mdb.css": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf",
   "static/media/font-awesome.min.css": "/bartonization/static/media/fontawesome-webfont.fee66e71.woff",
+  "static/css/main.0a513287.chunk.css.map": "/bartonization/static/css/main.0a513287.chunk.css.map",
   "static/css/1.c95e4472.chunk.css.map": "/bartonization/static/css/1.c95e4472.chunk.css.map",
-  "static/css/main.c1a385c4.chunk.css.map": "/bartonization/static/css/main.c1a385c4.chunk.css.map",
   "index.html": "/bartonization/index.html",
-  "precache-manifest.eb02e85ccbfd3868fd7d3ec9201da629.js": "/bartonization/precache-manifest.eb02e85ccbfd3868fd7d3ec9201da629.js",
+  "precache-manifest.ae6a8b44392530650cbb3e25df97cbd7.js": "/bartonization/precache-manifest.ae6a8b44392530650cbb3e25df97cbd7.js",
   "service-worker.js": "/bartonization/service-worker.js"
 }
