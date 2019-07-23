@@ -36,12 +36,10 @@ class Flip extends React.Component {
     if (this.state.addClass) {
       boxClass.push ('mc-active');
       btnClass.pop ();
-      btnClass.push ('fa fa-spin-fast');
-      btnClass.pop ();
-      btnClass.push ('fa fa-arrow-left');
+      btnClass.push ('fa fa-arrow-left fa-spin-fast');
     }
 
-    const classes = classNames (btn, 'mc-btn-action', className);
+    const classBtn = classNames (btn, 'mc-btn-action', className);
     const classHeader = classNames (header, className);
     const classFooter = classNames (header, 'mc-footer', className);
 
@@ -60,7 +58,7 @@ class Flip extends React.Component {
           <div className="mc-description">{description}</div>
         </div>
 
-        <div className={classes} onClick={this.toggle.bind (this)}>
+        <div className={classBtn} onClick={this.toggle.bind (this)}>
           <i className={btnClass.join (' ')} />
         </div>
         <div className={classFooter}>
