@@ -1,63 +1,82 @@
-import React, {Component} from 'react';
-import {Carousel, CarouselInner, CarouselItem, View, Container} from 'mdbreact';
-
+import React, { Component } from 'react';
+import { Carousel, CarouselInner, CarouselItem, View, Container, Col, Row } from 'mdbreact';
+import Flip from '../components/Flip';
 import './projects.scss';
+import Data from '../data/Data';
 
-class AskoraPage extends Component {
-  render () {
-    const images = [
-      {
-        id: 1,
-        imgSrc: './images/Askora/1.jpg',
-        name: 'Askora Translation',
-      },
-      {
-        id: 2,
-        imgSrc: './images/Askora/2.jpg',
-        name: 'Kosmetikstudio Katerina',
-      },
-      {
-        id: 3,
-        imgSrc: './images/Askora/3.jpg',
-        name: 'Dentist Chlosta',
-      },
-      {
-        id: 4,
-        imgSrc: './images/Askora/4.jpg',
-        name: 'Dentist Chlosta',
-      },
-    ];
+class KaterinaPage extends Component {
+  componentDidMount() {
+    document.title = 'Katerina';
+    window.scrollTo(0, 0);
+  }
 
-    const image = images.map (project => (
-      <CarouselItem itemId={project.id} key={project.id}>
-        <View>
-          <img
-            className="d-block w-100"
+  state = {
+    Index: 0,
+    data: Data,
+  };
+
+  renderFlip = (projects) => {
+    let Index = -1;
+
+    return projects.map((project) => {
+      Index++;
+
+      return (
+        <Col xs="12" sm="12" md="12" lg="4" key={Index}>
+          <Flip
             src={project.imgSrc}
             alt={project.name}
+            btn={project.btn}
+            header={project.name}
+            subHeader={project.subName}
+            description={project.description}
+            footer={project.name}
           />
-        </View>
+        </Col>
+      );
+    });
+  };
+  renderCarousel = (images) => {
+    let Index = -1;
 
-      </CarouselItem>
-    ));
+    return images.map((image) => {
+      Index++;
+
+      return (
+        <CarouselItem itemId={image.id} key={Index}>
+          <View>
+            <img className="d-block w-100" src={image.imgSrc} alt={image.name} />
+          </View>
+        </CarouselItem>
+      );
+    });
+  };
+
+  render() {
+    const { data } = this.state;
+
     return (
-      <Container>
+      <div>
+        <Container>
+          <Row>
+            <Col>
+              <h4 className="mt-5 mb-2">Katerina Page</h4>
+              <Carousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1">
+                <CarouselInner>{this.renderCarousel(data.images.Katerina)}</CarouselInner>
+              </Carousel>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <h1 className="text-center">What i did</h1>
+          </Row>
 
-        <h4 className="mt-5 mb-2">Katerina Page</h4>
-        <Carousel
-          activeItem={1}
-          length={4}
-          showControls={true}
-          showIndicators={true}
-          className="z-depth-1"
-        >
-          <CarouselInner>
-            {image}
-          </CarouselInner>
-        </Carousel>
-      </Container>
+          <Row>{this.renderFlip(data.tools.Katerina)}</Row>
+        </Container>
+      </div>
     );
   }
 }
 
-export default AskoraPage;
+export default KaterinaPage;
