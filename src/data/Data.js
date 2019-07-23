@@ -319,44 +319,44 @@ var DATA = {
     Chlosta: [
       {
         id: 1,
-        imgSrc: './images/NN/slider3/1.jpg',
+        imgSrc: './images/NN/slider3/1.jpeg',
         name: 'Askora Translation',
       },
       {
         id: 2,
-        imgSrc: './images/NN/slider3/2.jpg',
+        imgSrc: './images/NN/slider3/2.jpeg',
         name: 'Kosmetikstudio Katerina',
       },
       {
         id: 3,
-        imgSrc: './images/NN/slider3/11.jpg',
+        imgSrc: './images/NN/slider3/11.jpeg',
         name: 'Dentist Chlosta',
       },
       {
         id: 4,
-        imgSrc: './images/NN/slider3/21.jpg',
+        imgSrc: './images/NN/slider3/21.jpeg',
         name: 'Dentist Chlosta',
       },
     ],
     Katerina: [
       {
         id: 1,
-        imgSrc: './images/NN/slider3/1.jpg',
+        imgSrc: './images/KK/slider7/1.jpeg',
         name: 'Askora Translation',
       },
       {
         id: 2,
-        imgSrc: './images/NN/slider3/2.jpg',
+        imgSrc: './images/KK/slider7/2.jpeg',
         name: 'Kosmetikstudio Katerina',
       },
       {
         id: 3,
-        imgSrc: './images/NN/slider3/11.jpg',
+        imgSrc: './images/KK/slider7/3.jpeg',
         name: 'Dentist Chlosta',
       },
       {
         id: 4,
-        imgSrc: './images/NN/slider3/21.jpg',
+        imgSrc: './images/KK/slider7/4.jpeg',
         name: 'Dentist Chlosta',
       },
     ],
