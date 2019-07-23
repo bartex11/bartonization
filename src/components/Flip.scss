@@ -120,6 +120,83 @@
                 border-bottom-color: #ead31c;
             }
         }
+        &.SEO {
+            background-color: #4775a6;
+            &:after {
+                border-top-color: #4775a6;
+                border-right-color: #4775a6;
+            }
+            &:before {
+                border-right-color: #6ba6e5;
+                border-bottom-color: #6ba6e5;
+            }
+        }
+        &.Bootstrap {
+            background-color: #1f0e39;
+            &:after {
+                border-top-color: #1f0e39;
+                border-right-color: #1f0e39;
+            }
+            &:before {
+                border-right-color: #5c2b4c;
+                border-bottom-color: #5c2b4c;
+            }
+        }
+        &.Wordpress {
+            background-color: #006897;
+            &:after {
+                border-top-color: #006897;
+                border-right-color: #006897;
+            }
+            &:before {
+                border-right-color: #6cb4e0;
+                border-bottom-color: #6cb4e0;
+            }
+        }
+        &.jQuery {
+            background-color: #0868ac;
+            &:after {
+                border-top-color: #0868ac;
+                border-right-color: #0868ac;
+            }
+            &:before {
+                border-right-color: #49a2e1;
+                border-bottom-color: #49a2e1;
+            }
+        }
+        &.Mobile {
+            background-color: #23568e;
+            &:after {
+                border-top-color: #23568e;
+                border-right-color: #23568e;
+            }
+            &:before {
+                border-right-color: #4da0c1;
+                border-bottom-color: #4da0c1;
+            }
+        }
+        &.UI {
+            background-color: #a20101;
+            &:after {
+                border-top-color: #a20101;
+                border-right-color: #a20101;
+            }
+            &:before {
+                border-right-color: #e39291;
+                border-bottom-color: #e39291;
+            }
+        }
+        &.Web {
+            background-color: #006b9c;
+            &:after {
+                border-top-color: #006b9c;
+                border-right-color: #006b9c;
+            }
+            &:before {
+                border-right-color: #1e618a;
+                border-bottom-color: #1e618a;
+            }
+        }
         span {
             display: block;
         }
@@ -170,6 +247,27 @@
         }
         &.btn-js {
             background-color: #f7df1e;
+        }
+        &.btn-seo {
+            background-color: #4775a6;
+        }
+        &.btn-bootstrap {
+            background-color: #1f0e39;
+        }
+        &.btn-wordpress {
+            background-color: #006897;
+        }
+        &.btn-jquery {
+            background-color: #006897;
+        }
+        &.btn-mobile {
+            background-color: #23568e;
+        }
+        &.btn-ui {
+            background-color: #a20101;
+        }
+        &.btn-web {
+            background-color: #006b9c;
         }
     }
     .mc-description {
@@ -281,6 +379,83 @@
                 border-right-color: #ead31c;
             }
         }
+        &.SEO {
+            background-color: #4775a6;
+            &:before {
+                border-right-color: #4775a6;
+                border-bottom-color: #4775a6;
+            }
+            &:after {
+                border-top-color: #6ba6e5;
+                border-right-color: #6ba6e5;
+            }
+        }
+        &.Bootstrap {
+            background-color: #1f0e39;
+            &:before {
+                border-right-color: #1f0e39;
+                border-bottom-color: #1f0e39;
+            }
+            &:after {
+                border-top-color: #5c2b4c;
+                border-right-color: #5c2b4c;
+            }
+        }
+        &.Wordpress {
+            background-color: #6cb4e0;
+            &:before {
+                border-right-color: #6cb4e0;
+                border-bottom-color: #6cb4e0;
+            }
+            &:after {
+                border-top-color: #006897;
+                border-right-color: #006897;
+            }
+        }
+        &.jQuery {
+            background-color: #0868ac;
+            &:before {
+                border-right-color: #0868ac;
+                border-bottom-color: #0868ac;
+            }
+            &:after {
+                border-top-color: #49a2e1;
+                border-right-color: #49a2e1;
+            }
+        }
+        &.Mobile {
+            background-color: #23568e;
+            &:before {
+                border-right-color: #23568e;
+                border-bottom-color: #23568e;
+            }
+            &:after {
+                border-top-color: #4da0c1;
+                border-right-color: #4da0c1;
+            }
+        }
+        &.UI {
+            background-color: #a20101;
+            &:before {
+                border-right-color: #a20101;
+                border-bottom-color: #a20101;
+            }
+            &:after {
+                border-top-color: #e39291;
+                border-right-color: #e39291;
+            }
+        }
+        &.Web {
+            background-color: #006b9c;
+            &:before {
+                border-right-color: #006b9c;
+                border-bottom-color: #006b9c;
+            }
+            &:after {
+                border-top-color: #1e618a;
+                border-right-color: #1e618a;
+            }
+        }
     }
     .mc-btn-action {
         top: 62px;
@@ -294,6 +469,7 @@
         width: 60px;
         height: 60px;
         z-index: 20;
+        background: #fff;
         .img-member {
             width: 100%;
             height: 100%;
@@ -335,6 +511,27 @@
         }
         &.JS {
             background-color: #f7df1e;
+        }
+        &.SEO {
+            background-color: #4775a6;
+        }
+        &.Bootstrap {
+            background-color: #1f0e39;
+        }
+        &.Wordpress {
+            background-color: #6cb4e0;
+        }
+        &.jQuery {
+            background-color: #0868ac;
+        }
+        &.Mobile {
+            background-color: #23568e;
+        }
+        &.UI {
+            background-color: #a20101;
+        }
+        &.Web {
+            background-color: #006b9c;
         }
         .member-details {
             display: flex;

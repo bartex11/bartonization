@@ -50,7 +50,8 @@ var DATA = {
       name: 'HTML5',
       subName: 'Semantik HTML',
       imgSrc: './images/Tools/HTML5.svg',
-      description: 'HTML5 ist die fünfte Fassung der Hypertext Markup Language, einer Computersprache zur Auszeichnung und Vernetzung von Texten und anderen Inhalten elektronischer Dokumente, vorwiegend im World Wide Web. Unter Semantik versteht man im Allgemeinen die Bedeutungslehre, die die Bedeutung von Zeichen wie Wörter, Phrasen oder Symbole untersucht. Durch semantisch korrektes HTML verleiht man Inhalten eine Bedeutung. Eine Überschrift wird häufig in etwas größerer Schrift und fett dargestellt, aber nicht jeder fette und groß gedruckte Text ist zwangsläufig eine Überschrift, er könnte auch ein Motto oder ein Zitat sein.',
+      description:
+        'HTML5 ist die fünfte Fassung der Hypertext Markup Language, einer Computersprache zur Auszeichnung und Vernetzung von Texten und anderen Inhalten elektronischer Dokumente, vorwiegend im World Wide Web. Unter Semantik versteht man im Allgemeinen die Bedeutungslehre, die die Bedeutung von Zeichen wie Wörter, Phrasen oder Symbole untersucht. Durch semantisch korrektes HTML verleiht man Inhalten eine Bedeutung. Eine Überschrift wird häufig in etwas größerer Schrift und fett dargestellt, aber nicht jeder fette und groß gedruckte Text ist zwangsläufig eine Überschrift, er könnte auch ein Motto oder ein Zitat sein.',
       btn: 'btn-html',
     },
 
@@ -58,42 +59,48 @@ var DATA = {
       name: 'CSS',
       subName: 'Cascading Style Sheets',
       imgSrc: './images/Tools/CSS3.svg',
-      description: 'Cascading Style Sheets, kurz CSS genannt, ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen des World Wide Webs.',
+      description:
+        'Cascading Style Sheets, kurz CSS genannt, ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen des World Wide Webs.',
       btn: 'btn-css',
     },
     {
       name: 'JS',
       subName: 'ECMAScript',
       imgSrc: './images/Tools/javascript.svg',
-      description: 'JavaScript ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern',
+      description:
+        'JavaScript ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern',
       btn: 'btn-js',
     },
     {
       name: 'SEO',
       subName: 'Search Engine Optimization',
       imgSrc: './images/Tools/SEO.png',
-      description: 'Suchmaschinenoptimierung, oder englisch search engine optimization (SEO), bezeichnet Maßnahmen, die dazu dienen, dass Webseiten und deren Inhalte im organischen Suchmaschinenranking (Natural Listings) auf vorderen Plätzen erscheinen.',
+      description:
+        'Suchmaschinenoptimierung, oder englisch search engine optimization (SEO), bezeichnet Maßnahmen, die dazu dienen, dass Webseiten und deren Inhalte im organischen Suchmaschinenranking (Natural Listings) auf vorderen Plätzen erscheinen.',
       btn: 'btn-seo',
     },
     {
-      name: 'Botstrap',
+      name: 'Bootstrap',
       subName: 'Bootstrap Fremework',
       imgSrc: './images/Tools/Bootstrap.png',
-      description: 'Bootstrap ist ein freies Frontend-CSS-Framework. Es enthält auf HTML und CSS basierende Gestaltungsvorlagen für Typografie, Formulare, Buttons, Tabellen, Grid-Systeme, Navigations- und andere Oberflächengestaltungselemente sowie zusätzliche, optionale JavaScript-Erweiterungen',
+      description:
+        'Bootstrap ist ein freies Frontend-CSS-Framework. Es enthält auf HTML und CSS basierende Gestaltungsvorlagen für Typografie, Formulare, Buttons, Tabellen, Grid-Systeme, Navigations- und andere Oberflächengestaltungselemente sowie zusätzliche, optionale JavaScript-Erweiterungen',
       btn: 'btn-bootstrap',
     },
     {
       name: 'Wordpress',
       subName: 'Responsive WordPress theme',
       imgSrc: './images/Tools/WordPress.png',
-      description: 'WordPress ist ein freies Content-Management-System. Es wurde ab 2003 von Matthew Mullenweg als Software für Weblogs programmiert und wird als Open-Source-Projekt ständig weiterentwickelt.',
+      description:
+        'WordPress ist ein freies Content-Management-System. Es wurde ab 2003 von Matthew Mullenweg als Software für Weblogs programmiert und wird als Open-Source-Projekt ständig weiterentwickelt.',
       btn: 'btn-wordpress',
     },
     {
       name: 'jQuery',
       subName: 'Custom jQuery tabs and accordion',
       imgSrc: './images/Tools/jquery.png',
-      description: 'jQuery ist eine freie JavaScript-Bibliothek, die Funktionen zur DOM-Navigation und -Manipulation zur Verfügung stellt. jQuery ist die meistverwendete JavaScript-Bibliothek',
+      description:
+        'jQuery ist eine freie JavaScript-Bibliothek, die Funktionen zur DOM-Navigation und -Manipulation zur Verfügung stellt. jQuery ist die meistverwendete JavaScript-Bibliothek',
       btn: 'btn-jquery',
     },
     {
@@ -107,14 +114,16 @@ var DATA = {
       name: 'UI',
       subName: 'User interface design',
       imgSrc: './images/Tools/UI.png',
-      description: 'Die Benutzerschnittstelle oder auch Nutzerschnittstelle ist die Stelle oder Handlung, mit der ein Mensch mit einer Maschine in Kontakt tritt. Im einfachsten Fall ist das ein Lichtschalter: Er gehört weder zum Menschen, noch zur „Maschine“, sondern ist die Schnittstelle zwischen beiden.',
+      description:
+        'Die Benutzerschnittstelle oder auch Nutzerschnittstelle ist die Stelle oder Handlung, mit der ein Mensch mit einer Maschine in Kontakt tritt. Im einfachsten Fall ist das ein Lichtschalter: Er gehört weder zum Menschen, noch zur „Maschine“, sondern ist die Schnittstelle zwischen beiden.',
       btn: 'btn-ui',
     },
     {
       name: 'Web config',
       subName: 'Configuring of the web',
       imgSrc: './images/Tools/web.png',
-      description: 'Network configuration is the process of setting a networks controls, flow and operation to support the network communication of an organization and/or network owne',
+      description:
+        'Network configuration is the process of setting a networks controls, flow and operation to support the network communication of an organization and/or network owne',
       btn: 'btn-web',
     },
   ],
