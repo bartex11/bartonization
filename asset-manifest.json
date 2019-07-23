@@ -1,7 +1,7 @@
 {
   "main.css": "/bartonization/static/css/main.597a273e.chunk.css",
-  "main.js": "/bartonization/static/js/main.5bb3ad7c.chunk.js",
-  "main.js.map": "/bartonization/static/js/main.5bb3ad7c.chunk.js.map",
+  "main.js": "/bartonization/static/js/main.6b709700.chunk.js",
+  "main.js.map": "/bartonization/static/js/main.6b709700.chunk.js.map",
   "static/css/1.226d31bb.chunk.css": "/bartonization/static/css/1.226d31bb.chunk.css",
   "static/js/1.30664d4c.chunk.js": "/bartonization/static/js/1.30664d4c.chunk.js",
   "static/js/1.30664d4c.chunk.js.map": "/bartonization/static/js/1.30664d4c.chunk.js.map",
@@ -12,6 +12,6 @@
   "static/css/1.226d31bb.chunk.css.map": "/bartonization/static/css/1.226d31bb.chunk.css.map",
   "static/css/main.597a273e.chunk.css.map": "/bartonization/static/css/main.597a273e.chunk.css.map",
   "index.html": "/bartonization/index.html",
-  "precache-manifest.865efd273a2f035c1576075bb97d1b5d.js": "/bartonization/precache-manifest.865efd273a2f035c1576075bb97d1b5d.js",
+  "precache-manifest.fde74d63b94983d111f15a526526e14c.js": "/bartonization/precache-manifest.fde74d63b94983d111f15a526526e14c.js",
   "service-worker.js": "/bartonization/service-worker.js"
 }
