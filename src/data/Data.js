@@ -25,14 +25,14 @@ var DATA = {
   spicy: [
     {
       name: 'FabFoods',
-      imgSrc: './images/FF/1.png',
+      imgSrc: './images/FF/1.PNG',
       url: 'https://fabfoods.de',
       technologies: 'React, Styled components, Liquid',
       tools: 'Trello, Git, Shopify, Oddo ',
     },
     {
       name: 'Spa Group Europe',
-      imgSrc: './images/Spa/1.png',
+      imgSrc: './images/Spa/1.PNG',
       url: 'https://entspannung-buchen.de/',
       technologies: 'React, Styled components',
       tools: 'Trello, Git',
