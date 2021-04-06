@@ -106,7 +106,7 @@ class HomePage extends React.Component {
 
         <section className="text-center my-5 project-section">
           <h2 className="h1-responsive font-weight-bold my-5">
-            {t ('Frelance')}
+            {t ('Freelance')}
           </h2>
           <p className="grey-text w-responsive mx-auto mb-5">
             Duisyaute irure dolor in reprehenderit in voluptate velit esse

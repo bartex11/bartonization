@@ -114,11 +114,15 @@ class Protfolio extends React.Component {
                     <p>All Projects</p>
                   </Tab>
                   <Tab>
-                    <p>Frelance projects</p>
+                    <p>Freelance projects</p>
                   </Tab>
                   <Tab>
                     <p>Spicy Media</p>
                   </Tab>
+                  <Tab>
+                    <p>engine-productions GmbH</p>
+                  </Tab>
+                  
                 </TabList>
               </Col>
 
@@ -174,6 +178,25 @@ class Protfolio extends React.Component {
                     </Col>
                   </Row>
                 </TabPanel>
+
+                <TabPanel>
+                  <Row>
+                    <Col size="12">
+                      <Card>
+                        <CardHeader color="indigo lighten-1">Spicy</CardHeader>
+                        <CardBody>
+                          <ProjectImg>
+                            <div className="-lightbox p-3">
+                              <Row>Cooming soon ...</Row>
+                            </div>
+                          </ProjectImg>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
+                </TabPanel>
+
+
               </Col>
             </Tabs>
           </Row>

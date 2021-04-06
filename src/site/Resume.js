@@ -122,7 +122,61 @@ class Resume extends React.Component {
                     >
                       <h6 class="mt-3">
                         <strong>
-                          {t("January")} 2017 – {t("Present")}
+                          {t("Nov")} 2019 – {t("Present")}
+                        </strong>
+                      </h6>
+                      <div class="mt-3">
+                        <Pill pill>TYPO3</Pill>
+                        <Pill pill>HTML5</Pill>
+                        <Pill pill>CSS3</Pill>
+                        <Pill pill>Java Script</Pill>
+                        
+                      </div>
+                    </Col>
+                    <Col xs="12" sm="12" md="12" lg="10">
+                      <MDBCard style={{ marginBottom: "25px" }}>
+                        <MDBCardHeader color="indigo lighten-1">
+                          engine-productions GmbH, Köln
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{t("Frontend")}</MDBCardTitle>
+                          <MDBCardText style={{ fontSize: "1.25rem" }}>
+                            <p>
+                              <strong>{t("About")} Engine: </strong>
+                              coming soon
+                            </p>
+                            <p>
+                              <strong>{t("Goals")}: </strong>
+                              Building front-end (JS/CSS)
+                              <br />
+                              Lorem ipsum TYPO3.
+                              <br />
+                              Web Development with TYPO3.
+                            </p>
+                            <p>
+                              <strong>{t("Projects")}: </strong>
+                              BITV Projekte coming soon
+                            </p>
+                            <p>
+                              <strong>{t("Technologies")}: </strong>
+                              HTML5, CSS3, Java Script, coming soon ....
+                            </p>
+                          </MDBCardText>
+                        </MDBCardBody>
+                      </MDBCard>
+                    </Col>
+                  </Row>
+                  <Row className="mb-2">
+                    <Col
+                      xs="12"
+                      sm="12"
+                      md="12"
+                      lg="2"
+                      className="text-right p-0"
+                    >
+                      <h6 class="mt-3">
+                        <strong>
+                          {t("January")} 2017 – Nov 2019
                         </strong>
                       </h6>
                       <div class="mt-3">
@@ -198,7 +252,7 @@ class Resume extends React.Component {
                           Freelance
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Web Deweloper</MDBCardTitle>
+                          <MDBCardTitle>Web Developer</MDBCardTitle>
                           <MDBCardText style={{ fontSize: "1.25rem" }}>
                             <p>
                               <strong>{t("Goals")}: </strong>
