@@ -28,8 +28,6 @@ class MyStory extends React.Component {
             <br />
             <p>{t ('Story1')}</p>
             <br />
-            <p>{t ('Story2')}</p>
-            <br />
             <p>{t ('Story3')}</p>
             <br />
             <br />

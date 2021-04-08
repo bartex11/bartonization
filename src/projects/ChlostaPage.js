@@ -60,19 +60,14 @@ class ChlostaPage extends Component {
         <Container>
           <Row>
             <Col>
-              <h4 className="mt-5 mb-2">Chlosta Page</h4>
-              <Carousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1">
+              <Carousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1 mt-5">
                 <CarouselInner>{this.renderCarousel(data.images.Chlosta)}</CarouselInner>
               </Carousel>
             </Col>
           </Row>
         </Container>
         <Container>
-          <Row>
-            <h1 className="text-center">What i did</h1>
-          </Row>
-
-          <Row>{this.renderFlip(data.tools.Chlosta)}</Row>
+          <Row className="mt-5">{this.renderFlip(data.tools.Chlosta)}</Row>
         </Container>
       </div>
     );

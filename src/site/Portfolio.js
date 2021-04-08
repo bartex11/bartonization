@@ -28,6 +28,7 @@ class Protfolio extends React.Component {
     photoIndex: 0,
     data: Data,
   };
+
   renderImages = (projects) => {
     let photoIndex = -1;
     const { t } = this.props;
@@ -120,7 +121,7 @@ class Protfolio extends React.Component {
                     <p>Spicy Media</p>
                   </Tab>
                   <Tab>
-                    <p>engine-productions GmbH</p>
+                    <p>Engine productions</p>
                   </Tab>
                   
                 </TabList>
@@ -135,6 +136,7 @@ class Protfolio extends React.Component {
                         <CardBody>
                           <ProjectImg>
                             <Row>
+                              {this.renderImages(data.engine)}
                               {this.renderImages(data.spicy)}
                               {this.renderImages(data.free)}
                             </Row>
@@ -166,7 +168,7 @@ class Protfolio extends React.Component {
                   <Row>
                     <Col size="12">
                       <Card>
-                        <CardHeader color="indigo lighten-1">Spicy</CardHeader>
+                        <CardHeader color="indigo lighten-1">Spicy Media</CardHeader>
                         <CardBody>
                           <ProjectImg>
                             <div className="-lightbox p-3">
@@ -183,11 +185,11 @@ class Protfolio extends React.Component {
                   <Row>
                     <Col size="12">
                       <Card>
-                        <CardHeader color="indigo lighten-1">Spicy</CardHeader>
+                        <CardHeader color="indigo lighten-1">Engine productions</CardHeader>
                         <CardBody>
                           <ProjectImg>
                             <div className="-lightbox p-3">
-                              <Row>Cooming soon ...</Row>
+                              <Row>{this.renderImages(data.engine)}</Row>
                             </div>
                           </ProjectImg>
                         </CardBody>

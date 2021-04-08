@@ -143,23 +143,23 @@ class Resume extends React.Component {
                           <MDBCardText style={{ fontSize: "1.25rem" }}>
                             <p>
                               <strong>{t("About")} Engine: </strong>
-                              coming soon
+                              Agentur für Digitalisierung mit TYPO3 CMS und interaktiven Onlinelösungen in Köln
                             </p>
                             <p>
                               <strong>{t("Goals")}: </strong>
-                              Building front-end (JS/CSS)
+                              Realisierung von TYPO3-basierten Web-Projekte
                               <br />
-                              Lorem ipsum TYPO3.
+                              Programmierung von TYPO3-Extensions mit Extbase und Fluid
                               <br />
-                              Web Development with TYPO3.
+                              Optimierung für mobile Endgeräte und die Programmierung ansprechender und innovativer User Interfaces
                             </p>
                             <p>
                               <strong>{t("Projects")}: </strong>
-                              BITV Projekte coming soon
+                              Primalkima, Rewe Digital, Agiamondo, Regenbogenportal, Stark im Beruf, MGH, Deltax, Ardex ....
                             </p>
                             <p>
                               <strong>{t("Technologies")}: </strong>
-                              HTML5, CSS3, Java Script, coming soon ....
+                              TYPO3, Extbase, Fluid, Flux, HTML5, CSS3, JavaScript-Frameworks, Bootstrap, Figma, Composer, JIRA, Bitbucket, Trello, Jenkins, Git, BITV(Barrierefreiheit von informationsorientierten Webangeboten)...
                             </p>
                           </MDBCardText>
                         </MDBCardBody>
@@ -365,12 +365,12 @@ class Resume extends React.Component {
                           LANGUAGES
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Special title languages</MDBCardTitle>
+                          
                           <MDBCardText style={{ fontSize: "1.25rem" }}>
                             <ToolsList className="tool-list">
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
-                                  <strong>Semantic HTML5</strong>
+                                Semantic<strong> HTML5</strong>
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
@@ -381,6 +381,12 @@ class Resume extends React.Component {
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Java Script</strong> (ES6)
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>TYPO3 </strong>
+                                  Open-source CMS
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
@@ -413,45 +419,71 @@ class Resume extends React.Component {
                           FRAMEWORKS & LIBS
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Special title frameworks</MDBCardTitle>
+                      
                           <MDBCardText style={{ fontSize: "1.25rem" }}>
                             <ToolsList className="tool-list">
-                              <ToolsListItem className="tool-item">
-                                <Toolstext>
-                                  <strong>React</strong>
-                                </Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext>
-                                  <strong>Styled components</strong>
-                                </Toolstext>
-                              </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext>
-                                  <strong>jQuery</strong>
-                                </Toolstext>
-                              </ToolsListItem>
+
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Bootstrap</strong>
                                 </Toolstext>
                               </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>jQuery</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Fluid</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Composer</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Figma</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>React</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Styled components</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Symfony </strong>
                                   Set of PHP Components
                                 </Toolstext>
                               </ToolsListItem>
+
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Wordpress</strong>
                                 </Toolstext>
                               </ToolsListItem>
+
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Angular</strong>
                                 </Toolstext>
                               </ToolsListItem>
+
                             </ToolsList>
                           </MDBCardText>
                         </MDBCardBody>
@@ -464,20 +496,29 @@ class Resume extends React.Component {
                           ADDITIONAL
                         </MDBCardHeader>
                         <MDBCardBody>
-                          <MDBCardTitle>Special title additional</MDBCardTitle>
                           <MDBCardText style={{ fontSize: "1.25rem" }}>
                             <ToolsList className="tool-list">
+
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Atlassian </strong>
                                   Jira, Trello, Bitbucket...
                                 </Toolstext>
                               </ToolsListItem>
+
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Git</strong> Version control system
                                 </Toolstext>
                               </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>BITV </strong>
+                                  Barrierefreiheit von informationsorientierten Webangeboten
+                                </Toolstext>
+                              </ToolsListItem>
+
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>SEO </strong>
@@ -595,13 +636,14 @@ class Resume extends React.Component {
                           color="indigo lighten-1"
                           className="text-center"
                         >
-                          {t("Downloads")}
+                          {t("Download")}
                         </MDBCardHeader>
                         <MDBCardBody>
                           <MDBCardText style={{ textAlign: "center" }}>
                             <MDBBtn
                               outline
                               color="indigo"
+                              disabled
                               href="./content/CV.pdf"
                               download="Vasilev-CV"
                             >
@@ -610,12 +652,14 @@ class Resume extends React.Component {
                             <MDBBtn
                               color="indigo"
                               href="./content/Resume.pdf"
+                              disabled
                               download="Vasilev-Resume"
                             >
                               {t("Resume")}
                             </MDBBtn>
                             <MDBBtn
                               color="green"
+                              disabled
                               href="./content/Reference.pdf"
                               download="Vasilev-Resume"
                             >

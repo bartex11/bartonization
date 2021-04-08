@@ -27,6 +27,7 @@ class HomePage extends React.Component {
         name: 'Askora',
         button: t ('More'),
         link: '/askora',
+        color: "askora-color"
       },
       {
         id: 2,
@@ -35,6 +36,7 @@ class HomePage extends React.Component {
         name: 'Katerina',
         button: t ('More'),
         link: '/katerina',
+        color: "katerina-color"
       },
       {
         id: 3,
@@ -43,6 +45,8 @@ class HomePage extends React.Component {
         name: ' Chlosta',
         button: t ('More'),
         link: '/chlosta',
+        color: "closta-color",
+    
       },
     ];
 
@@ -50,17 +54,16 @@ class HomePage extends React.Component {
       <Col md="4" xl="4" className="mb-5" key={project.id}>
         <MDBView className="overlay rounded z-depth-2" waves>
           <img src={project.imgSrc} alt="" className="img-fluid" />
-          <a href="#!">
+          <Link to={project.link}>
             <MDBMask overlay="white-slight" />
-          </a>
+          </Link>
         </MDBView>
         <CardBody className="pb-0">
-          <a href="#!" className="green-text">
+          <Link to={project.link} className={project.color}>
             <h5 className="font-weight-bold mt-2 mb-3">
-              <MDBIcon icon="twitter" className="pr-2" />
               {project.title}
             </h5>
-          </a>
+          </Link>
           <h4 className="font-weight-bold mb-3">{project.name}</h4>
 
           <Link to={project.link}>
@@ -109,10 +112,7 @@ class HomePage extends React.Component {
             {t ('Freelance')}
           </h2>
           <p className="grey-text w-responsive mx-auto mb-5">
-            Duisyaute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            est laborum.
+          {t ('FreelanceIntro')}
           </p>
           <Container>
             <Row className="d-flex justify-content-center">

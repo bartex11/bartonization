@@ -18,9 +18,10 @@
     "ContactDetails": "Контакт с мен",
     "Social": "Социални мрежи",
     "AboutText": "Моето мото  в живота е \"Never stop learning...\". Винаги съм бил добър в математиката и точните научки и затова се дипломирах като машинен инженер в ТУ-София. След доста години в логитиката аз решиш, че е време за ново предизвикателство.",
-    "Download": "Изтегли",
+    "Download": "Изтегли чрез запитване",
     "Cv": "Автобиография",
     "Freelance": "Freelance проекти",
+    "FreelanceIntro": "Мойте freelance проекти",
     "Profile": "Профил",
     "Experience": "Опит",
     "Education": "Образование",
@@ -40,12 +41,6 @@
     "Reference": "Референции",
 
 
-
-
-
-
-
-
     "Introduction": "Взведение",
     "Description": "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop",
     "Plugins to detect the user language": "Plugins to detect the user language",
@@ -53,12 +48,9 @@
     "Optionally cache the translations": "Optionally cache the translations",
     "Advantages": "Advantages",
     "Flexibility to use other packages": "Flexibility to use other packages",
-    "Story": "Здравей, аз съм Иван Василев. Винаги съм бил добър в математиката и точните научки и затова се дипломирах като машинен инженер в ТУ-София. След доста години в логитиката аз решиш, че е време за ново предизвикателство. Дигиталните технологии, дизайна и компютрите са предизвиквали винаги моя интерес били част от моя живот. Така попаднах в света на УЕБ. Сравнително бързо научих основите на програмирането, защото мисля логично и разбирам техническата част на проектите.Проведох различни онлайн обучения и започнах да създавам собствени проекти. От 2017 работя за Spicy Media.Това е малък старт ъп с много разнообразни и интересни проекти.Заедно с колеги реализирахме страхотни идеи и аз научавам много от тях.",
-    "Story1": "When I am not working, I spend as much time I can with my wife and my son, who motivate me to do my best.",
-    "Story2": "I would love to participate in larger projects, to work in a team of developers where I would be able to enlarge my current skills and knowledge and learn new technologies. Currently I am looking for a full time job, but I would be glad also to join freelance projects.",
-    "Story3": "В момента съм готов за нови предизвикателства проекти.  С удоволствие ще работя в по-голям екип, където да приложа мойте знания и умения, както и да науча нови технологии.  Търся full time job в района на Дюселдорф и ще се радвам ако се свържете с мен.....",
-    "Story4": "When I am not working, I spend as much time I can with my wife and my son, who motivate me to do my best.",
-    "Spicy": "Since 2019 I have been working in a spymedia. The company is a small startup with various interesting projects. During that time I learned a lot from my colleagues.",
+    "Story": "Здравей, аз съм Иван Василев. Винаги съм бил добър в математиката и точните научки и затова се дипломирах като машинен инженер в ТУ-София. След доста години в логитиката аз решиш, че е време за ново предизвикателство. Дигиталните технологии, дизайна и компютрите са предизвиквали винаги моя интерес били част от моя живот. Така попаднах в света на УЕБ. Сравнително бързо научих основите на програмирането, защото мисля логично и разбирам техническата част на проектите.Проведох различни онлайн обучения и започнах да създавам собствени проекти. От 2017 работя като фронтенд програмист в разнообразни и интересни проекти.Заедно с колеги реализирахме страхотни идеи и аз научавам много от тях.",
+    "Story1": "Свободното си време прекарвам с моята съпруга и двата ми сина, които ме мотивират да давам най-доброто от себе си.",
+    "Story3": "Ако харесвате моя опит, портфолио и проекти, ще се радвам ако се свържете с мен.....",
     "Chlosta": "This page provides information about the services of dentist Chlosta located in Duisburg, Germany",
     "Katerina": "This page provides information about the services, products and prices of beauty salon Katerina located in Düsseldorf, Germany",
     "Askora": "The webpage was created for the needs of company Askora based in the town of Kardzhali, Bulgaria.",

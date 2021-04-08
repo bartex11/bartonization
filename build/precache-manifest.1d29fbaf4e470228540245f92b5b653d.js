@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "78ddb02f25f5c4ded9df",
-    "url": "/bartonization/static/css/main.1c676ff5.chunk.css"
+    "revision": "5a1e41a3cfd09abd552c",
+    "url": "/bartonization/static/css/main.dca701d8.chunk.css"
   },
   {
-    "revision": "78ddb02f25f5c4ded9df",
-    "url": "/bartonization/static/js/main.78ddb02f.chunk.js"
+    "revision": "5a1e41a3cfd09abd552c",
+    "url": "/bartonization/static/js/main.5a1e41a3.chunk.js"
   },
   {
     "revision": "4673f23cf828fea6080f",
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/js/runtime~main.3d03dd08.js"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/bartonization/static/media/fontawesome-webfont.674f50d2.eot"
-  },
-  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/bartonization/static/media/fontawesome-webfont.af7ae505.woff2"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/bartonization/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -84,12 +84,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Regular.ba3dcd89.woff"
   },
   {
-    "revision": "df7b648ce5356ea1ebce435b3459fd60",
-    "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
-  },
-  {
     "revision": "4d9f3f9e5195e7b074bb63ba4ce42208",
     "url": "/bartonization/static/media/Roboto-Medium.4d9f3f9e.eot"
+  },
+  {
+    "revision": "df7b648ce5356ea1ebce435b3459fd60",
+    "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
     "revision": "574fd0b50367f886d359e8264938fc37",
@@ -100,12 +100,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Medium.fc78759e.woff"
   },
   {
-    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
-    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
-  },
-  {
     "revision": "ecdd509cadbf1ea78b8d2e31ec52328c",
     "url": "/bartonization/static/media/Roboto-Bold.ecdd509c.eot"
+  },
+  {
+    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
+    "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
   },
   {
     "revision": "39b2c3031be6b4ea96e2e3e95d307814",
@@ -116,6 +116,10 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Bold.dc81817d.woff"
   },
   {
+    "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
+    "url": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf"
+  },
+  {
     "revision": "11911410dca2de148f30954eb2fd5eab",
     "url": "/bartonization/static/media/arrow_left.11911410.svg"
   },
@@ -124,11 +128,7 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/arrow_right.8ef6a08c.svg"
   },
   {
-    "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
-    "url": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf"
-  },
-  {
-    "revision": "cd605c3744fc219decab2545d2360367",
+    "revision": "74f5e93c238ccb10397a0e78e80fac66",
     "url": "/bartonization/index.html"
   }
 ];

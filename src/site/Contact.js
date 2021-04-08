@@ -111,12 +111,13 @@ class Contact extends React.Component {
               <Col lg="4" md="12">
                 <Card>
                   <CardHeader color="indigo lighten-1" className="text-center">
-                    {t("Downloads")}
+                    {t("Download")}
                   </CardHeader>
                   <CardBody>
                     <CardText style={{ textAlign: "center" }} tag="div">
                       <Button
                         outline
+                        disabled
                         color="indigo"
                         href="./content/CV.pdf"
                         download="Vasilev-CV"
@@ -125,6 +126,7 @@ class Contact extends React.Component {
                       </Button>
                       <Button
                         color="indigo"
+                        disabled
                         href="./content/Resume.pdf"
                         download="Vasilev-Resume"
                       >
@@ -132,6 +134,7 @@ class Contact extends React.Component {
                       </Button>
                       <Button
                         color="green"
+                        disabled
                         href="./content/Reference.pdf"
                         download="Vasilev-Resume"
                       >
