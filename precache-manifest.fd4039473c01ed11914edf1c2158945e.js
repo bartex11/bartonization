@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Thin.dfe56a87.eot"
   },
   {
-    "revision": "7500519de3d82e33d1587f8042e2afcb",
-    "url": "/bartonization/static/media/Roboto-Thin.7500519d.woff"
-  },
-  {
     "revision": "954bbdeb86483e4ffea00c4591530ece",
     "url": "/bartonization/static/media/Roboto-Thin.954bbdeb.woff2"
+  },
+  {
+    "revision": "7500519de3d82e33d1587f8042e2afcb",
+    "url": "/bartonization/static/media/Roboto-Thin.7500519d.woff"
   },
   {
     "revision": "94998475f6aea65f558494802416c1cf",
@@ -84,12 +84,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Regular.ba3dcd89.woff"
   },
   {
-    "revision": "4d9f3f9e5195e7b074bb63ba4ce42208",
-    "url": "/bartonization/static/media/Roboto-Medium.4d9f3f9e.eot"
-  },
-  {
     "revision": "df7b648ce5356ea1ebce435b3459fd60",
     "url": "/bartonization/static/media/Roboto-Regular.df7b648c.ttf"
+  },
+  {
+    "revision": "4d9f3f9e5195e7b074bb63ba4ce42208",
+    "url": "/bartonization/static/media/Roboto-Medium.4d9f3f9e.eot"
   },
   {
     "revision": "574fd0b50367f886d359e8264938fc37",
@@ -100,12 +100,12 @@ self.__precacheManifest = [
     "url": "/bartonization/static/media/Roboto-Medium.fc78759e.woff"
   },
   {
-    "revision": "ecdd509cadbf1ea78b8d2e31ec52328c",
-    "url": "/bartonization/static/media/Roboto-Bold.ecdd509c.eot"
-  },
-  {
     "revision": "894a2ede85a483bf9bedefd4db45cdb9",
     "url": "/bartonization/static/media/Roboto-Medium.894a2ede.ttf"
+  },
+  {
+    "revision": "ecdd509cadbf1ea78b8d2e31ec52328c",
+    "url": "/bartonization/static/media/Roboto-Bold.ecdd509c.eot"
   },
   {
     "revision": "39b2c3031be6b4ea96e2e3e95d307814",
