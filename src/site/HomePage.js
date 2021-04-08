@@ -9,7 +9,7 @@ import Row from '../components/Row';
 import Col from '../components/Col';
 import Button from '../components/Button';
 import CardBody from '../components/CardBody';
-import {MDBIcon, MDBBtn, MDBView, MDBMask} from 'mdbreact';
+import {MDBBtn, MDBView, MDBMask} from 'mdbreact';
 
 import './HomePage.css';
 class HomePage extends React.Component {
