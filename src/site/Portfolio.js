@@ -56,11 +56,18 @@ class Protfolio extends React.Component {
 
       if (project.link) {
         link = (
+          <div>
           <Link to={project.link}>
             <Button color="indigo" rounded>
               {t('More')}
             </Button>
           </Link>
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+          <Button color="indigo" rounded>
+            {t('ViewOnline')}
+          </Button>
+        </a>
+        </div>
         );
       } else {
         link = (
@@ -151,7 +158,7 @@ class Protfolio extends React.Component {
                   <Row>
                     <Col size="12">
                       <Card>
-                        <CardHeader color="indigo lighten-1">Freee</CardHeader>
+                        <CardHeader color="indigo lighten-1">Free</CardHeader>
                         <CardBody>
                           <ProjectImg>
                             <div className="-lightbox p-3">

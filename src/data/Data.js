@@ -1,9 +1,18 @@
 var DATA = {
   free: [
     {
+      name: 'Kosmetik Katerina',
+      imgSrc: './images/KK/1-3.jpg',
+      link: '/katerina',
+      url: 'https://kosmetik-katerina.com/',
+      technologies: 'HTML5,CSS3,JavaScript,Responsive Web Design',
+      tools: 'Bootstrap, Git, SEO Tools,',
+    },
+    {
       name: 'Askora Translation',
       imgSrc: './images/Askora/1.jpg',
       link: '/askora',
+      url: 'http://askora-bg.com/#/',
       technologies: 'HTML5,CSS3,jQuery,PHP, Responsive Web Design ',
       tools: 'Google SEO Tools',
     },
@@ -11,16 +20,11 @@ var DATA = {
       name: 'Dentist Chlosta',
       imgSrc: './images/NN/1.png',
       link: '/chlosta',
+      url: 'https://zahnarztpraxis-chlosta.de/',
       technologies: 'HTML5, CSS3, jQuery,',
       tools: 'Wordpress, Google SEO tools, User interface design (UI)',
-    },
-    {
-      name: 'Kosmetik Katerina',
-      imgSrc: './images/KK/1-3.jpg',
-      link: '/katerina',
-      technologies: 'HTML5,CSS3,JavaScript,Responsive Web Design',
-      tools: 'Bootstrap, Git, SEO Tools,',
-    },
+    }
+    
   ],
   spicy: [
     {
