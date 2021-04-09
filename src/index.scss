@@ -386,8 +386,9 @@ ADDRESS CARD
     .address-card-info-group {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
         .fa {
+            margin-top: 0;
             &.icon-location {
                 font-size: 34px;
             }
@@ -512,4 +513,12 @@ HOME PAGE
 
 .askora-color {
     color: #999999
+}
+
+.language-btn {
+    margin: 5px;
+}
+
+.language-btn:hover {
+    cursor: pointer;
 }

@@ -79,7 +79,7 @@ var DATA = {
       imgSrc: './images/Engine/rewe.png',
       url: 'https://www.rewe-digital.com/',
       technologies: 'TYPO3, HTML5, LESS, JQuery',
-      tools: 'Bootstrap, JIRA, Bitbucket, Jenkins',
+      tools: 'Bootstrap, JIRA, Bitbucket',
     },
     {
       name: 'Hilfe im Haushalt',
@@ -92,8 +92,8 @@ var DATA = {
       name: 'Mehrgenerationenhäuser',
       imgSrc: './images/Engine/mgh.png',
       url: 'https://www.mehrgenerationenhaeuser.de/',
-      technologies: 'TYPO3, HTML5, LESS, JQuery',
-      tools: 'BITV, JIRA, Bitbucket, Jenkins',
+      technologies: 'TYPO3, Bootstrap, LESS, JQuery',
+      tools: 'BITV, JIRA, Bitbucket, Figma',
     },
     {
       name: 'Deltax',

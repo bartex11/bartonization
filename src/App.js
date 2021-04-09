@@ -310,7 +310,7 @@ class App extends Component {
                         {t('Language')}
                       </h5>
                       <div className="language-change">
-                        <span onClick={() => changeLanguage('de')}>
+                        <span className="language-btn" onClick={() => changeLanguage('de')}>
                           <img
                             src="images/de.png"
                             alt="Smiley face"
@@ -318,7 +318,7 @@ class App extends Component {
                             width="42"
                           />
                         </span>
-                        <span onClick={() => changeLanguage('en')}>
+                        <span className="language-btn" onClick={() => changeLanguage('en')}>
                           <img
                             src="images/uk.png"
                             alt="Smiley face"
@@ -326,7 +326,7 @@ class App extends Component {
                             width="42"
                           />
                         </span>
-                        <span onClick={() => changeLanguage('bg')}>
+                        <span className="language-btn" onClick={() => changeLanguage('bg')}>
                           <img
                             src="images/bg.png"
                             alt="Smiley face"

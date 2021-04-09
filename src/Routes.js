@@ -90,10 +90,7 @@ class Routes extends React.Component {
         {/* FREE */}
         <Route path="/css/animations" component={AnimationPage} />
         <Route exact path="/tables/table" component={TablePage} />
-        <Route
-          path="/tables/table-responsive"
-          component={TableResponsivePage}
-        />
+        <Route path="/tables/table-responsive"component={TableResponsivePage} />
         <Route path="/tables/table-scroll" component={TableScrollPage} />
         <Route path="/tables/table-styles" component={TableStylesPage} />
         <Route path="/components/badge" component={BadgePage} />

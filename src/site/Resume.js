@@ -88,9 +88,7 @@ class Resume extends React.Component {
               <Col xs="12" sm="12" md="12" lg="10" className="tabs-content">
                 <TabPanel>
                   <Row>
-                    <Col size="12" className="mt-1 mb-2 text-right">
-                      <h2>{t("About")}</h2>
-                    </Col>
+              
                     <Col size="12">
                       <MDBCard>
                         <MDBCardHeader color="indigo lighten-1">
@@ -108,11 +106,7 @@ class Resume extends React.Component {
                   </Row>
                 </TabPanel>
                 <TabPanel>
-                  <Row>
-                    <Col size="12" className="mt-1 mb-2 text-right">
-                      <h2>{t("WorkExperience")}</h2>
-                    </Col>
-                  </Row>
+                 
                   <Row className="mb-2">
                     <Col
                       xs="12"
@@ -273,12 +267,7 @@ class Resume extends React.Component {
                   </Row>
                 </TabPanel>
                 <TabPanel>
-                  <Row>
-                    <Col size="12" className="mt-1 mb-2 text-right">
-                      <h2>Education</h2>
-                    </Col>
-                  </Row>
-
+          
                   <Row className="mb-2">
                     <Col
                       xs="12"
@@ -356,10 +345,7 @@ class Resume extends React.Component {
 
                 <TabPanel>
                   <Row>
-                    <Col size="12" className="mt-1 mb-2 text-right">
-                      <h2>Skills and Tools</h2>
-                    </Col>
-
+              
                     <Col size="12" className="mb-2">
                       <MDBCard>
                         <MDBCardHeader color="indigo lighten-1">
