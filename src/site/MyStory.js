@@ -1,7 +1,7 @@
 import React from 'react';
 import {withNamespaces} from 'react-i18next';
 
-import {MDBCard, MDBCardBody, MDBCardText, MDBCardHeader} from 'mdbreact';
+import {MDBCard, MDBCardBody, MDBCardHeader} from 'mdbreact';
 import Head from '../components/PageHeading';
 import Container from '../components/Container';
 import Row from '../components/Row';
@@ -22,15 +22,16 @@ class MyStory extends React.Component {
         <div className="paper-background">
           <span className="coffee-stain" />
           <span className="duss" />
-          <span className="paper-date">Düsseldorf, 07.06.2019</span>
+          <span className="paper-date">Düsseldorf, 04.04.2021</span>
           <section className="paper-content">
             <p>{t ('Story')}</p>
             <br />
             <p>{t ('Story1')}</p>
             <br />
             <p>{t ('Story3')}</p>
+            
             <br />
-            <br />
+            <br/>
             <p className="paper-signature">Ivan Vasilev</p>
           </section>
         </div>
@@ -47,18 +48,14 @@ class MyStory extends React.Component {
                   {t ('About')}
                 </MDBCardHeader>
                 <MDBCardBody>
-                  <MDBCardText style={{fontSize: '1rem'}}>
-                    {t ('Story')}
-                    <br />
-                    {t ('Story1')}
-                    <br />
-                    {t ('Story2')}
-                    <br />
-                    {t ('Story3')}
-                    <br />
-                    <br />
-                    <span className="paper-signature">Ivan Vasilev</span>
-                  </MDBCardText>
+                
+                    <p>{t ('Story')}</p>
+                    <p>{t ('Story1')}</p>
+                    <p>{t ('Story2')}</p>
+                    <p>{t ('Story3')}</p>
+              
+                    <span className="paper-signature font-weight-bold">Ivan Vasilev</span>
+                
                 </MDBCardBody>
               </MDBCard>
             </Col>

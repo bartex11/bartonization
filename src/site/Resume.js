@@ -99,7 +99,8 @@ class Resume extends React.Component {
                         <MDBCardBody>
                           <MDBCardTitle>{t("Duss")}</MDBCardTitle>
                           <MDBCardText style={{ fontSize: "1.25rem" }}>
-                            {t("AboutText")}
+                            {t("Story")} <br/><br/>
+                            {t ('Story1')}
                           </MDBCardText>
                         </MDBCardBody>
                       </MDBCard>
@@ -656,6 +657,7 @@ class Resume extends React.Component {
                               download="Vasilev-Resume"
                             >
                               {t("Resume")}
+                          
                             </MDBBtn>
                             <MDBBtn
                               color="green"
