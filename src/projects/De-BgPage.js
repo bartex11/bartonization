@@ -4,7 +4,7 @@ import Flip from '../components/Flip';
 import './projects.scss';
 import Data from '../data/Data';
 
-class AskoraPage extends Component {
+class DeBgPage extends Component {
   componentDidMount() {
     document.title = 'De-Bg portal';
     window.scrollTo(0, 0);
@@ -75,4 +75,4 @@ class AskoraPage extends Component {
   }
 }
 
-export default AskoraPage;
+export default DeBgPage;
