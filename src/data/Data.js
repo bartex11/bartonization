@@ -462,17 +462,17 @@ var DATA = {
     DeBg: [
       {
         id: 1,
-        imgSrc: './images/De-BG/1.JPG',
+        imgSrc: './images/De-Bg/1.JPG',
         name: 'De-Bg home',
       },
       {
         id: 2,
-        imgSrc: './images/De-BG/2.JPG',
+        imgSrc: './images/De-Bg/2.JPG',
         name: 'de',
       },
       {
         id: 3,
-        imgSrc: './images/De-BG/3.JPG',
+        imgSrc: './images/De-Bg/3.JPG',
         name: 'de',
       },
 
