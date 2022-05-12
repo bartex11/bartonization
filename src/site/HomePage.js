@@ -27,7 +27,8 @@ class HomePage extends React.Component {
         name: 'Askora',
         button: t ('More'),
         link: '/askora',
-        color: "askora-color"
+        color: "askora-color",
+        url: "https://askora-bg.com/"
       },
       {
         id: 2,
@@ -36,7 +37,8 @@ class HomePage extends React.Component {
         name: 'Katerina',
         button: t ('More'),
         link: '/katerina',
-        color: "katerina-color"
+        color: "katerina-color",
+        url: "https://kosmetik-katerina.com/"
       },
       {
         id: 3,
@@ -46,12 +48,22 @@ class HomePage extends React.Component {
         button: t ('More'),
         link: '/chlosta',
         color: "closta-color",
-    
+        url: "https://zahnarztpraxis-chlosta.de/"
       },
+      {
+        id: 3,
+        imgSrc: './images/De-Bg/1.jpg',
+        title: 'Info portal',
+        name: ' DE-BG',
+        button: t ('More'),
+        link: '/de-bg',
+        color: "portal-color",
+        url: "https://de-bg.com/index.html"
+      }
     ];
 
     const project = projects.map (project => (
-      <Col md="4" xl="4" className="mb-5" key={project.id}>
+      <Col md="6" xl="6" className="mb-5" key={project.id}>
         <MDBView className="overlay rounded z-depth-2" waves>
           <img src={project.imgSrc} alt="" className="img-fluid" />
           <Link to={project.link}>
@@ -71,6 +83,15 @@ class HomePage extends React.Component {
               {project.button}
             </MDBBtn>
           </Link>
+
+          <a  href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-indigo btn-rounded"
+            >
+            Live              
+          </a>
+
         </CardBody>
       </Col>
     ));

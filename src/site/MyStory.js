@@ -22,7 +22,7 @@ class MyStory extends React.Component {
         <div className="paper-background">
           <span className="coffee-stain" />
           <span className="duss" />
-          <span className="paper-date">Düsseldorf, 04.04.2021</span>
+          <span className="paper-date">Düsseldorf, 12.05.2022</span>
           <section className="paper-content">
             <p>{t ('Story')}</p>
             <br />

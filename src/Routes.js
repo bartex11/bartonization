@@ -19,6 +19,7 @@ import Contact from './site/Contact';
 import Askora from './projects/AskoraPage';
 import Katerina from './projects/KaterinaPage';
 import Chlosta from './projects/ChlostaPage';
+import DeBg from './projects/De-BgPage';
 
 // FREE
 import AnimationPage from './pages/AnimationPage';
@@ -75,6 +76,7 @@ class Routes extends React.Component {
         <Route exact path="/askora" component={Askora} />
         <Route exact path="/katerina" component={Katerina} />
         <Route exact path="/chlosta" component={Chlosta} />
+        <Route exact path="/de-bg" component={DeBg} />
 
         <Route exact path="/css" component={CSSPage} />
         <Route exact path="/components" component={ComponentsNavPage} />
