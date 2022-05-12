@@ -52,7 +52,7 @@ class HomePage extends React.Component {
       },
       {
         id: 3,
-        imgSrc: './images/De-Bg/1.jpg',
+        imgSrc: './images/De-Bg/1.JPG',
         title: 'Info portal',
         name: ' DE-BG',
         button: t ('More'),
