@@ -9,9 +9,9 @@
   "runtime~main.js.map": "/bartonization/static/js/runtime~main.3d03dd08.js.map",
   "static/media/font-awesome.min.css": "/bartonization/static/media/fontawesome-webfont.912ec66d.svg",
   "static/media/mdb.css": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf",
-  "static/css/main.f6793537.chunk.css.map": "/bartonization/static/css/main.f6793537.chunk.css.map",
   "static/css/1.5dddfd15.chunk.css.map": "/bartonization/static/css/1.5dddfd15.chunk.css.map",
+  "static/css/main.f6793537.chunk.css.map": "/bartonization/static/css/main.f6793537.chunk.css.map",
   "index.html": "/bartonization/index.html",
-  "precache-manifest.8df4c3c2a877633dfdc9cb17b578a039.js": "/bartonization/precache-manifest.8df4c3c2a877633dfdc9cb17b578a039.js",
+  "precache-manifest.d54d3719ce119a8cd839bb3f31577c27.js": "/bartonization/precache-manifest.d54d3719ce119a8cd839bb3f31577c27.js",
   "service-worker.js": "/bartonization/service-worker.js"
 }
