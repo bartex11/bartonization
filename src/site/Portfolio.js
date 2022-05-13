@@ -56,22 +56,23 @@ class Protfolio extends React.Component {
 
       if (project.link) {
         link = (
-          <div>
-          <Link to={project.link}>
-            <Button color="indigo" rounded>
-              {t('More')}
-            </Button>
-          </Link>
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
-          <Button color="indigo" rounded>
-            {t('ViewOnline')}
-          </Button>
-        </a>
-        </div>
+          <div class="card-link">
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <Button color="indigo" rounded>
+                {t('ViewOnline')}
+              </Button>
+            </a>
+            <Link to={project.link}>
+              <Button outline color="indigo" rounded>
+                {t('More')}
+              </Button>
+            </Link>
+          
+          </div>
         );
       } else {
         link = (
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
+          <a href={project.url} class="card-link" target="_blank" rel="noopener noreferrer">
             <Button color="indigo" rounded>
               {t('ViewOnline')}
             </Button>
@@ -119,10 +120,10 @@ class Protfolio extends React.Component {
               <Col xs="12" sm="12" md="12" lg="2" className="tabs-menu">
                 <TabList>
                   <Tab>
-                    <p>All Projects</p>
+                    <p>All</p>
                   </Tab>
                   <Tab>
-                    <p>Freelance projects</p>
+                    <p>Freelance</p>
                   </Tab>
                   <Tab>
                     <p>Spicy Media</p>
