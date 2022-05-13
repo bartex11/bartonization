@@ -37,7 +37,7 @@ var DATA = {
   spicy: [
     {
       name: 'FabFoods',
-      imgSrc: './images/FF/1.PNG',
+      imgSrc: './images/FF/1.png',
       url: 'https://fabfoods.de',
       technologies: 'React, Styled components, Liquid',
       tools: 'Trello, Git, Shopify, Oddo ',
