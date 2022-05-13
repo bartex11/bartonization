@@ -8,10 +8,10 @@
   "runtime~main.js": "/bartonization/static/js/runtime~main.3d03dd08.js",
   "runtime~main.js.map": "/bartonization/static/js/runtime~main.3d03dd08.js.map",
   "static/media/font-awesome.min.css": "/bartonization/static/media/fontawesome-webfont.912ec66d.svg",
-  "static/media/mdb.css": "/bartonization/static/media/arrow_right.8ef6a08c.svg",
+  "static/media/mdb.css": "/bartonization/static/media/Roboto-Bold.e31fcf18.ttf",
   "static/css/main.c83d8dcc.chunk.css.map": "/bartonization/static/css/main.c83d8dcc.chunk.css.map",
   "static/css/1.5dddfd15.chunk.css.map": "/bartonization/static/css/1.5dddfd15.chunk.css.map",
   "index.html": "/bartonization/index.html",
-  "precache-manifest.57abd1414fca1d9b8f26eabb3022aebe.js": "/bartonization/precache-manifest.57abd1414fca1d9b8f26eabb3022aebe.js",
+  "precache-manifest.f3882432d239c99402948735fbda5b5e.js": "/bartonization/precache-manifest.f3882432d239c99402948735fbda5b5e.js",
   "service-worker.js": "/bartonization/service-worker.js"
 }
