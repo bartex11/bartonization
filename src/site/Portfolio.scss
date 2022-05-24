@@ -1,9 +1,6 @@
 .portfolio-container {
   .card {
     height: 100%;
-    .view {
-     
-    }
 
     .card-body {
       text-align: center;
@@ -18,14 +15,6 @@
         font-size: 1.25rem;
         text-align: left;
         margin-bottom: 20px;
-
-        .techno-container {
-          .badge {}
-        }
-
-        .tools-container {
-          .badge {}
-        }
       }
 
       .card-link {
@@ -33,5 +22,4 @@
       }
     }
   }
-
 }

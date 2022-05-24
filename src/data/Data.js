@@ -30,7 +30,7 @@ var DATA = {
       link: '/de-bg',
       url: 'https://de-bg.com/',
       technologies: 'React, HTML5, CSS3, jQuery,',
-      tools: 'Wordpress, Google SEO tools, User interface design (UI)',
+      tools: 'Bootstrap, Google SEO tools, User interface design (UI)',
     }
     
   ],
@@ -200,6 +200,15 @@ var DATA = {
     ],
     BgDe: [
       {
+        name: 'React',
+        subName: 'JavaScript library',
+        imgSrc: './images/Tools/React.png',
+        description:
+          'React ist eine JavaScript-Softwarebibliothek, die ein Grundgerüst für die Ausgabe von User-Interface-Komponenten von Webseiten zur Verfügung stellt.',
+        btn: 'btn-html',
+      },
+
+      {
         name: 'HTML5',
         subName: 'Semantik HTML',
         imgSrc: './images/Tools/HTML5.svg',
@@ -270,7 +279,7 @@ var DATA = {
         description:
           'Network configuration is the process of setting a networks controls, flow and operation to support the network communication of an organization and/or network owne',
         btn: 'btn-web',
-      },
+      }
     ],
     Chlosta: [
       {

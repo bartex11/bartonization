@@ -117,7 +117,7 @@ class Resume extends React.Component {
                     >
                       <h6 class="mt-3">
                         <strong>
-                          {t("Nov")} 2019 – {t("Present")}
+                           11.2019 – {t("Now")}
                         </strong>
                       </h6>
                       <div class="mt-3">
@@ -125,7 +125,7 @@ class Resume extends React.Component {
                         <Pill pill>HTML5</Pill>
                         <Pill pill>CSS3</Pill>
                         <Pill pill>Java Script</Pill>
-                        
+                        <Pill pill>PHP</Pill>
                       </div>
                     </Col>
                     <Col xs="12" sm="12" md="12" lg="10">
@@ -154,7 +154,7 @@ class Resume extends React.Component {
                             </p>
                             <p>
                               <strong>{t("Technologies")}: </strong>
-                              TYPO3, Extbase, Fluid, Flux, HTML5, CSS3, JavaScript-Frameworks, Bootstrap, Figma, Composer, JIRA, Bitbucket, Trello, Jenkins, Git, BITV(Barrierefreiheit von informationsorientierten Webangeboten)...
+                              TYPO3, PHP, Extbase, Fluid, Flux, HTML5, CSS3, JavaScript-Frameworks, Bootstrap, Figma, Composer, JIRA, Bitbucket, Trello, Jenkins, Git, BITV(Barrierefreiheit von informationsorientierten Webangeboten)...
                             </p>
                           </MDBCardText>
                         </MDBCardBody>
@@ -171,7 +171,7 @@ class Resume extends React.Component {
                     >
                       <h6 class="mt-3">
                         <strong>
-                          {t("January")} 2017 – Nov 2019
+                          01.2017 – 11.2019
                         </strong>
                       </h6>
                       <div class="mt-3">
@@ -229,7 +229,7 @@ class Resume extends React.Component {
                     >
                       <h6 class="mt-3">
                         <strong>
-                          {t("January")} 2016 – {t("Present")}
+                           01.2016 – {t("Now")}
                         </strong>
                       </h6>
                       <div class="mt-3">
@@ -367,7 +367,18 @@ class Resume extends React.Component {
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
+                                  <strong>SASS, LESS </strong>
+                                  CSS extension und preprocessor
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
                                   <strong>Java Script</strong> (ES6)
+                                </Toolstext>
+                              </ToolsListItem>
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>PHP</strong>
                                 </Toolstext>
                               </ToolsListItem>
                               <ToolsListItem className="tool-item">
@@ -388,12 +399,7 @@ class Resume extends React.Component {
                                   Template language written in Ruby
                                 </Toolstext>
                               </ToolsListItem>
-                              <ToolsListItem className="tool-item">
-                                <Toolstext>
-                                  <strong>SASS, LESS </strong>
-                                  CSS extension und preprocessor
-                                </Toolstext>
-                              </ToolsListItem>
+                             
                             </ToolsList>
                           </MDBCardText>
                         </MDBCardBody>
@@ -425,6 +431,12 @@ class Resume extends React.Component {
                               <ToolsListItem className="tool-item">
                                 <Toolstext>
                                   <strong>Fluid</strong>
+                                </Toolstext>
+                              </ToolsListItem>
+
+                              <ToolsListItem className="tool-item">
+                                <Toolstext>
+                                  <strong>Flux</strong>
                                 </Toolstext>
                               </ToolsListItem>
 
