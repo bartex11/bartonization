@@ -287,7 +287,7 @@ class App extends Component {
                         </li>
                         <li className="footer-linkedin">
                           <a
-                            href="linkedin.com/in/bartonization"
+                            href="https://www.linkedin.com/in/bartonization"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
