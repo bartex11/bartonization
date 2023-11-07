@@ -29,7 +29,7 @@
         "typescript": "^3.2.1"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "react-scripts --openssl-legacy-provider start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
@@ -40,7 +40,7 @@
     },
     "devDependencies": {
         "gh-pages": "^2.1.1",
-        "node-sass": "^7.0.0",
+        "node-sass": "npm:sass@^1.49.9",
         "renamer": "^1.0.0",
         "rimraf": "^2.6.2",
         "sass-loader": "^7.1.0"

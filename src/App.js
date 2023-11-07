@@ -77,12 +77,6 @@ class App extends Component {
                 scrolling
               >
                 <NavbarBrand href="/">
-                  <img
-                    src="./images/bart-simpson-picture-png-image-723.png"
-                    alt=""
-                    height="40"
-                    style={{ marginRight: '10px' }}
-                  />
                   {t('Brand')}
                 </NavbarBrand>
                 <NavbarToggler
@@ -287,7 +281,7 @@ class App extends Component {
                         </li>
                         <li className="footer-linkedin">
                           <a
-                            href="https://www.linkedin.com/in/bartonization"
+                            href="https://www.linkedin.com/in/vasilev-ivan"
                             target="_blank"
                             rel="noopener noreferrer"
                           >

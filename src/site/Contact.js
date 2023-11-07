@@ -86,7 +86,7 @@ class Contact extends React.Component {
                         </li>
                         <li className="list-linkedin">
                           <a
-                            href="linkedin.com/in/bartonization"
+                            href="https://www.linkedin.com/in/vasilev-ivan/"
                             target="_blank"
                             rel="noopener noreferrer"
                           >

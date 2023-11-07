@@ -113,14 +113,14 @@ class Resume extends React.Component {
                       sm="12"
                       md="12"
                       lg="2"
-                      className="text-right p-0"
+                      className="text-right"
                     >
                       <h6 class="mt-3">
                         <strong>
                            11.2019 – {t("Now")}
                         </strong>
                       </h6>
-                      <div class="mt-3">
+                      <div class="mt-3 mb-2">
                         <Pill pill>TYPO3</Pill>
                         <Pill pill>HTML5</Pill>
                         <Pill pill>CSS3</Pill>
@@ -167,14 +167,14 @@ class Resume extends React.Component {
                       sm="12"
                       md="12"
                       lg="2"
-                      className="text-right p-0"
+                      className="text-right"
                     >
                       <h6 class="mt-3">
                         <strong>
                           01.2017 – 11.2019
                         </strong>
                       </h6>
-                      <div class="mt-3">
+                      <div class="mt-3 mb-2">
                         <Pill pill>HTML5</Pill>
                         <Pill pill>CSS3</Pill>
                         <Pill pill>Java Script</Pill>
@@ -225,14 +225,14 @@ class Resume extends React.Component {
                       sm="12"
                       md="12"
                       lg="2"
-                      className="text-right p-0"
+                      className="text-right"
                     >
                       <h6 class="mt-3">
                         <strong>
                            01.2016 – {t("Now")}
                         </strong>
                       </h6>
-                      <div class="mt-3">
+                      <div class="mt-3 mb-2">
                         <Pill pill>HTML5</Pill>
                         <Pill pill>CSS3</Pill>
                         <Pill pill>Java Script</Pill>
@@ -274,7 +274,7 @@ class Resume extends React.Component {
                       sm="12"
                       md="12"
                       lg="3"
-                      className="text-right p-0"
+                      className="text-right"
                     >
                       <h5>
                         <strong>Technische Universität Sofia</strong>{" "}
@@ -311,7 +311,7 @@ class Resume extends React.Component {
                       sm="12"
                       md="12"
                       lg="3"
-                      className="text-right p-0"
+                      className="text-right"
                     >
                       <h5>
                         <strong>Technische Universität Sofia</strong>
@@ -544,12 +544,12 @@ class Resume extends React.Component {
                   </Row>
                 </TabPanel>
                 <TabPanel>
-                  <Row>
-                    <Col size="12" className="mt-1 mb-2 text-right">
-                      <h2>Contact</h2>
-                      <h5 class="mt-1 mb-2 text-left">{t("ContactText")}</h5>
-                    </Col>
-                  </Row>
+        
+                  <Col size="12" className="mt-1 mb-4">
+                    <h2>{t("Contact")}</h2>
+                    <h5 class="mt-1 mb-2 text-left">{t("ContactText")}</h5>
+                  </Col>
+                 
                   <Row className="contact-container">
                     <Col xs="12" sm="12" md="12" lg="4">
                       <MDBCard>
